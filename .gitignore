@@ -31,7 +31,8 @@
 *.out
 *.app
 
-# Builds
+# Builds and folders
 build/
 release/
 .vscode/ipch
+x64/

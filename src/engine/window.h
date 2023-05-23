@@ -4,6 +4,7 @@
 
 #include <memory>
 #include <string>
+#include "logger.h"
 
 class iwindow
 {

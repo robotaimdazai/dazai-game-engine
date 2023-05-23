@@ -1,8 +1,11 @@
 #ifndef WINDOW_SDL_H
 #define WINDOW_SDL_H
 
-#include "window.h"
 #include "SDL.h"
+#include "window.h"
+
+extern const float screen_width;
+extern const float screen_height;
 
 struct sdl_window_destroyer
 {
@@ -11,8 +14,10 @@ struct sdl_window_destroyer
         SDL_DestroyWindow(window);
     }
 };
+
 class window_sdl: public iwindow
 {
+    
 public:
     window_sdl(const std::string &title);
     ~window_sdl() override;
@@ -23,6 +28,5 @@ private:
     const std::string& m_title_;
     
 };
-
 
 #endif
