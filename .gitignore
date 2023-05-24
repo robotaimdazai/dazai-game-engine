@@ -35,3 +35,5 @@
 *.sln
 x64\
 *.vcxproj
+*.idea
+*.vcxproj.filters
