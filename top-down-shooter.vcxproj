@@ -19,6 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\engine\input_keyboard_state.cpp" />
+    <ClCompile Include="src\engine\input_manager.cpp" />
     <ClCompile Include="src\engine\logger.cpp" />
     <ClCompile Include="src\engine\window_sdl.cpp" />
     <ClCompile Include="src\game\game.cpp" />
@@ -34,6 +36,9 @@
   <ItemGroup>
     <ClInclude Include="src\engine\game.h" />
     <ClInclude Include="src\engine\game_state.h" />
+    <ClInclude Include="src\engine\input_keyboard_state.h" />
+    <ClInclude Include="src\engine\input_manager.h" />
+    <ClInclude Include="src\engine\input_state.h" />
     <ClInclude Include="src\engine\logger.h" />
     <ClInclude Include="src\engine\window.h" />
     <ClInclude Include="src\engine\window_sdl.h" />

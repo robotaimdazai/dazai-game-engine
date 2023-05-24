@@ -4,6 +4,8 @@
 #include <memory>
 #include <vector>
 
+#include "input_manager.h"
+
 class game_state;
 
 class game
@@ -26,6 +28,7 @@ public:
 
 private:
     std::vector<std::unique_ptr<game_state>> m_game_states_;
+    std::unique_ptr<input_manager> m_input_manager_;
 };
 
 #endif

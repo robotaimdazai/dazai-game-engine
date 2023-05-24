@@ -3,7 +3,7 @@
 #include <sstream>
 #include <fstream>
 
-#define LOG_FILE "game.log"
+#define LOG_FILE "logs.log"
 
 enum log_level
 {

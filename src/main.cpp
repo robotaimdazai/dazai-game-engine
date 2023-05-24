@@ -17,7 +17,8 @@ int main(int argc, char *argv[])
     log_config.restart = true;
     if(log_config.restart)
         logger::restart();
-    
+
+    int delta_time;
     const auto window = iwindow::create(title);
     window->init(SDL_WINDOWPOS_CENTERED,SDL_WINDOWPOS_CENTERED,screen_width,screen_height,false);
     game game;
@@ -26,8 +27,16 @@ int main(int argc, char *argv[])
 
     while(game.is_running)
     {
-      
+        delta_time = 1; // replace with delta time computation
+        game.handle_inputs();
+        game.update(delta_time);
+
+        //render here
+        
     }
+
+    game.clean();
+    //clean window here
     
     return 0;
 }
