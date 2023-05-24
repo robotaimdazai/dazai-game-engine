@@ -33,7 +33,5 @@
 
 #custom
 *.sln
-x64\
-*.vcxproj
 *.idea
-*.vcxproj.filters
+x64\
