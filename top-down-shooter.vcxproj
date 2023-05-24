@@ -22,6 +22,8 @@
     <ClCompile Include="src\engine\input_keyboard_state.cpp" />
     <ClCompile Include="src\engine\input_manager.cpp" />
     <ClCompile Include="src\engine\logger.cpp" />
+    <ClCompile Include="src\engine\resource_manager.cpp" />
+    <ClCompile Include="src\engine\texture2d.cpp" />
     <ClCompile Include="src\engine\timer.cpp" />
     <ClCompile Include="src\engine\window_sdl.cpp" />
     <ClCompile Include="src\game\game.cpp" />
@@ -41,6 +43,8 @@
     <ClInclude Include="src\engine\input_manager.h" />
     <ClInclude Include="src\engine\input_state.h" />
     <ClInclude Include="src\engine\logger.h" />
+    <ClInclude Include="src\engine\resource_manager.h" />
+    <ClInclude Include="src\engine\texture2d.h" />
     <ClInclude Include="src\engine\timer.h" />
     <ClInclude Include="src\engine\window.h" />
     <ClInclude Include="src\engine\window_sdl.h" />
