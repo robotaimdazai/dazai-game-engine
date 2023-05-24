@@ -3,6 +3,7 @@
 #include <SDL_video.h>
 #include "engine/game.h"
 #include "engine/logger.h"
+#include "engine/timer.h"
 #include "engine/window.h"
 
 struct log_config log_config = {};
@@ -18,6 +19,7 @@ int main(int argc, char *argv[])
     if(log_config.restart)
         logger::restart();
 
+    timer time;
     int delta_time;
     const auto window = iwindow::create(title);
     window->init(SDL_WINDOWPOS_CENTERED,SDL_WINDOWPOS_CENTERED,screen_width,screen_height,false);
@@ -27,12 +29,13 @@ int main(int argc, char *argv[])
 
     while(game.is_running)
     {
-        delta_time = 1; // replace with delta time computation
+        delta_time = time.delta_time();
         game.handle_inputs();
         game.update(delta_time);
 
         //render here
-        
+
+        time.delay_time();
     }
 
     game.clean();
