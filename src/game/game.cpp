@@ -2,6 +2,7 @@
 
 #include "game_state_main.h"
 #include "../engine/game_state.h"
+#include "../engine/resource_manager.h"
 
 game::game():
 is_running(false),
@@ -13,12 +14,13 @@ window_height(0)
 game::~game()
 = default;
 
-auto game::init(const int screen_width, const int screen_height) -> void
+auto game::init(const int screen_width, const int screen_height, SDL_Renderer* renderer) -> void
 {
     window_width = screen_width;
     window_height = screen_height;
     is_running = true;
     m_input_manager_ = std::make_unique<input_manager>();
+    window_renderer = renderer;
 }
 
 auto game::load() -> void
@@ -42,12 +44,12 @@ auto game::update(uint32_t delta_time) -> void
 
 auto game::render() -> void
 {
-    
+    m_game_states_.back()->draw();
 }
 
 auto game::clean() -> void
 {
-    
+    resource_manager::clear();
 }
 
 auto game::change_state(std::unique_ptr<game_state> state) -> void

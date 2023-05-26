@@ -22,10 +22,12 @@ public:
     window_sdl(const std::string &title);
     ~window_sdl() override;
     auto init(int x_pos, int y_pos, int width, int height, bool is_fullscreen) -> bool override;
+    auto get_renderer()-> SDL_Renderer* override;
 
 private:
     std::unique_ptr<SDL_Window,sdl_window_destroyer> m_window_;
     const std::string& m_title_;
+    SDL_Renderer* m_renderer_;
     
 };
 

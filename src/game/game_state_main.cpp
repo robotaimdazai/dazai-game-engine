@@ -1,5 +1,6 @@
 #include "game_state_main.h"
 #include "../engine/logger.h"
+#include "../engine/resource_manager.h"
 
 game_state_main::game_state_main()= default;
 
@@ -18,6 +19,7 @@ auto game_state_main::load() -> void
     m_right_key_ = SDL_SCANCODE_D;
     m_up_key_ = SDL_SCANCODE_W;
     m_down_key_ = SDL_SCANCODE_S;
+    resource_manager::load_texture("assets/textures/dazai.png","dazai",m_game_->window_renderer);
 }
 auto game_state_main::clean() -> void
 {
@@ -38,7 +40,7 @@ auto game_state_main::update(const uint32_t delta_time) -> void
 
 auto game_state_main::draw() -> void
 {
-    
+    resource_manager::get_texture("dazai").render(0,0,m_game_->window_renderer);
 }
 auto game_state_main::handle_event(const input_state& input_state) -> void
 {

@@ -1,13 +1,14 @@
 
 #include "window_sdl.h"
 
-window_sdl::window_sdl(const std::string& title): m_title_(title)
+window_sdl::window_sdl(const std::string& title): m_title_(title),m_renderer_(nullptr)
 {
     
 }
 
 window_sdl::~window_sdl()
 {
+    SDL_DestroyRenderer(m_renderer_);
     SDL_Quit();
 }
 
@@ -23,7 +24,14 @@ auto window_sdl::init(const int x_pos, const int y_pos, const int width, const i
             SDL_CreateWindow(m_title_.c_str(),x_pos,y_pos,width,height,flags));
         
         if(m_window_)
-            LOG(info)<<"Window Created";
+        {
+            LOG(info)<<"Window created";
+            m_renderer_ = SDL_CreateRenderer(m_window_.get(),-1,SDL_RENDERER_ACCELERATED);
+            if(m_renderer_)
+            {
+                LOG(info)<<"Windows renderer created";
+            }
+        }
         else
             success = false;
        
@@ -36,6 +44,12 @@ auto window_sdl::init(const int x_pos, const int y_pos, const int width, const i
 
     return success;
 }
+
+auto window_sdl::get_renderer() ->  SDL_Renderer*
+{
+    return m_renderer_;
+}
+
 
 auto iwindow::create(const std::string& title) -> std::unique_ptr<iwindow>
 {

@@ -2,6 +2,7 @@
 #define GAME_H
 #include <cstdint>
 #include <memory>
+#include <SDL_render.h>
 #include <vector>
 
 #include "input_manager.h"
@@ -14,7 +15,7 @@ class game
 public:
     game();
     virtual ~game();
-    auto init(int screen_width, int screen_height)->void;
+    auto init(int screen_width, int screen_height, SDL_Renderer* renderer = nullptr)->void;
     auto load()->void;
     auto handle_inputs()->void;
     auto update(uint32_t delta_time)->void;
@@ -25,6 +26,7 @@ public:
     auto pop_state()->void;
     bool is_running;
     int window_width, window_height;
+    SDL_Renderer* window_renderer;
 
 private:
     std::vector<std::unique_ptr<game_state>> m_game_states_;

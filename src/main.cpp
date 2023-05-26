@@ -21,10 +21,10 @@ int main(int argc, char *argv[])
 
     timer time;
     int delta_time;
-    const auto window = iwindow::create(title);
+    const auto window =  iwindow::create(title);
     window->init(SDL_WINDOWPOS_CENTERED,SDL_WINDOWPOS_CENTERED,screen_width,screen_height,false);
     game game;
-    game.init(screen_width,screen_height);
+    game.init(screen_width,screen_height, window->get_renderer());
     game.load();
 
     while(game.is_running)
@@ -34,12 +34,15 @@ int main(int argc, char *argv[])
         game.update(delta_time);
 
         //render here
-
+        SDL_SetRenderDrawColor(game.window_renderer, 0xFF, 0xFF, 0xFF, 0xFF);
+        SDL_RenderClear(game.window_renderer);
+        game.render();
+        SDL_RenderPresent(game.window_renderer);
         time.delay_time();
     }
 
     game.clean();
-    //clean window here
+    //clean window here if requires
     
     return 0;
 }
