@@ -2,12 +2,13 @@
 #define GAME_STATE_MAIN_H
 
 #include "../engine/game_state.h"
+#include "../engine/ecs/components/component_manager.h"
 
-class game_state_main:public game_state
+class game_state_main:public i_game_state
 {
 public:
-    game_state_main();
-    virtual ~game_state_main();
+    game_state_main() = default;
+    virtual ~game_state_main() = default;
 
     auto load() -> void;
     auto clean() -> void;
@@ -21,6 +22,7 @@ public:
 private:
     game* m_game_{};
     uint32_t m_counter_{};
+    component_manager* m_component_manager_;
     int m_left_key_;
     int m_right_key_;
     int m_up_key_;

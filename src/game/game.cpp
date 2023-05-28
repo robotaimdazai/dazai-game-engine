@@ -52,7 +52,7 @@ auto game::clean() -> void
     resource_manager::clear();
 }
 
-auto game::change_state(std::unique_ptr<game_state> state) -> void
+auto game::change_state(std::unique_ptr<i_game_state> state) -> void
 {
     //clean the current state
     if(!m_game_states_.empty())
@@ -66,7 +66,7 @@ auto game::change_state(std::unique_ptr<game_state> state) -> void
     m_game_states_.back()->load();
 }
 
-auto game::push_state(std::unique_ptr<game_state>) -> void
+auto game::push_state(std::unique_ptr<i_game_state>) -> void
 {
     
 }

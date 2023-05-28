@@ -35,8 +35,16 @@
     <Folder Include="external" />
     <Folder Include="resources" />
     <Folder Include="scripts" />
+    <Folder Include="src\engine\ecs\systems" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\engine\ecs\components\component.h" />
+    <ClInclude Include="src\engine\ecs\components\component_manager.h" />
+    <ClInclude Include="src\engine\ecs\components\keyboard_component.h" />
+    <ClInclude Include="src\engine\ecs\components\motion_component.h" />
+    <ClInclude Include="src\engine\ecs\components\sprite_component.h" />
+    <ClInclude Include="src\engine\ecs\components\transform_component.h" />
+    <ClInclude Include="src\engine\ecs\entities\entity.h" />
     <ClInclude Include="src\engine\game.h" />
     <ClInclude Include="src\engine\game_state.h" />
     <ClInclude Include="src\engine\input_keyboard_state.h" />
@@ -46,6 +54,7 @@
     <ClInclude Include="src\engine\resource_manager.h" />
     <ClInclude Include="src\engine\texture2d.h" />
     <ClInclude Include="src\engine\timer.h" />
+    <ClInclude Include="src\engine\vec2.h" />
     <ClInclude Include="src\engine\window.h" />
     <ClInclude Include="src\engine\window_sdl.h" />
     <ClInclude Include="src\game\game_state_main.h" />

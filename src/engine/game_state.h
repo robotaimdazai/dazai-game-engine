@@ -2,10 +2,10 @@
 #define GAME_STATE_H
 #include "game.h"
 
-class game_state
+class i_game_state
 {
 public:
-    virtual ~game_state() = default;
+    virtual ~i_game_state() = default;
     virtual auto load()->void =0;
     virtual auto clean()->void =0;
     virtual auto update(uint32_t delta_time)->void=0;
@@ -14,5 +14,6 @@ public:
     virtual auto resume()->void = 0;
     virtual auto set_game(game* game)->void=0;
     virtual auto handle_event(const input_state&)->void = 0;
+    
 };
 #endif
