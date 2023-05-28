@@ -1,12 +1,9 @@
 ﻿#pragma once
 
 #include "component.h"
-#include "../../vec2.h"
+#include "../../input_keyboard_state.h"
+
 struct keyboard_component:component
 {
-    bool up = false;
-    bool down = false;
-    bool left = false;
-    bool right = false;
-    bool space = false;
+    keyboard_state keyboard_state;
 };

@@ -5,12 +5,12 @@
 #include "component.h"
 
 
-//templates for components
+template<typename T>
 class component_manager
 {
 public:
     
-    template<typename T, typename... Args>
+    template<typename... Args>
     auto create_component(Args&&... args) ->T*
     {
         auto component = std::make_unique<T>(std::forward<Args>(args)...);
@@ -18,8 +18,7 @@ public:
         m_components_[std::type_index(typeid(T))].emplace_back(std::move(component));
         return component_ptr;
     }
-
-    template<typename T>
+    
      auto get_component(uint32_t entity_id) ->T*
     {
         auto& components = m_components_[std::type_index(typeid(T))];
@@ -33,8 +32,7 @@ public:
         }
         return nullptr;
     }
-
-    template<typename T>
+    
     auto get_all_components() ->std::vector<T*>
     {
         std::vector<T*> components;
@@ -47,5 +45,5 @@ public:
         return components;
     }
 private:
-    std::unordered_map<std::type_index, std:: vector<std::unique_ptr<component>>> m_components_;
+    std::unordered_map<std::type_index, std:: vector<std::unique_ptr<T>>> m_components_;
 };

@@ -44,7 +44,7 @@ auto game::update(uint32_t delta_time) -> void
 
 auto game::render() -> void
 {
-    m_game_states_.back()->draw();
+    m_game_states_.back()->render();
 }
 
 auto game::clean() -> void
@@ -74,11 +74,6 @@ auto game::pop_state() -> void
 {
     
 }
-
-
-
-
-
 
 
 
