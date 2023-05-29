@@ -4,7 +4,6 @@
 #include <memory>
 #include <SDL_render.h>
 #include <vector>
-
 #include "input_manager.h"
 
 class i_game_state;

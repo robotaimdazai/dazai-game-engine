@@ -5,7 +5,7 @@
 //base class for all components
 struct component
 {
-    component(uint32_t entity_id):m_entity_id_(entity_id){};
+    component() = default;
     
     auto set_entity_id(const uint32_t id)->void
     {

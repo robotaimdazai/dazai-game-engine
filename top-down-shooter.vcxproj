@@ -20,6 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\engine\ecs\entities\entity_manager.cpp" />
+    <ClInclude Include="src\engine\ecs\components\base_component_manager.h" />
     <ClInclude Include="src\engine\ecs\systems\sprite_system.h" />
     <ClCompile Include="src\engine\ecs\systems\sprite_system.cpp" />
     <ClCompile Include="src\engine\ecs\systems\system_manager.cpp" />

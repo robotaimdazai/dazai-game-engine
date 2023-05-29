@@ -16,7 +16,6 @@ auto entity_manager::get_entity(const uint32_t entity_id) ->entity
     return m_entities_.at(entity_id);
 }
 
-
 auto entity_manager::destroy_entity(const uint32_t entity_id) ->void
 {
     m_entities_.erase(entity_id);

@@ -17,7 +17,7 @@ auto system_manager::delete_system(const i_system* system) ->void
         }
     }
 }
-auto system_manager::init_all() ->void
+auto system_manager::init() ->void
 {
     for(const auto& system : m_systems_)
     {
@@ -25,7 +25,7 @@ auto system_manager::init_all() ->void
     }
 }
 
-auto system_manager::update_all(uint32_t delta_time) ->void
+auto system_manager::update(uint32_t delta_time) ->void
 {
     for(auto& system : m_systems_)
     {
@@ -33,7 +33,7 @@ auto system_manager::update_all(uint32_t delta_time) ->void
     }
 }
 
-auto system_manager::handle_event_all(const input_state& input_state) ->void
+auto system_manager::handle_event(const input_state& input_state) ->void
 {
     for(const auto& system : m_systems_)
     {
@@ -41,7 +41,7 @@ auto system_manager::handle_event_all(const input_state& input_state) ->void
     }
 }
 
-auto system_manager::render_all() ->void
+auto system_manager::render() ->void
 {
     for(const auto& system : m_systems_)
     {
@@ -49,7 +49,7 @@ auto system_manager::render_all() ->void
     }
 }
 
-auto system_manager::clean_all() ->void
+auto system_manager::clean() ->void
 {
     for(const auto& system : m_systems_)
     {
