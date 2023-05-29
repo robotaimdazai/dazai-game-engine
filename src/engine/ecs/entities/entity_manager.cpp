@@ -2,6 +2,8 @@
 
 uint32_t entity_manager::m_next_entity_id_ = 0;
 std::unordered_map<uint32_t,entity> entity_manager::m_entities_;
+std::unordered_map<std::type_index, std::unique_ptr<base_component_manager>> entity_manager::m_component_managers_;
+
 auto entity_manager::create_entity() ->entity
 {
     entity entity{};
@@ -25,4 +27,5 @@ auto entity_manager::clean() ->void
 {
     m_next_entity_id_ = 0;
     m_entities_.clear();
+    m_component_managers_.clear();
 }

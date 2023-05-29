@@ -7,15 +7,12 @@
 #include "../engine/ecs/systems/system_manager.h"
 #include "../engine/ecs/components/sprite_component.h"
 
-component_manager<sprite_component>* g_sprite_component_manager;
-
 auto game_state_main::set_game(game* game) -> void
 {
     m_game_ = game;
-    //init component managers here
-    g_sprite_component_manager = new component_manager<sprite_component>();
-    //create and register systems here
-    system_manager::register_system(new sprite_system(m_game_->window_renderer, g_sprite_component_manager));
+    
+    entity_manager::register_component_manager<sprite_component>(new component_manager<sprite_component>());
+    system_manager::register_system(new sprite_system(m_game_->window_renderer));
 }
 
 auto game_state_main::load() -> void
@@ -25,8 +22,9 @@ auto game_state_main::load() -> void
     //init all systems
     system_manager::init();
     //creating player entity
-    const auto player_entity =entity_manager::create_entity();
-    g_sprite_component_manager->add_component(player_entity.id)->texture_id = "dazai";
+    const auto player_entity = entity_manager::create_entity();
+    entity_manager::add_component<sprite_component>(player_entity.id);
+    entity_manager::get_component<sprite_component>(player_entity.id)->texture_id = "dazai";
 }
 auto game_state_main::clean() -> void
 {

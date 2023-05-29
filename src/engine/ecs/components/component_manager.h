@@ -1,13 +1,14 @@
 ﻿#pragma once
 #include <memory>
 #include "../entities/entity.h"
+#include "base_component_manager.h"
 template<typename T>
-class component_manager 
+class component_manager final : public base_component_manager
 {
 public:
     component_manager() = default;
     
-    auto add_component(int entity_id = -1) ->T*
+    auto add_component(int entity_id) ->T*
     {
         auto component = std::make_unique<T>();
         auto component_ptr = component.get();
@@ -32,7 +33,7 @@ public:
         return nullptr;
     }
     
-    auto get_components() ->std::vector<T*> 
+    auto get_components() ->std::vector<T*>
     {
         std::vector<T*> components;
         for(auto& component : m_components_)
