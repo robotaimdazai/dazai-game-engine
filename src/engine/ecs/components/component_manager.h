@@ -4,22 +4,21 @@
 #include <unordered_map>
 #include "component.h"
 
-
 template<typename T>
 class component_manager
 {
 public:
+    component_manager() = default;
     
-    template<typename... Args>
-    auto create_component(Args&&... args) ->T*
+    auto add_component() ->T*
     {
-        auto component = std::make_unique<T>(std::forward<Args>(args)...);
+        auto component = std::make_unique<T>();
         auto component_ptr = component.get();
         m_components_[std::type_index(typeid(T))].emplace_back(std::move(component));
         return component_ptr;
     }
     
-     auto get_component(uint32_t entity_id) ->T*
+    auto get_component_of_entity_id(uint32_t entity_id) ->T*
     {
         auto& components = m_components_[std::type_index(typeid(T))];
         for(auto& component : components)
@@ -33,7 +32,7 @@ public:
         return nullptr;
     }
     
-    auto get_all_components() ->std::vector<T*>
+    auto get_components() ->std::vector<T*>
     {
         std::vector<T*> components;
         auto& components_vector = m_components_[std::type_index(typeid(T))];

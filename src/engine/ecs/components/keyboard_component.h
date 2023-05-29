@@ -5,5 +5,5 @@
 
 struct keyboard_component:component
 {
-    keyboard_state keyboard_state;
+    keyboard_state keyboard_state{};
 };
