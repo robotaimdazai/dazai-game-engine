@@ -17,5 +17,5 @@ public:
 
 private:
     SDL_Renderer* m_renderer_;
-    component_manager<sprite_component> *m_sprite_component_manager_;
+    component_manager<sprite_component> *m_sprite_component_manager_{};
 };

@@ -8,13 +8,16 @@ sprite_system::sprite_system(SDL_Renderer* renderer):
 auto sprite_system::init() ->void
 {
     m_sprite_component_manager_ = entity_manager::get_component_manager<sprite_component>();
+    if(m_sprite_component_manager_ == nullptr)
+    {
+        LOG(error) << "Sprite system can't init sprite component manager is null";
+    }
 }
 
 auto sprite_system::render() ->void
 {
     if(m_sprite_component_manager_ == nullptr)
     {
-        LOG(warning) << "Unable to start sprite system, sprite component manager is null";
         return;
     }
     for (const auto& sprite: m_sprite_component_manager_->get_components())

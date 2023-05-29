@@ -26,19 +26,6 @@ auto game_state_main::load() -> void
     entity_manager::add_component<sprite_component>(player_entity.id);
     entity_manager::get_component<sprite_component>(player_entity.id)->texture_id = "dazai";
 }
-auto game_state_main::clean() -> void
-{
-    entity_manager::clean();
-    system_manager::clean();
-}
-auto game_state_main::pause() -> void
-{
-    
-}
-auto game_state_main::resume() -> void
-{
-    
-}
 
 auto game_state_main::update(const uint32_t delta_time) -> void
 {
@@ -55,6 +42,22 @@ auto game_state_main::handle_event(const input_state& input_state) -> void
     system_manager::handle_event(input_state);
 }
 
+//pause and resume
+
+auto game_state_main::pause() -> void
+{
+    
+}
+auto game_state_main::resume() -> void
+{
+    
+}
+
+auto game_state_main::clean() -> void
+{
+    entity_manager::clean();
+    system_manager::clean();
+}
 
 
 

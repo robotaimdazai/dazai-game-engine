@@ -22,10 +22,16 @@ public:
         auto component_manager = get_component_manager<T>();
         if(component_manager == nullptr)
         {
-            LOG(warning)<<"Can't get component, manager not found: "<<std::type_index(typeid(T)).name();   
+            LOG(error)<<"Can't get component, manager not found: "<<std::type_index(typeid(T)).name();   
             return nullptr;
         }
-        return component_manager->get_component_of_entity_id(entity_id);
+        auto component =component_manager->get_component_of_entity_id(entity_id);
+        if(component == nullptr)
+        {
+            LOG(warning)<<"Can't get component, component is null: "<<std::type_index(typeid(T)).name();   
+            return nullptr;
+        }
+        return component;
     }
     
     template<typename T>
@@ -34,7 +40,7 @@ public:
         auto component_manager = get_component_manager<T>();
         if(component_manager == nullptr)
         {
-            LOG(warning)<<"Can't add component, manager not found: "<<std::type_index(typeid(T)).name();   
+            LOG(error)<<"Can't add component, manager not found: "<<std::type_index(typeid(T)).name();   
             return nullptr;
         }
         return component_manager->add_component(entity_id);
@@ -47,13 +53,13 @@ public:
         const auto iter = m_component_managers_.find( std::type_index(typeid(T)) );
         if(iter == m_component_managers_.end()) 
         {
-            LOG(warning)<<"Component manager not found: "<<std::type_index(typeid(T)).name();   
+            LOG(error)<<"Component manager not found: "<<std::type_index(typeid(T)).name();   
             return nullptr;
         }   
         auto this_manager =m_component_managers_.at(std::type_index(typeid(T))).get();
         if(this_manager == nullptr)
         {
-            LOG(warning)<<"Component manager not found: "<<std::type_index(typeid(T)).name();   
+            LOG(error)<<"Component Manager is Null: "<<std::type_index(typeid(T)).name();   
             return nullptr;
         }
         return static_cast<component_manager<T>*>(this_manager);
@@ -61,6 +67,11 @@ public:
     template<typename T>
     static auto register_component_manager(base_component_manager* component_manager) ->void
     {
+        if(component_manager == nullptr)
+        {
+            LOG(error)<<"Can't register component manager, component manager is null: "<<std::type_index(typeid(T)).name();   
+            return;
+        }
         m_component_managers_.emplace(std::type_index(typeid(T)),std::move(component_manager));
     }
     static auto clean() ->void;
