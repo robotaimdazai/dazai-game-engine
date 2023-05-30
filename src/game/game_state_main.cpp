@@ -23,8 +23,8 @@ auto game_state_main::load() -> void
     system_manager::init();
     //creating player entity
     const auto player_entity = entity_manager::create_entity();
-    entity_manager::add_component<sprite_component>(player_entity.id);
-    entity_manager::get_component<sprite_component>(player_entity.id)->texture_id = "dazai";
+    entity_manager::add_component<sprite_component>(player_entity);
+    entity_manager::get_component<sprite_component>(player_entity).texture_id = "dazai";
 }
 
 auto game_state_main::update(const uint32_t delta_time) -> void

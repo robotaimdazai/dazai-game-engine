@@ -17,33 +17,18 @@ public:
     static auto destroy_entity(uint32_t entity_id) ->void;
 
     template<typename T>
-    static auto get_component(uint32_t entity_id) -> T*
+    static auto get_component(entity entity) -> T&
     {
         auto component_manager = get_component_manager<T>();
-        if(component_manager == nullptr)
-        {
-            LOG(error)<<"Can't get component, manager not found: "<<std::type_index(typeid(T)).name();   
-            return nullptr;
-        }
-        auto component =component_manager->get_component_of_entity_id(entity_id);
-        if(component == nullptr)
-        {
-            LOG(warning)<<"Can't get component, component is null: "<<std::type_index(typeid(T)).name();   
-            return nullptr;
-        }
-        return component;
+        auto component =component_manager->get_component_of_entity_id(entity.id);
+        return *component;
     }
     
     template<typename T>
-    static auto add_component(uint32_t entity_id) ->T*
+    static auto add_component(entity entity) ->T&
     {
         auto component_manager = get_component_manager<T>();
-        if(component_manager == nullptr)
-        {
-            LOG(error)<<"Can't add component, manager not found: "<<std::type_index(typeid(T)).name();   
-            return nullptr;
-        }
-        return component_manager->add_component(entity_id);
+        return component_manager->add_component(entity.id);
     }
 
     //template functions
@@ -51,18 +36,8 @@ public:
     static auto get_component_manager() ->component_manager<T>*
     {
         const auto iter = m_component_managers_.find( std::type_index(typeid(T)) );
-        if(iter == m_component_managers_.end()) 
-        {
-            LOG(error)<<"Component manager not found: "<<std::type_index(typeid(T)).name();   
-            return nullptr;
-        }   
-        auto this_manager =m_component_managers_.at(std::type_index(typeid(T))).get();
-        if(this_manager == nullptr)
-        {
-            LOG(error)<<"Component Manager is Null: "<<std::type_index(typeid(T)).name();   
-            return nullptr;
-        }
-        return static_cast<component_manager<T>*>(this_manager);
+        auto this_manager = static_cast<component_manager<T>*>(iter->second.get());
+        return this_manager;
     }
     template<typename T>
     static auto register_component_manager(base_component_manager* component_manager) ->void

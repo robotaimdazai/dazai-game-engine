@@ -8,7 +8,7 @@ class component_manager final : public base_component_manager
 public:
     component_manager() = default;
     
-    auto add_component(int entity_id) ->T*
+    auto add_component(int entity_id) ->T&
     {
         auto component = std::make_unique<T>();
         auto component_ptr = component.get();
@@ -17,7 +17,7 @@ public:
             component_ptr->set_entity_id(entity_id);
         }
         m_components_.emplace_back(std::move(component));
-        return component_ptr;
+        return *component_ptr;
     }
     
     auto get_component_of_entity_id(uint32_t entity_id) ->T* 

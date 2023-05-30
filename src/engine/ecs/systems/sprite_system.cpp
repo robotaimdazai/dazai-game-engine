@@ -8,18 +8,10 @@ sprite_system::sprite_system(SDL_Renderer* renderer):
 auto sprite_system::init() ->void
 {
     m_sprite_component_manager_ = entity_manager::get_component_manager<sprite_component>();
-    if(m_sprite_component_manager_ == nullptr)
-    {
-        LOG(error) << "Sprite system can't init sprite component manager is null";
-    }
 }
 
 auto sprite_system::render() ->void
 {
-    if(m_sprite_component_manager_ == nullptr)
-    {
-        return;
-    }
     for (const auto& sprite: m_sprite_component_manager_->get_components())
     {
         resource_manager::get_texture(sprite->texture_id).render(sprite->offset.x, sprite->offset.y, m_renderer_);
