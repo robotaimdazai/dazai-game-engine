@@ -9,9 +9,7 @@ input_manager::input_manager()
 }
 
 input_manager::~input_manager()
-{
-    
-}
+= default;
 
 auto input_manager::init() -> void
 {

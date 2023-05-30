@@ -8,7 +8,7 @@
 class sprite_system: public i_system
 {
 public:
-    sprite_system(SDL_Renderer*);
+    sprite_system(const game* game,component_manager<sprite_component> *sprite_component_manager);
     auto init() ->void override;
     auto update(uint32_t delta_time) ->void override;
     auto handle_event(const input_state& input_state) ->void override;

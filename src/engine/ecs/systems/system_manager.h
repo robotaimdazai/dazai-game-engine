@@ -8,14 +8,14 @@
 class system_manager
 {
 public:
-    static auto register_system(i_system* system) ->void;
-    static auto delete_system(const i_system* system) ->void;
-    static auto init() ->void;
-    static auto update(uint32_t delta_time) ->void;
-    static auto handle_event(const input_state& input_state) ->void;
-    static auto render() ->void;
-    static auto clean() ->void;
+    auto add_system(i_system* system) ->void;
+    auto delete_system(const i_system* system) ->void;
+    auto init() const ->void;
+    auto update(uint32_t delta_time) const ->void;
+    auto handle_event(const input_state& input_state) const ->void;
+    auto render() const ->void;
+    auto clean() const ->void;
 
 private:
-    static std::vector<std::unique_ptr<i_system>> m_systems_;
+    std::vector<std::unique_ptr<i_system>> m_systems_;
 };

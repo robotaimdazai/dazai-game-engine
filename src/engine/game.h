@@ -5,6 +5,8 @@
 #include <SDL_render.h>
 #include <vector>
 #include "input_manager.h"
+#include "ecs/entities/entity_manager.h"
+#include "ecs/systems/system_manager.h"
 
 class i_game_state;
 

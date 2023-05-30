@@ -1,22 +1,27 @@
 ﻿#include "sprite_system.h"
 #include "../../resource_manager.h"
-#include "../entities/entity_manager.h"
 
-sprite_system::sprite_system(SDL_Renderer* renderer):
-    m_renderer_(renderer) {}
+sprite_system::sprite_system(const game *game, component_manager<sprite_component> *sprite_component_manager):
+    m_renderer_(game->window_renderer), m_sprite_component_manager_(sprite_component_manager) {}
  
 auto sprite_system::init() ->void
 {
-    m_sprite_component_manager_ = entity_manager::get_component_manager<sprite_component>();
+    if(m_sprite_component_manager_==nullptr)
+    {
+        LOG(warning)<< "sprite system component manager was null at init";
+    }
 }
 
 auto sprite_system::render() ->void
 {
-    for (const auto& sprite: m_sprite_component_manager_->get_components())
+    if(m_sprite_component_manager_==nullptr)
     {
-        resource_manager::get_texture(sprite->texture_id).render(sprite->offset.x, sprite->offset.y, m_renderer_);
+        return;
     }
-    
+    for (const auto sprite: m_sprite_component_manager_->get_components())
+    {
+        resource_manager::get_texture(sprite.texture_id).render(sprite.offset.x, sprite.offset.y, m_renderer_);
+    }
 }
 
 auto sprite_system::update(uint32_t delta_time) ->void

@@ -1,10 +1,10 @@
 ﻿#include "entity_manager.h"
 
-uint32_t entity_manager::m_next_entity_id_ = 0;
-std::unordered_map<uint32_t,entity> entity_manager::m_entities_;
-std::unordered_map<std::type_index, std::unique_ptr<base_component_manager>> entity_manager::m_component_managers_;
-
-auto entity_manager::create_entity() ->entity
+entity_manager::entity_manager()
+{
+    m_next_entity_id_ = 0;
+}
+auto entity_manager::add_entity() ->entity
 {
     entity entity{};
     entity.id = m_next_entity_id_;
@@ -13,7 +13,7 @@ auto entity_manager::create_entity() ->entity
     return entity;
 }
 
-auto entity_manager::get_entity(const uint32_t entity_id) ->entity
+auto entity_manager::get_entity(const uint32_t entity_id) const ->entity
 {
     return m_entities_.at(entity_id);
 }

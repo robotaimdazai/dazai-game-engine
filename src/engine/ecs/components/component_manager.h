@@ -1,7 +1,11 @@
 ﻿#pragma once
-#include <memory>
+#include <stdexcept>
+#include <typeindex>
+
 #include "../entities/entity.h"
 #include "base_component_manager.h"
+#include "../../logger.h"
+
 template<typename T>
 class component_manager final : public base_component_manager
 {
@@ -10,39 +14,33 @@ public:
     
     auto add_component(int entity_id) ->T&
     {
-        auto component = std::make_unique<T>();
-        auto component_ptr = component.get();
+        m_components_.emplace_back(T{});
+        auto& component = m_components_.back();
         if(entity_id != -1)
         {
-            component_ptr->set_entity_id(entity_id);
+            component.set_entity_id(entity_id);
         }
-        m_components_.emplace_back(std::move(component));
-        return *component_ptr;
+        return component;
     }
     
-    auto get_component_of_entity_id(uint32_t entity_id) ->T* 
+    auto get_component_of_entity_id(entity entity) ->T&
     {
         for(auto& component : m_components_)
         {
-            T* typed_component = static_cast<T*>(component.get());
-            if(typed_component->get_entity_id() == entity_id)
+            if(component.get_entity_id() == entity.id)
             {
-                return typed_component;
+                return component;
             }
         }
-        return nullptr;
+        LOG(error)<<"Component not found: "<<std::type_index(typeid(T)).name();
+        throw std::runtime_error("Component not found Exception");
     }
     
-    auto get_components() ->std::vector<T*>
+    auto get_components() ->std::vector<T>&
     {
-        std::vector<T*> components;
-        for(auto& component : m_components_)
-        {
-            T* typed_component = static_cast<T*>(component.get());
-            components.emplace_back(typed_component);
-        }
-        return components;
+        return m_components_;
     }
+    
 private:
-   std::vector<std::unique_ptr<T>> m_components_{};
+   std::vector<T> m_components_{};
 };

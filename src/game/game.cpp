@@ -19,8 +19,8 @@ auto game::init(const int screen_width, const int screen_height, SDL_Renderer* r
     window_width = screen_width;
     window_height = screen_height;
     is_running = true;
-    m_input_manager_ = std::make_unique<input_manager>();
     window_renderer = renderer;
+    m_input_manager_ = std::make_unique<input_manager>();
 }
 
 auto game::load() -> void
