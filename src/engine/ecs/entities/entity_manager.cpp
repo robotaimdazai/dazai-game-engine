@@ -1,31 +1,43 @@
 ﻿#include "entity_manager.h"
+#include <assert.h>
 
 entity_manager::entity_manager()
 {
-    m_next_entity_id_ = 0;
+    for(uint32_t entity = 0; entity < MAX_ENTITIES; entity++)
+    {
+        m_available_entities_.push(entity);
+    }
 }
 auto entity_manager::add_entity() ->entity
 {
-    entity entity{};
-    entity.id = m_next_entity_id_;
-    m_entities_.emplace(entity.id,entity);
-    m_next_entity_id_++;
+    assert(m_living_entity_count_< MAX_ENTITIES && "Too many entities in existence.");
+    const entity entity{m_available_entities_.front()};
+    m_available_entities_.pop();
+    ++m_living_entity_count_;
     return entity;
 }
 
-auto entity_manager::get_entity(const uint32_t entity_id) const ->entity
+auto entity_manager::destroy_entity(const entity entity) ->void
 {
-    return m_entities_.at(entity_id);
+    assert(entity.id<MAX_ENTITIES && "Entity out of range.");
+    m_signature_[entity.id].reset();
+    m_available_entities_.push(entity.id);
+    --m_living_entity_count_;
 }
 
-auto entity_manager::destroy_entity(const uint32_t entity_id) ->void
+auto entity_manager::set_signature(const entity entity, const signature signature) ->void
 {
-    m_entities_.erase(entity_id);
+    assert(entity.id<MAX_ENTITIES && "Entity out of range.");
+    m_signature_[entity.id] = signature;
+}
+
+auto entity_manager::get_signature(const entity entity) const ->signature
+{
+    assert(entity.id<MAX_ENTITIES && "Entity out of range.");
+    return m_signature_[entity.id];
 }
 
 auto entity_manager::clean() ->void
 {
-    m_next_entity_id_ = 0;
-    m_entities_.clear();
-    m_component_managers_.clear();
+    
 }

@@ -1,46 +1,68 @@
 ﻿#pragma once
-#include <stdexcept>
-#include <typeindex>
+#include <cassert>
+#include <memory>
+#include <unordered_map>
+#include "i_component_array.h"
+#include "component_array.h"
 
-#include "../entities/entity.h"
-#include "base_component_manager.h"
-#include "../../logger.h"
-
-template<typename T>
-class component_manager final : public base_component_manager
+class component_manager
 {
 public:
-    component_manager() = default;
-    
-    auto add_component(int entity_id) ->T&
+    template<typename T>
+    auto register_component() ->void
     {
-        m_components_.emplace_back(T{});
-        auto& component = m_components_.back();
-        if(entity_id != -1)
+        const char* type_name = typeid(T).name();
+        assert(m_component_types_.find(type_name) == m_component_types_.end() && "Registering component type more than once.");
+        m_component_types_.insert({type_name,m_next_component_type_});
+        m_component_arrays_.insert({type_name,std::make_shared<component_array<T>>()});
+        ++m_next_component_type_;
+    }
+    template<typename T>
+    auto get_component_type()->uint8_t
+    {
+        const char* type_name = typeid(T).name();
+        assert(m_component_types_.find(type_name) != m_component_types_.end() && "Component not registered before use.");
+        return m_component_types_[type_name];
+    }
+    template<typename T>
+    auto add_component(entity entity) ->void
+    {
+        get_component_array<T>()->set_data(entity,T{});
+    }
+
+    template <typename T>
+    auto remove_component(entity entity) ->void
+    {
+        get_component_array<T>()->remove_component(entity);
+    }
+
+    template<typename T>
+    auto get_component(entity entity) ->T&
+    {
+        return get_component_array<T>()->get_data(entity);
+    }
+
+    auto entity_destroyed(entity entity) ->void
+    {
+        for(auto const& pair : m_component_arrays_)
         {
-            component.set_entity_id(entity_id);
+            auto const& component = pair.second;
+            component->entity_destroyed(entity);
         }
-        return component;
     }
-    
-    auto get_component_of_entity_id(entity entity) ->T&
-    {
-        for(auto& component : m_components_)
-        {
-            if(component.get_entity_id() == entity.id)
-            {
-                return component;
-            }
-        }
-        LOG(error)<<"Component not found: "<<std::type_index(typeid(T)).name();
-        throw std::runtime_error("Component not found Exception");
-    }
-    
-    auto get_components() ->std::vector<T>&
-    {
-        return m_components_;
-    }
-    
+
 private:
-   std::vector<T> m_components_{};
+    //string to int type mapping, this type name is returned by typeid(T).name()
+    std::unordered_map<const char*, uint8_t> m_component_types_{};
+    //string to component array
+    std::unordered_map<const char*, std::shared_ptr<i_component_array>> m_component_arrays_{};
+    uint8_t m_next_component_type_{};
+
+    template<typename T>
+    auto get_component_array() ->std::shared_ptr<component_array<T>>
+    {
+        const char* type_name = typeid(T).name();
+        assert(m_component_types_.find(type_name) != m_component_types_.end() && "Component not registered before use.");
+        return std::static_pointer_cast<component_array<T>>(m_component_arrays_[type_name]);
+    }
 };
