@@ -1,11 +1,6 @@
 ﻿#pragma once
 #include <bitset>
-#include <map>
-#include <memory>
 #include <queue>
-#include <typeindex>
-#include <unordered_map>
-#include "entity.h"
 #include "../../game_constants.h"
 
 

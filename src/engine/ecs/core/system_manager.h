@@ -32,7 +32,7 @@ public:
         for(auto const& pair : m_systems_)
         {
             auto const& system = pair.second;
-            system->entities.erase(entity.id);
+            system->entities.erase(entity);
         }
     }
 
@@ -47,12 +47,12 @@ public:
             //if the entity signature matches the system signature, insert it
             if ((entity_signature & system_signature) == system_signature)
             {
-                system->entities.insert(entity.id);
+                system->entities.insert(entity);
             }
             else
             {
                 //if the entity signature does not match the system signature, erase it
-                system->entities.erase(entity.id);
+                system->entities.erase(entity);
             }
         }
     }

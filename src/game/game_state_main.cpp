@@ -1,8 +1,6 @@
 #include "game_state_main.h"
 #include "../engine/resource_manager.h"
 
-
-
 auto game_state_main::set_game(game* game) -> void
 {
     m_game_ = game;

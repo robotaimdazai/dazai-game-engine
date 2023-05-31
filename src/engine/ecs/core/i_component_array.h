@@ -1,6 +1,5 @@
 ﻿#pragma once
-struct entity;
-
+#include "../../game_constants.h"
 class i_component_array
 {
 public:

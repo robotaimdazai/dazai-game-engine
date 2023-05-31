@@ -1,7 +1,5 @@
-#ifndef GAME_STATE_H
-#define GAME_STATE_H
+#pragma once
 #include "game.h"
-
 
 class i_game_state
 {
@@ -17,4 +15,3 @@ public:
     virtual auto handle_event(const input_state&)->void = 0;
     
 };
-#endif

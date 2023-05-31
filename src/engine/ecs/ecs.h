@@ -1,9 +1,8 @@
 ﻿#pragma once
 #include <memory>
-#include "components/component_manager.h"
-#include "entities/entity_manager.h"
-#include "systems/system_manager.h"
-
+#include "core/component_manager.h"
+#include "core/entity_manager.h"
+#include "core/system_manager.h"
 class ecs
 {
 public:

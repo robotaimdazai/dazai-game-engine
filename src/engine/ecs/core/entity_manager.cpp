@@ -19,22 +19,22 @@ auto entity_manager::add_entity() ->entity
 
 auto entity_manager::destroy_entity(const entity entity) ->void
 {
-    assert(entity.id<MAX_ENTITIES && "Entity out of range.");
-    m_signature_[entity.id].reset();
-    m_available_entities_.push(entity.id);
+    assert(entity<MAX_ENTITIES && "Entity out of range.");
+    m_signature_[entity].reset();
+    m_available_entities_.push(entity);
     --m_living_entity_count_;
 }
 
 auto entity_manager::set_signature(const entity entity, const signature signature) ->void
 {
-    assert(entity.id<MAX_ENTITIES && "Entity out of range.");
-    m_signature_[entity.id] = signature;
+    assert(entity<MAX_ENTITIES && "Entity out of range.");
+    m_signature_[entity] = signature;
 }
 
 auto entity_manager::get_signature(const entity entity) const ->signature
 {
-    assert(entity.id<MAX_ENTITIES && "Entity out of range.");
-    return m_signature_[entity.id];
+    assert(entity<MAX_ENTITIES && "Entity out of range.");
+    return m_signature_[entity];
 }
 
 auto entity_manager::clean() ->void
