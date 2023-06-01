@@ -1,5 +1,4 @@
 ﻿#include "resource_manager.h"
-
 #include "logger.h"
 
 std::map<std::string,texture2d> resource_manager::textures;
@@ -10,9 +9,9 @@ auto resource_manager::load_texture(const std::string& file, const std::string& 
     return textures[name];
 }
 
-auto resource_manager::get_texture(const std::string& name) -> texture2d
+auto resource_manager::get_texture(const std::string& name) -> texture2d&
 {
-    return textures[name];
+    return textures.at(name);
 }
 
 auto resource_manager::clear() -> void

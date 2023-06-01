@@ -92,6 +92,7 @@
       <SDLCheck>true</SDLCheck>
       <LinkCompiled>true</LinkCompiled>
     </ClCompile>
+    <ClCompile Include="src\engine\ecs\systems\sprite_system.cpp" />
     <ClCompile Include="src\engine\input_keyboard_state.cpp" />
     <ClCompile Include="src\engine\input_manager.cpp" />
     <ClCompile Include="src\engine\logger.cpp" />
@@ -108,11 +109,10 @@
     <Folder Include="external" />
     <Folder Include="resources" />
     <Folder Include="scripts" />
-    <Folder Include="src\engine\ecs\components" />
     <Folder Include="src\engine\ecs\entities" />
-    <Folder Include="src\engine\ecs\systems" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\engine\ecs\components\sprite.h" />
     <ClInclude Include="src\engine\ecs\core\component_array.h" />
     <ClInclude Include="src\engine\ecs\core\component_manager.h" />
     <ClInclude Include="src\engine\ecs\core\entity_manager.h" />
@@ -134,6 +134,9 @@
     <ClInclude Include="src\engine\window.h" />
     <ClInclude Include="src\engine\window_sdl.h" />
     <ClInclude Include="src\game\game_state_main.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\engine\ecs\systems\sprite_system.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

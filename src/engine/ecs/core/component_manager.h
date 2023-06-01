@@ -27,7 +27,7 @@ public:
     template<typename T>
     auto add_component(entity entity) ->void
     {
-        get_component_array<T>()->set_data(entity,T{});
+        get_component_array<T>()->set_data(entity);
     }
 
     template <typename T>

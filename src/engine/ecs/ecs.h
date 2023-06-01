@@ -3,6 +3,7 @@
 #include "core/component_manager.h"
 #include "core/entity_manager.h"
 #include "core/system_manager.h"
+
 class ecs
 {
 public:

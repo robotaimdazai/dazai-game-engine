@@ -2,7 +2,6 @@
 #include <assert.h>
 #include <typeindex>
 #include <unordered_map>
-#include "../core/entity.h"
 #include "i_component_array.h"
 #include "../../game_constants.h"
 #include "../../logger.h"
