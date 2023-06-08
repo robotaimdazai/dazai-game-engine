@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
     
     const auto window =  iwindow::create(title);
     window->init(SDL_WINDOWPOS_CENTERED,SDL_WINDOWPOS_CENTERED,screen_width,screen_height,false);
-    const auto renderer = window->get_renderer();
+    const auto renderer = window->get_sdl_renderer();
     game game;
     game.init(screen_width,screen_height, renderer);
     game.load();
@@ -33,14 +33,16 @@ int main(int argc, char *argv[])
     while(game.is_running)
     {
         delta_time = time.delta_time();
+        window->update_fps_counter(delta_time);
         game.handle_inputs();
         game.update(delta_time);
 
         //render here
-        SDL_SetRenderDrawColor(game.window_renderer, 0xFF, 0xFF, 0xFF, 0xFF);
-        SDL_RenderClear(game.window_renderer);
+        window->clear();
         game.render();
-        SDL_RenderPresent(game.window_renderer);
+        window->swap_buffers();
+        
+        //make sure frame is delayed to lock FPS
         time.delay_time();
     }
 

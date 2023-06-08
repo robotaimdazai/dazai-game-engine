@@ -105,13 +105,16 @@
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="assets" />
-    <Folder Include="external" />
+    <Folder Include="assets\shaders" />
     <Folder Include="resources" />
     <Folder Include="scripts" />
     <Folder Include="src\engine\ecs\entities" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="external\glew\include\GL\eglew.h" />
+    <ClInclude Include="external\glew\include\GL\glew.h" />
+    <ClInclude Include="external\glew\include\GL\glxew.h" />
+    <ClInclude Include="external\glew\include\GL\wglew.h" />
     <ClInclude Include="src\engine\ecs\components\sprite.h" />
     <ClInclude Include="src\engine\ecs\core\component_array.h" />
     <ClInclude Include="src\engine\ecs\core\component_manager.h" />
@@ -137,6 +140,40 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\engine\ecs\systems\sprite_system.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\textures\dazai.png" />
+    <Content Include="external\glew\bin\Release\Win32\glew32.dll" />
+    <Content Include="external\glew\bin\Release\Win32\glewinfo.exe" />
+    <Content Include="external\glew\bin\Release\Win32\visualinfo.exe" />
+    <Content Include="external\glew\bin\Release\x64\glew32.dll" />
+    <Content Include="external\glew\bin\Release\x64\glewinfo.exe" />
+    <Content Include="external\glew\bin\Release\x64\visualinfo.exe" />
+    <Content Include="external\glew\doc\advanced.html" />
+    <Content Include="external\glew\doc\basic.html" />
+    <Content Include="external\glew\doc\build.html" />
+    <Content Include="external\glew\doc\credits.html" />
+    <Content Include="external\glew\doc\github.png" />
+    <Content Include="external\glew\doc\glew.css" />
+    <Content Include="external\glew\doc\glew.html" />
+    <Content Include="external\glew\doc\glew.png" />
+    <Content Include="external\glew\doc\glew.txt" />
+    <Content Include="external\glew\doc\glxew.html" />
+    <Content Include="external\glew\doc\gpl.txt" />
+    <Content Include="external\glew\doc\index.html" />
+    <Content Include="external\glew\doc\install.html" />
+    <Content Include="external\glew\doc\khronos.txt" />
+    <Content Include="external\glew\doc\log.html" />
+    <Content Include="external\glew\doc\mesa.txt" />
+    <Content Include="external\glew\doc\new.png" />
+    <Content Include="external\glew\doc\ogl_sm.jpg" />
+    <Content Include="external\glew\doc\travis.png" />
+    <Content Include="external\glew\doc\wglew.html" />
+    <Content Include="external\glew\lib\Release\Win32\glew32.lib" />
+    <Content Include="external\glew\lib\Release\Win32\glew32s.lib" />
+    <Content Include="external\glew\lib\Release\x64\glew32.lib" />
+    <Content Include="external\glew\lib\Release\x64\glew32s.lib" />
+    <Content Include="external\glew\LICENSE.txt" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
@@ -199,8 +236,8 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
     <ExternalIncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</ExternalIncludePath>
-    <LibraryPath>$(VC_LibraryPath_x64);external\SDL2-2.26.5\lib\x64;external\SDL2_image-2.6.3\lib\x64;external\SDL2_mixer-2.6.3\lib\x64;external\SDL2_ttf-2.20.2\lib\x64;$(WindowsSDK_LibraryPath_x64);</LibraryPath>
-    <IncludePath>$(VC_IncludePath);external\SDL2-2.26.5\include;external\SDL2_image-2.6.3\include;external\SDL2_mixer-2.6.3\include;external\SDL2_ttf-2.20.2\include;$(WindowsSDK_IncludePath);</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x64);external\SDL2-2.26.5\lib\x64;external\SDL2_image-2.6.3\lib\x64;external\SDL2_mixer-2.6.3\lib\x64;external\SDL2_ttf-2.20.2\lib\x64;external\glew\lib\Release\x64;$(WindowsSDK_LibraryPath_x64);</LibraryPath>
+    <IncludePath>$(VC_IncludePath);external\SDL2-2.26.5\include;external\SDL2_image-2.6.3\include;external\SDL2_mixer-2.6.3\include;external\SDL2_ttf-2.20.2\include;external\glew\include;$(WindowsSDK_IncludePath);</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -238,7 +275,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>$(CoreLibraryDependencies);SDL2.lib;SDL2_ttf.lib;SDL2_mixer.lib;SDL2_image.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>$(CoreLibraryDependencies);SDL2.lib;SDL2_ttf.lib;SDL2_mixer.lib;SDL2_image.lib;glew32s.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
