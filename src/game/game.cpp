@@ -75,5 +75,10 @@ auto game::pop_state() -> void
     
 }
 
+auto game::on_gui() -> void
+{
+    m_game_states_.back()->on_gui();
+}
+
 
 

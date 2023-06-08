@@ -7,16 +7,17 @@ class game_state_main:public i_game_state
 {
 public:
     game_state_main() = default;
-    virtual ~game_state_main() = default;
+    ~game_state_main() override = default;
 
-    auto load() -> void;
-    auto clean() -> void;
-    auto pause() -> void;
-    auto resume() -> void;
-    auto update(uint32_t delta_time) -> void;
-    auto render() -> void;
-    auto set_game(game* game) -> void;
-    auto handle_event(const input_state&) -> void;
+    auto load() -> void override;
+    auto clean() -> void override;
+    auto pause() -> void override;
+    auto resume() -> void override;
+    auto update(uint32_t delta_time) -> void override;
+    auto render() -> void override;
+    auto set_game(game* game) -> void override;
+    auto handle_event(const input_state&) -> void override;
+    auto on_gui() -> void override;
 
 private:
     game* m_game_{};

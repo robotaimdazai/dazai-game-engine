@@ -22,6 +22,7 @@ public:
     auto change_state(std::unique_ptr<i_game_state>)->void;
     auto push_state(std::unique_ptr<i_game_state>)->void;
     auto pop_state()->void;
+    auto on_gui()->void;
     bool is_running;
     int window_width, window_height;
     SDL_Renderer* window_renderer;

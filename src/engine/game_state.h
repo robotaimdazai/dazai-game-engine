@@ -13,5 +13,6 @@ public:
     virtual auto resume()->void = 0;
     virtual auto set_game(game* game)->void=0;
     virtual auto handle_event(const input_state&)->void = 0;
+    virtual auto on_gui()->void =0;
     
 };

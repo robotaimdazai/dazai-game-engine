@@ -10,7 +10,7 @@ public:
     auto delay_time()->void;
 
 private:
-    constexpr static int fps = 60;
+    constexpr static int fps = 165;
     constexpr static int frame_delay = 1000/fps;
     uint32_t m_frame_start_;
     uint32_t m_last_frame_;

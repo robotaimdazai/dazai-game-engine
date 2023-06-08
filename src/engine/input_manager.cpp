@@ -3,6 +3,9 @@
 #include <SDL_events.h>
 #include <SDL_keyboard.h>
 
+#include "imgui.h"
+#include "backends/imgui_impl_sdl2.h"
+
 input_manager::input_manager()
 {
     init();
@@ -26,6 +29,7 @@ auto input_manager::poll_inputs() -> bool
 {
     SDL_Event event;
     SDL_PollEvent(&event);
+    ImGui_ImplSDL2_ProcessEvent(&event);
     bool is_running = true;
     switch (event.type)
     {

@@ -1,5 +1,9 @@
 #define GLEW_STATIC
 #include "window_sdl.h"
+
+#include "imgui.h"
+#include "backends/imgui_impl_opengl3.h"
+#include "backends/imgui_impl_sdl2.h"
 #include "GL/glew.h"
 
 window_sdl::window_sdl(const std::string& title): m_title_(title),m_sdl_renderer_(nullptr)
@@ -63,6 +67,15 @@ auto window_sdl::init(const int x_pos, const int y_pos, const int width, const i
         glEnable(GL_CULL_FACE);
         glEnable(GL_BLEND);
         glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+
+        //setup imGUI
+        ImGui::CreateContext();
+        ImGuiIO& io = ImGui::GetIO(); (void)io;
+        io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard; 
+        io.ConfigFlags |= ImGuiConfigFlags_NavEnableGamepad;
+        ImGui::StyleColorsDark();
+        ImGui_ImplSDL2_InitForOpenGL(m_window_.get(),m_context_);
+        ImGui_ImplOpenGL3_Init("#version 130");
     }
     else
     {

@@ -1,6 +1,10 @@
 ﻿
 #include <SDL_timer.h>
 #include <SDL_video.h>
+
+#include "imgui.h"
+#include "backends/imgui_impl_opengl3.h"
+#include "backends/imgui_impl_sdl2.h"
 #include "engine/game.h"
 #include "engine/logger.h"
 #include "engine/timer.h"
@@ -12,8 +16,8 @@ int main(int argc, char *argv[])
 {
     //create window
     const std::string title = "Dazai";
-    const int screen_width= 640;
-    const int screen_height= 480;
+    const int screen_width= 1280;
+    const int screen_height= 720;
     log_config.reporting_level = debug;
     log_config.restart = true;
     if(log_config.restart)
@@ -34,14 +38,22 @@ int main(int argc, char *argv[])
     {
         delta_time = time.delta_time();
         window->update_fps_counter(delta_time);
+        //updates here----------------
         game.handle_inputs();
         game.update(delta_time);
+        
+        //imGUI render---------------
+        ImGui_ImplOpenGL3_NewFrame();
+        ImGui_ImplSDL2_NewFrame();
+        ImGui::NewFrame();
+        game.on_gui();
+        ImGui::Render();
 
-        //render here
+        //render here----------------
         window->clear();
         game.render();
+        ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
         window->swap_buffers();
-        
         //make sure frame is delayed to lock FPS
         time.delay_time();
     }

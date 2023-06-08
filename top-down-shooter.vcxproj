@@ -19,6 +19,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="external\imGUI\backends\imgui_impl_opengl3.cpp" />
+    <ClCompile Include="external\imGUI\backends\imgui_impl_sdl2.cpp" />
+    <ClCompile Include="external\imGUI\imgui.cpp" />
+    <ClCompile Include="external\imGUI\imgui_demo.cpp" />
+    <ClCompile Include="external\imGUI\imgui_draw.cpp" />
+    <ClCompile Include="external\imGUI\imgui_tables.cpp" />
+    <ClCompile Include="external\imGUI\imgui_widgets.cpp" />
     <ClCompile Include="src\engine\ecs\core\entity_manager.cpp">
       <RuntimeLibrary>MultiThreadedDebugDll</RuntimeLibrary>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -97,6 +104,7 @@
     <ClCompile Include="src\engine\input_manager.cpp" />
     <ClCompile Include="src\engine\logger.cpp" />
     <ClCompile Include="src\engine\resource_manager.cpp" />
+    <ClCompile Include="src\engine\stb_image.cpp" />
     <ClCompile Include="src\engine\texture2d.cpp" />
     <ClCompile Include="src\engine\timer.cpp" />
     <ClCompile Include="src\engine\window_sdl.cpp" />
@@ -115,6 +123,15 @@
     <ClInclude Include="external\glew\include\GL\glew.h" />
     <ClInclude Include="external\glew\include\GL\glxew.h" />
     <ClInclude Include="external\glew\include\GL\wglew.h" />
+    <ClInclude Include="external\imGUI\backends\imgui_impl_opengl3.h" />
+    <ClInclude Include="external\imGUI\backends\imgui_impl_opengl3_loader.h" />
+    <ClInclude Include="external\imGUI\backends\imgui_impl_sdl2.h" />
+    <ClInclude Include="external\imGUI\imconfig.h" />
+    <ClInclude Include="external\imGUI\imgui.h" />
+    <ClInclude Include="external\imGUI\imgui_internal.h" />
+    <ClInclude Include="external\imGUI\imstb_rectpack.h" />
+    <ClInclude Include="external\imGUI\imstb_textedit.h" />
+    <ClInclude Include="external\imGUI\imstb_truetype.h" />
     <ClInclude Include="src\engine\ecs\components\sprite.h" />
     <ClInclude Include="src\engine\ecs\core\component_array.h" />
     <ClInclude Include="src\engine\ecs\core\component_manager.h" />
@@ -131,6 +148,7 @@
     <ClInclude Include="src\engine\input_state.h" />
     <ClInclude Include="src\engine\logger.h" />
     <ClInclude Include="src\engine\resource_manager.h" />
+    <ClInclude Include="src\engine\stb_image.h" />
     <ClInclude Include="src\engine\texture2d.h" />
     <ClInclude Include="src\engine\timer.h" />
     <ClInclude Include="src\engine\vec2.h" />
@@ -237,7 +255,7 @@
     <LinkIncremental>true</LinkIncremental>
     <ExternalIncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</ExternalIncludePath>
     <LibraryPath>$(VC_LibraryPath_x64);external\SDL2-2.26.5\lib\x64;external\SDL2_image-2.6.3\lib\x64;external\SDL2_mixer-2.6.3\lib\x64;external\SDL2_ttf-2.20.2\lib\x64;external\glew\lib\Release\x64;$(WindowsSDK_LibraryPath_x64);</LibraryPath>
-    <IncludePath>$(VC_IncludePath);external\SDL2-2.26.5\include;external\SDL2_image-2.6.3\include;external\SDL2_mixer-2.6.3\include;external\SDL2_ttf-2.20.2\include;external\glew\include;$(WindowsSDK_IncludePath);</IncludePath>
+    <IncludePath>$(VC_IncludePath);external\SDL2-2.26.5\include;external\SDL2_image-2.6.3\include;external\SDL2_mixer-2.6.3\include;external\SDL2_ttf-2.20.2\include;external\glew\include;external\imGUI;$(WindowsSDK_IncludePath);</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>

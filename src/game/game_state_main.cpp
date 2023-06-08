@@ -1,4 +1,6 @@
 #include "game_state_main.h"
+
+#include "imgui.h"
 #include "../engine/resource_manager.h"
 #include "../engine/ecs/ecs.h"
 #include "../engine/ecs/components/sprite.h"
@@ -61,6 +63,12 @@ auto game_state_main::resume() -> void
 auto game_state_main::clean() -> void
 {
    
+}
+
+auto game_state_main::on_gui() -> void
+{
+    ImGui::Begin("Debug");
+    ImGui::End();
 }
 
 
