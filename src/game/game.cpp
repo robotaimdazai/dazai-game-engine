@@ -1,7 +1,6 @@
 #include "../engine/game.h"
-
-#include "game_state_main.h"
-#include "../engine/game_state.h"
+#include "scene_main.h"
+#include "../engine/scene.h"
 #include "../engine/resource_manager.h"
 
 game::game():
@@ -26,7 +25,7 @@ auto game::init(const int screen_width, const int screen_height, SDL_Renderer* r
 auto game::load() -> void
 {
     //change game state to starting state
-    change_state(std::make_unique<game_state_main>());
+    change_scene(std::make_unique<scene_main>());
 }
 
 auto game::handle_inputs() -> void
@@ -34,17 +33,17 @@ auto game::handle_inputs() -> void
     m_input_manager_->prepare_for_update();
     is_running = m_input_manager_->poll_inputs();
     const input_state& input_state = m_input_manager_->get_state();
-    m_game_states_.back()->handle_event(input_state);
+    m_game_scenes_.back()->handle_event(input_state);
 }
 
 auto game::update(uint32_t delta_time) -> void
 {
-    m_game_states_.back()->update(delta_time);
+    m_game_scenes_.back()->update(delta_time);
 }
 
 auto game::render() -> void
 {
-    m_game_states_.back()->render();
+    m_game_scenes_.back()->render();
 }
 
 auto game::clean() -> void
@@ -52,32 +51,32 @@ auto game::clean() -> void
     resource_manager::clear();
 }
 
-auto game::change_state(std::unique_ptr<i_game_state> state) -> void
+auto game::change_scene(std::unique_ptr<i_scene> state) -> void
 {
     //clean the current state
-    if(!m_game_states_.empty())
+    if(!m_game_scenes_.empty())
     {
-        m_game_states_.back()->clean();
-        m_game_states_.pop_back();
+        m_game_scenes_.back()->clean();
+        m_game_scenes_.pop_back();
     }
     //store and load new state
     state->set_game(this);
-    m_game_states_.push_back(std::move(state));
-    m_game_states_.back()->load();
+    m_game_scenes_.push_back(std::move(state));
+    m_game_scenes_.back()->load();
 }
 
-auto game::push_state(std::unique_ptr<i_game_state>) -> void
+auto game::push_scene(std::unique_ptr<i_scene>) -> void
 {
     
 }
-auto game::pop_state() -> void
+auto game::pop_scene() -> void
 {
     
 }
 
 auto game::on_gui() -> void
 {
-    m_game_states_.back()->on_gui();
+    m_game_scenes_.back()->on_gui();
 }
 
 

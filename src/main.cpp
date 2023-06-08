@@ -36,11 +36,15 @@ int main(int argc, char *argv[])
 
     while(game.is_running)
     {
+        //calculate delta time and fps
         delta_time = time.delta_time();
         window->update_fps_counter(delta_time);
+        //----------------------------
+        
         //updates here----------------
         game.handle_inputs();
         game.update(delta_time);
+        //----------------------------
         
         //imGUI render---------------
         ImGui_ImplOpenGL3_NewFrame();
@@ -48,14 +52,19 @@ int main(int argc, char *argv[])
         ImGui::NewFrame();
         game.on_gui();
         ImGui::Render();
+        //---------------------------
 
         //render here----------------
         window->clear();
         game.render();
         ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
+        //----------------------------
+
+        //swap buffers and delay-----
         window->swap_buffers();
         //make sure frame is delayed to lock FPS
         time.delay_time();
+        //---------------------------
     }
 
     game.clean();

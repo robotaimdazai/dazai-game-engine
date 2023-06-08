@@ -1,4 +1,4 @@
-#include "game_state_main.h"
+#include "scene_main.h"
 
 #include "imgui.h"
 #include "../engine/resource_manager.h"
@@ -9,7 +9,7 @@
 ecs g_ecs;
 sprite_system* g_sprite_system;
 
-auto game_state_main::set_game(game* game) -> void
+auto scene_main::set_game(game* game) -> void
 {
     m_game_ = game;
     g_ecs.init();
@@ -21,7 +21,7 @@ auto game_state_main::set_game(game* game) -> void
 
 }
 
-auto game_state_main::load() -> void
+auto scene_main::load() -> void
 {
     //load all resources
     resource_manager::load_texture("assets/textures/dazai.png","dazai",m_game_->window_renderer);
@@ -34,38 +34,38 @@ auto game_state_main::load() -> void
     
 }
 
-auto game_state_main::update(const uint32_t delta_time) -> void
+auto scene_main::update(const uint32_t delta_time) -> void
 {
 
 }
 
-auto game_state_main::render() -> void
+auto scene_main::render() -> void
 {
     //render all entities
     g_sprite_system->render();
 }
 
-auto game_state_main::handle_event(const input_state& input_state) -> void
+auto scene_main::handle_event(const input_state& input_state) -> void
 {
    
 }
 
 
-auto game_state_main::pause() -> void
+auto scene_main::pause() -> void
 {
     
 }
-auto game_state_main::resume() -> void
+auto scene_main::resume() -> void
 {
     
 }
 
-auto game_state_main::clean() -> void
+auto scene_main::clean() -> void
 {
    
 }
 
-auto game_state_main::on_gui() -> void
+auto scene_main::on_gui() -> void
 {
     ImGui::Begin("Debug");
     ImGui::End();

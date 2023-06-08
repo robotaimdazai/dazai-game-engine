@@ -1,10 +1,10 @@
 #pragma once
 #include "game.h"
 
-class i_game_state
+class i_scene
 {
 public:
-    virtual ~i_game_state() = default;
+    virtual ~i_scene() = default;
     virtual auto load()->void =0;
     virtual auto clean()->void =0;
     virtual auto update(uint32_t delta_time)->void=0;

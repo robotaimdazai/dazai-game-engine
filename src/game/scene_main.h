@@ -1,13 +1,13 @@
 #ifndef GAME_STATE_MAIN_H
 #define GAME_STATE_MAIN_H
 
-#include "../engine/game_state.h"
+#include "../engine/scene.h"
 
-class game_state_main:public i_game_state
+class scene_main:public i_scene
 {
 public:
-    game_state_main() = default;
-    ~game_state_main() override = default;
+    scene_main() = default;
+    ~scene_main() override = default;
 
     auto load() -> void override;
     auto clean() -> void override;
