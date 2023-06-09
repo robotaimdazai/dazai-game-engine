@@ -101,13 +101,17 @@
       <LinkCompiled>true</LinkCompiled>
     </ClCompile>
     <ClCompile Include="src\engine\ecs\systems\sprite_system.cpp" />
+    <ClCompile Include="src\engine\index_buffer.cpp" />
     <ClCompile Include="src\engine\input_keyboard_state.cpp" />
     <ClCompile Include="src\engine\input_manager.cpp" />
     <ClCompile Include="src\engine\logger.cpp" />
     <ClCompile Include="src\engine\resource_manager.cpp" />
+    <ClCompile Include="src\engine\shader.cpp" />
     <ClCompile Include="src\engine\stb_image.cpp" />
     <ClCompile Include="src\engine\texture2d.cpp" />
     <ClCompile Include="src\engine\timer.cpp" />
+    <ClCompile Include="src\engine\vertex_array.cpp" />
+    <ClCompile Include="src\engine\vertex_buffer.cpp" />
     <ClCompile Include="src\engine\window_sdl.cpp" />
     <ClCompile Include="src\game\game.cpp" />
     <ClCompile Include="src\game\scene_main.cpp" />
@@ -561,16 +565,21 @@
     <ClInclude Include="src\engine\ecs\ecs.h" />
     <ClInclude Include="src\engine\game.h" />
     <ClInclude Include="src\engine\game_constants.h" />
+    <ClInclude Include="src\engine\index_buffer.h" />
     <ClInclude Include="src\engine\scene.h" />
     <ClInclude Include="src\engine\input_keyboard_state.h" />
     <ClInclude Include="src\engine\input_manager.h" />
     <ClInclude Include="src\engine\input_state.h" />
     <ClInclude Include="src\engine\logger.h" />
     <ClInclude Include="src\engine\resource_manager.h" />
+    <ClInclude Include="src\engine\shader.h" />
     <ClInclude Include="src\engine\stb_image.h" />
     <ClInclude Include="src\engine\texture2d.h" />
     <ClInclude Include="src\engine\timer.h" />
     <ClInclude Include="src\engine\vec2.h" />
+    <ClInclude Include="src\engine\vertex_array.h" />
+    <ClInclude Include="src\engine\vertex_buffer.h" />
+    <ClInclude Include="src\engine\vertex_buffer_layout.h" />
     <ClInclude Include="src\engine\window.h" />
     <ClInclude Include="src\engine\window_sdl.h" />
     <ClInclude Include="src\game\scene_main.h" />
