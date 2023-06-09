@@ -67,6 +67,18 @@ auto window_sdl::init(const int x_pos, const int y_pos, const int width, const i
         glEnable(GL_CULL_FACE);
         glEnable(GL_BLEND);
         glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+        //enable logging
+        glEnable(GL_DEBUG_OUTPUT);
+        
+        glDebugMessageCallback([](GLenum source, GLenum type, GLuint id, GLenum severity, GLsizei length, const GLchar* message, const void* userParam)
+        {
+            auto gl_error = glGetError();
+            if(gl_error != GL_NO_ERROR && severity==GL_DEBUG_SEVERITY_HIGH)
+            {
+                LOG(error)<<"OpenGL Log: ("<<id<<")"<<message;
+            }
+            
+        },nullptr);
 
         //setup imGUI
         ImGui::CreateContext();
