@@ -4,7 +4,6 @@
 #include <fstream>
 #include <iostream>
 
-
 shader::shader(const std::string& path)
 {
     m_renderer_id_ = glCreateProgram();

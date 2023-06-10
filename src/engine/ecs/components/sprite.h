@@ -1,11 +1,11 @@
 ﻿#pragma once
 #include "../../vec2.h"
-struct sprite {
-    sprite() = default;
-    sprite(const texture2d texture2d, int width, int height, vec2 offset) : texture(texture2d), width(width), height(height), offset(offset) {}
-    texture2d texture{};
-    int width{};
-    int height{};
-    vec2 offset{};
-    SDL_Renderer* renderer{};
+#include "../../texture2d.h"
+
+struct sprite
+{
+    texture2d texture;
+    vec2 size{10,10};
+    vec2 position{0,0};
+    float rotation{0};
 };

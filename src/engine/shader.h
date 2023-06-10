@@ -12,6 +12,7 @@ struct shader_program_source
 class shader
 {
 public:
+    shader()= default;
     shader(const std::string& path);
     ~shader();
     auto set_uniform4f(const std::string&, float f1, float f2, float f3, float f4)->void;

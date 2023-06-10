@@ -100,7 +100,7 @@
       <SDLCheck>true</SDLCheck>
       <LinkCompiled>true</LinkCompiled>
     </ClCompile>
-    <ClCompile Include="src\engine\ecs\systems\sprite_system.cpp" />
+    <ClCompile Include="src\engine\ecs\systems\renderer_sprite.cpp" />
     <ClCompile Include="src\engine\index_buffer.cpp" />
     <ClCompile Include="src\engine\input_keyboard_state.cpp" />
     <ClCompile Include="src\engine\input_manager.cpp" />
@@ -563,6 +563,7 @@
     <ClInclude Include="src\engine\ecs\core\system.h" />
     <ClInclude Include="src\engine\ecs\core\system_manager.h" />
     <ClInclude Include="src\engine\ecs\ecs.h" />
+    <ClInclude Include="src\engine\ecs\systems\renderer_sprite.h" />
     <ClInclude Include="src\engine\game.h" />
     <ClInclude Include="src\engine\game_constants.h" />
     <ClInclude Include="src\engine\index_buffer.h" />
@@ -583,9 +584,6 @@
     <ClInclude Include="src\engine\window.h" />
     <ClInclude Include="src\engine\window_sdl.h" />
     <ClInclude Include="src\game\scene_main.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="src\engine\ecs\systems\sprite_system.h" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="assets\textures\dazai.png" />
