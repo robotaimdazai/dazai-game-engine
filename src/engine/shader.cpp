@@ -11,11 +11,6 @@ shader::shader(const std::string& path)
     create_shader_program(vertex_source,fragment_source);
 }
 
-shader::~shader()
-{
-    glDeleteProgram(m_renderer_id_);
-}
-
 auto shader::parse_shader(const std::string& file_path) const -> shader_program_source
 {
     std::ifstream stream(file_path);
@@ -106,6 +101,11 @@ auto shader::set_uniform1i(const std::string& uniform, int value) -> void
     glUniform1i(get_uniform_location(uniform),value);
 }
 
+auto shader::set_uniform1f(const std::string& uniform, float value) -> void
+{
+    glUniform1f(get_uniform_location(uniform),value);
+}
+
 auto shader::set_uniform_mat4f(const std::string& uniform, const glm::mat4& matrix) -> void
 {
     glUniformMatrix4fv(get_uniform_location(uniform),1,GL_FALSE,&matrix[0][0]);
@@ -119,4 +119,9 @@ auto shader::bind() const -> void
 auto shader::unbind() const -> void
 {
     glUseProgram(0);
+}
+
+auto shader::destroy() -> void
+{
+    glDeleteProgram(m_renderer_id_);
 }

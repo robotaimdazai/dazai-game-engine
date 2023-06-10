@@ -5,7 +5,7 @@
 struct sprite
 {
     texture2d texture;
-    vec2 size{10,10};
-    vec2 position{0,0};
+    glm::vec3 size{1,1,1};
+    glm::vec3 position{0,0,0};
     float rotation{0};
 };

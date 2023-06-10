@@ -19,5 +19,4 @@ public:
 private:
     resource_manager() = default;
     static auto load_texture_from_file(const std:: string& file, SDL_Renderer* window_renderer)->texture2d;
-    static auto load_shader_from_file(const std:: string& file)->shader;
 };

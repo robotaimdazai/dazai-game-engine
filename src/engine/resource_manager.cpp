@@ -12,7 +12,7 @@ auto resource_manager::load_texture(const std::string& file, const std::string& 
 
 auto resource_manager::load_shader(const std::string& file,const std::string& name) -> shader
 {
-    shaders[name] = load_shader_from_file(file);
+    shaders.emplace(name, shader(file));
     return shaders[name];
 }
 
@@ -24,6 +24,10 @@ auto resource_manager::get_texture(const std::string& name) -> texture2d&
 auto resource_manager::clear() -> void
 {
     for (auto iter: textures)
+    {
+        iter.second.destroy();
+    }
+    for (auto iter: shaders)
     {
         iter.second.destroy();
     }
@@ -39,11 +43,6 @@ auto resource_manager::load_texture_from_file(const std::string& file, SDL_Rende
     return texture2d;
 }
 
-auto resource_manager::load_shader_from_file(const std::string& file) -> shader
-{
-    shader shader(file);
-    return shader;
-}
 
 auto resource_manager::get_shader(const std::string& name) -> shader&
 {

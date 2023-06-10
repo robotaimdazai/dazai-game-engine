@@ -9,12 +9,12 @@ class system_manager
 {
 public:
     
-    template<typename T>
-    auto register_system()->std::shared_ptr<T>  
+    template<typename T, typename ... Args>
+    auto register_system(Args&&...args)->std::shared_ptr<T>  
     {
         const char* type_name = typeid(T).name();
         assert(m_systems_.find(type_name) == m_systems_.end() && "Registering system more than once.");
-        auto system = std::make_shared<T>();
+        auto system = std::make_shared<T>(std::forward<Args>(args)...);
         m_systems_.insert({type_name,system});
         return system;
     }

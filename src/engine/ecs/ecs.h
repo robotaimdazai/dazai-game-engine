@@ -68,10 +68,10 @@ public:
 
     //system--------------------------------
 
-    template<typename T>
-    auto register_system()->std::shared_ptr<T>
+    template<typename T, typename ... Args>
+    auto register_system(Args&&...args)->std::shared_ptr<T>
     {
-        return m_system_manager_->register_system<T>();
+        return m_system_manager_->register_system<T>(std::forward<Args>(args)...);
     }
 
     template<typename T>
