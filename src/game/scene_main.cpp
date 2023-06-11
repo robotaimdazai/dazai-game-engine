@@ -3,11 +3,12 @@
 #include "../engine/resource_manager.h"
 #include "../engine/ecs/ecs.h"
 #include "../engine/ecs/components/sprite.h"
+#include "../engine/ecs/components/transform.h"
 #include "../engine/ecs/systems/renderer_sprite.h"
 #include "glm/ext/matrix_clip_space.hpp"
 
 ecs g_ecs;
-renderer_sprite* g_sprite_system;
+std::shared_ptr<renderer_sprite> g_sprite_system;
 entity g_player;
 
 auto scene_main::set_game(game* game) -> void
@@ -16,14 +17,16 @@ auto scene_main::set_game(game* game) -> void
     m_game_ = game;
     g_ecs.init();
     g_ecs.register_component<sprite>();
+    g_ecs.register_component<transform>();
     //loading shader
     resource_manager::load_shader(SHADER_SPRITE_PATH, SHADER_SPRITE_NAME);
     auto sprite_shader =resource_manager::get_shader(SHADER_SPRITE_NAME);
     
     //registering sprite system
-    g_sprite_system = g_ecs.register_system<renderer_sprite>(sprite_shader).get();
+    g_sprite_system = g_ecs.register_system<renderer_sprite>(sprite_shader);
     signature sprite_system_signature;
     sprite_system_signature.set(g_ecs.get_component_type<sprite>());
+    sprite_system_signature.set(g_ecs.get_component_type<transform>());
     g_ecs.set_system_signature<renderer_sprite>(sprite_system_signature);
 
     //setting projection
@@ -42,6 +45,7 @@ auto scene_main::load() -> void
     //load all resources
     resource_manager::load_texture("assets/textures/dazai.png","dazai");
     g_player = g_ecs.add_entity();
+    g_ecs.add_component<transform>(g_player);
     g_ecs.add_component<sprite>(g_player);
     auto& player_sprite =g_ecs.get_component<sprite>(g_player);
     player_sprite.texture = "dazai";
@@ -82,7 +86,7 @@ auto scene_main::clean() -> void
 auto scene_main::on_gui() -> void
 {
     ImGui::Begin("Debug");
-    ImGui::SliderFloat3("Pos",&g_ecs.get_component<sprite>(g_player).position.x,0.0f,1280.0f);
+    ImGui::SliderFloat3("Pos",&g_ecs.get_component<transform>(g_player).position.x,0.0f,1280.0f);
     
     ImGui::End();
 }

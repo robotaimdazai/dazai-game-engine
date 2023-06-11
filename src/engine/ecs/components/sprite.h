@@ -1,10 +1,10 @@
 ﻿#pragma once
-#include "../../texture2d.h"
+#include <string>
+#include "glm/vec2.hpp"
+#include "glm/vec3.hpp"
 
 struct sprite
 {
     std::string texture;
-    glm::vec3 scale{1,1,1};
-    glm::vec3 position{0,0,0};
-    float rotation{0};
+    glm::vec3 offset{0,0,0};
 };

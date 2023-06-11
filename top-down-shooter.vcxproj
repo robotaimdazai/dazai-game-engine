@@ -555,6 +555,7 @@
     <ClInclude Include="external\imGUI\imstb_textedit.h" />
     <ClInclude Include="external\imGUI\imstb_truetype.h" />
     <ClInclude Include="src\engine\ecs\components\sprite.h" />
+    <ClInclude Include="src\engine\ecs\components\transform.h" />
     <ClInclude Include="src\engine\ecs\core\component_array.h" />
     <ClInclude Include="src\engine\ecs\core\component_manager.h" />
     <ClInclude Include="src\engine\ecs\core\entity_manager.h" />
