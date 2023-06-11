@@ -12,7 +12,7 @@ out vec2 v_tex_coord;
 
 void main()
 {
-     //v_tex_coord  = in_tex_coord;
+     v_tex_coord  = in_tex_coord;
      mat4 mvp = u_proj * u_view * u_model;
      gl_Position = mvp * vec4(in_position , 1.0f);
 }
@@ -29,7 +29,6 @@ in vec2 v_tex_coord;
 
 void main()
 {
-    vec4 tex_color = texture(u_texture, v_tex_coord);
-    //color = tex_color;
-    color = u_color;
+    vec4 tex = texture(u_texture, v_tex_coord);
+    color = u_color * tex ;
 }

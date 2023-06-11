@@ -4,9 +4,9 @@
 std::map<std::string,texture2d> resource_manager::textures;
 std::map<std::string,shader> resource_manager::shaders;
 
-auto resource_manager::load_texture(const std::string& file, const std::string& name,SDL_Renderer* window_renderer) -> texture2d
+auto resource_manager::load_texture(const std::string& file, const std::string& name) -> texture2d
 {
-    textures[name] = load_texture_from_file(file,window_renderer);
+    textures.emplace(name,texture2d(file));
     return textures[name];
 }
 
@@ -18,7 +18,28 @@ auto resource_manager::load_shader(const std::string& file,const std::string& na
 
 auto resource_manager::get_texture(const std::string& name) -> texture2d&
 {
-    return textures.at(name);
+    try
+    {
+        return textures.at(name);
+    }
+    catch (const std::exception& e)
+    {
+        LOG(error)<<"Unable to get texture: "<<name<<" "<<e.what();
+        return textures[name];
+    }
+   
+}
+auto resource_manager::get_shader(const std::string& name) -> shader&
+{
+    try
+    {
+        return shaders.at(name);
+    }
+    catch (const std::exception& e)
+    {
+        LOG(error)<<"Unable to get shader: "<<name<<" "<<e.what();
+        return shaders[name];
+    }
 }
 
 auto resource_manager::clear() -> void
@@ -36,15 +57,3 @@ auto resource_manager::clear() -> void
     LOG(info)<<"Resources cleared";
 }
 
-auto resource_manager::load_texture_from_file(const std::string& file, SDL_Renderer* window_renderer) -> texture2d
-{
-    texture2d texture2d;
-    texture2d.load(file,window_renderer);
-    return texture2d;
-}
-
-
-auto resource_manager::get_shader(const std::string& name) -> shader&
-{
-    return shaders.at(name);
-}

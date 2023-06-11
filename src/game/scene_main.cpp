@@ -40,11 +40,11 @@ auto scene_main::set_game(game* game) -> void
 auto scene_main::load() -> void
 {
     //load all resources
-    resource_manager::load_texture("assets/textures/dazai.png","dazai",m_game_->window_renderer);
+    resource_manager::load_texture("assets/textures/dazai.png","dazai");
     g_player = g_ecs.add_entity();
     g_ecs.add_component<sprite>(g_player);
     auto& player_sprite =g_ecs.get_component<sprite>(g_player);
-    player_sprite.texture = resource_manager::get_texture("dazai");
+    player_sprite.texture = "dazai";
     
 }
 
@@ -82,7 +82,7 @@ auto scene_main::clean() -> void
 auto scene_main::on_gui() -> void
 {
     ImGui::Begin("Debug");
-    ImGui::SliderFloat3("Pos",&g_ecs.get_component<sprite>(g_player).position.x,0.0f,20.0f);
+    ImGui::SliderFloat3("Pos",&g_ecs.get_component<sprite>(g_player).position.x,0.0f,1280.0f);
     
     ImGui::End();
 }

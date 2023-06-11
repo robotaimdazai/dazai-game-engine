@@ -1,23 +1,25 @@
 ﻿#pragma once
-#include <SDL_render.h>
+#include "glm/vec2.hpp"
 #include <string>
-#include <SDL_image.h>
 
 class texture2d
 {
 public:
-    texture2d();
-    auto load(const std::string& file_name,SDL_Renderer* renderer)->bool;
-    auto get_width()const -> int;
-    auto get_height()const -> int;
-    auto render(int x, int y,SDL_Renderer* renderer ,SDL_Rect* clip = nullptr, double angle = 0.0, SDL_Point* center = nullptr,
-                SDL_RendererFlip flip = SDL_FLIP_NONE) const -> void;
-    auto destroy()->void;
-
+    texture2d() = default;
+    texture2d(const std::string& path);
+    
+    auto get_size()const->glm::vec2;
+    auto get_path()const->const std::string&;
+    auto get_slot()const->int;
+    auto bind(unsigned int slot =0) ->void;
+    auto unbind()->void;
+    auto destroy() const ->void;
 private:
-    SDL_Texture* m_texture_;
-    SDL_Surface* m_surface_;
     int m_width_;
     int m_height_;
-    
+    int m_slot_;
+    unsigned int m_renderer_id_;
+    unsigned char* m_raw_data_{};
+    int m_channels_count_;
+    std::string m_path_;
 };

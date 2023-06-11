@@ -1,5 +1,6 @@
 ﻿#include "renderer_sprite.h"
 #include "../ecs.h"
+#include "../../resource_manager.h"
 #include "../components/sprite.h"
 #include "glm/gtx/quaternion.hpp"
 #include "glm/gtx/transform.hpp"
@@ -46,20 +47,22 @@ auto renderer_sprite::render() -> void
     {
         const auto& this_sprite = g_ecs.get_component<sprite>(entity);
         m_shader_.bind();
-        
-        //create scale from texture width and height
-        auto scale_mat = scale(glm::mat4(1.0f), glm::vec3(this_sprite.texture.get_width(),this_sprite.texture.get_height(),1.0f));
-        //create scale from sprite size
-        auto world_transform_mat = scale(glm::mat4(1.0f),this_sprite.size);
+        auto texture = resource_manager::get_texture(this_sprite.texture);
+        texture.bind();
+        //create translate matrix
+        auto world_transform_mat = glm::translate(glm::mat4(1.0f),this_sprite.position);
         //rotate from sprite rotation in degree
         world_transform_mat *= glm::rotate(glm::mat4(1.0f),glm::radians(this_sprite.rotation),glm::vec3(0.0f,0.0f,1.0f));
-        //translate according to pos
-        world_transform_mat *= glm::translate(glm::mat4(1.0f),this_sprite.position);
+        //create default scale matrix based on texture dimension
+        world_transform_mat *= scale(glm::mat4(1.0f), glm::vec3(texture.get_size().x,texture.get_size().y,1.0f));
+        //apply transform scale
+        world_transform_mat *= scale(glm::mat4(1.0f),this_sprite.scale);
+        //pack final model matrix
         auto model = world_transform_mat;
         m_shader_.set_uniform_mat4f("u_model",model);
         //set color, texture here
-        m_shader_.set_uniform4f("u_color",1,0,0,1);
-        //m_shader_.set_uniform1i("u_texture",0);
+        m_shader_.set_uniform4f("u_color",1,1,1,1);
+        m_shader_.set_uniform1i("u_texture",texture.get_slot());
 
         //bind gl
         m_vertex_array_->bind();
