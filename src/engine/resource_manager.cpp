@@ -1,8 +1,8 @@
 ﻿#include "resource_manager.h"
 #include "logger.h"
 
-std::map<std::string,texture2d> resource_manager::textures;
-std::map<std::string,shader> resource_manager::shaders;
+//std::map<std::string,texture2d> resource_manager::textures;
+//std::map<std::string,shader> resource_manager::shaders;
 
 auto resource_manager::load_texture(const std::string& file, const std::string& name) -> texture2d
 {

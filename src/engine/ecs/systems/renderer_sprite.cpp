@@ -1,6 +1,7 @@
 ﻿#include "renderer_sprite.h"
 #include "../ecs.h"
 #include "../../resource_manager.h"
+#include "../components/camera.h"
 #include "../components/sprite.h"
 #include "../components/transform.h"
 #include "glm/gtx/quaternion.hpp"
@@ -62,6 +63,8 @@ auto renderer_sprite::render() -> void
         //pack final model matrix
         auto model = world_transform_mat;
         m_shader_.set_uniform_mat4f("u_model",model);
+        m_shader_.set_uniform_mat4f("u_proj",camera::proj);
+        m_shader_.set_uniform_mat4f("u_view",camera::view);
         //set color, texture here
         m_shader_.set_uniform4f("u_color",1,1,1,1);
         m_shader_.set_uniform1i("u_texture",texture.get_slot());

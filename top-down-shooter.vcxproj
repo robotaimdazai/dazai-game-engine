@@ -101,6 +101,7 @@
       <LinkCompiled>true</LinkCompiled>
     </ClCompile>
     <ClCompile Include="src\engine\ecs\systems\renderer_sprite.cpp" />
+    <ClCompile Include="src\engine\ecs\systems\system_camera.cpp" />
     <ClCompile Include="src\engine\index_buffer.cpp" />
     <ClCompile Include="src\engine\input_keyboard_state.cpp" />
     <ClCompile Include="src\engine\input_manager.cpp" />
@@ -554,6 +555,7 @@
     <ClInclude Include="external\imGUI\imstb_rectpack.h" />
     <ClInclude Include="external\imGUI\imstb_textedit.h" />
     <ClInclude Include="external\imGUI\imstb_truetype.h" />
+    <ClInclude Include="src\engine\ecs\components\camera.h" />
     <ClInclude Include="src\engine\ecs\components\sprite.h" />
     <ClInclude Include="src\engine\ecs\components\transform.h" />
     <ClInclude Include="src\engine\ecs\core\component_array.h" />
@@ -564,6 +566,7 @@
     <ClInclude Include="src\engine\ecs\core\system_manager.h" />
     <ClInclude Include="src\engine\ecs\ecs.h" />
     <ClInclude Include="src\engine\ecs\systems\renderer_sprite.h" />
+    <ClInclude Include="src\engine\ecs\systems\system_camera.h" />
     <ClInclude Include="src\engine\game.h" />
     <ClInclude Include="src\engine\game_constants.h" />
     <ClInclude Include="src\engine\index_buffer.h" />
