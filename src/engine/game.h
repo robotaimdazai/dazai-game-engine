@@ -16,7 +16,7 @@ public:
     auto init(int screen_width, int screen_height, SDL_Renderer* renderer = nullptr)->void;
     auto load()->void;
     auto handle_inputs()->void;
-    auto update(uint32_t delta_time)->void;
+    auto update(float delta_time)->void;
     auto render()->void;
     auto clean()->void;
     auto change_scene(std::unique_ptr<i_scene>)->void;

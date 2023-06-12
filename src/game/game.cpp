@@ -36,7 +36,7 @@ auto game::handle_inputs() -> void
     m_game_scenes_.back()->handle_event(input_state);
 }
 
-auto game::update(uint32_t delta_time) -> void
+auto game::update(float delta_time) -> void
 {
     m_game_scenes_.back()->update(delta_time);
 }

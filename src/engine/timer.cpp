@@ -10,7 +10,7 @@ timer::timer():m_frame_start_(0),m_last_frame_(0),m_frame_time_(0)
 timer::~timer()
 = default;
 
-auto timer::delta_time() -> uint32_t
+auto timer::delta_time() -> float
 {
     m_frame_start_ = SDL_GetTicks();
     const auto delta_time = m_frame_start_- m_last_frame_;

@@ -6,7 +6,7 @@ class timer
 public:
     timer();
     virtual ~timer();
-    auto delta_time() -> uint32_t;
+    auto delta_time() -> float;
     auto delay_time()->void;
 
 private:
