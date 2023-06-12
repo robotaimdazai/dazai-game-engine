@@ -11,4 +11,5 @@ struct player_movement
 
     //attributes
     float speed = 500.0f;
+    glm::vec3 direction{0.0f,0.0f,0.0f};
 };
