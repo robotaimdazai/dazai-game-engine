@@ -21,7 +21,6 @@ auto vertex_array::add_buffer(vertex_buffer& vb, vertex_buffer_layout& layout) -
         glEnableVertexAttribArray(index);
         glVertexAttribPointer(index,element.count,element.type,element.normalized,layout.get_stride(),(const void*) offset);
         offset+=element.count * element.size;
-            
     }
 }
 
