@@ -13,6 +13,7 @@ auto system_player_input::update(const float delta_time) -> void
         auto& player = g_ecs.get_component<player_input>(entity);
         auto& player_transform = g_ecs.get_component<transform>(entity);
         player_transform.position += player.direction * player.speed * delta_time;
+        
     }
 }
 
@@ -34,8 +35,11 @@ auto system_player_input::handle_event(const input_state& input) -> void
             player.direction.y=-1;
         //normalize the direction
         if(player.direction != glm::vec3(0))
+        {
             player.direction = glm::normalize(player.direction);
-
+            animator.active= "run";
+        }
+        
         if(input.keyboard_state.is_just_pressed(player.attack_key))
         {
             animator.active= "attack";

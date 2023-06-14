@@ -21,7 +21,7 @@ auto system_animation::update(float delta_time) -> void
         const float normalized_frame_width= this_animation.frame_size.x/(sprite_sheet.get_size().x );
         const float normalized_frame_height= this_animation.frame_size.y/(sprite_sheet.get_size().y);
         //inverse row from top to bottom
-        const int row = this_animation.frames.y - (float)(this_animation.row+1);
+        const int row = (sprite_sheet.get_size().y/this_animation.frame_size.y) - (float)(this_animation.row+1);
         //normalized y
         float y = normalized_frame_height * static_cast<float>(row);
         //normalized x
@@ -29,7 +29,7 @@ auto system_animation::update(float delta_time) -> void
         float x = normalized_frame_width * static_cast<float>(current_frame);
         
         this_animation.time += delta_time * this_animation.fps;
-        if(this_animation.time >= this_animation.frames.x)
+        if(this_animation.time >= this_animation.frames)
             this_animation.time = 0;
         
         if(x>1 || y>1)

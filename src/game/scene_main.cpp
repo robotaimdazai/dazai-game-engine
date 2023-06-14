@@ -87,8 +87,9 @@ auto scene_main::load() -> void
     g_ecs.add_component<animator>(g_player);
     player_sprite.is_animated = true;
     auto& player_animator = g_ecs.get_component<animator>(g_player);
-    player_animator.animations.emplace("idle",animation(0,{32,32},{13,8},8));
-    player_animator.animations.emplace("attack",animation(4,{32,32},{10,8},8));
+    player_animator.animations.emplace("idle",animation(0,{32,31},13,8));
+    player_animator.animations.emplace("run",animation(1,{32,32},8,20));
+    player_animator.animations.emplace("attack",animation(4,{32,32},10,24));
     player_animator.active="idle";
     
     //create camera

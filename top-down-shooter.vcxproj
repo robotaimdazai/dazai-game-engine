@@ -596,6 +596,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="assets\shaders\sprite.glsl" />
+    <Content Include="assets\textures\dazai-sheet.png" />
     <Content Include="assets\textures\dazai.png" />
     <Content Include="external\glew\bin\Release\Win32\glew32.dll" />
     <Content Include="external\glew\bin\Release\Win32\glewinfo.exe" />
