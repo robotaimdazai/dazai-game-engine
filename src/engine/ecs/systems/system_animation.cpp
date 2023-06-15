@@ -12,7 +12,7 @@ auto system_animation::update(float delta_time) -> void
         auto& this_animator = g_ecs.get_component<animator>(entity);
         auto& this_sprite = g_ecs.get_component<sprite>(entity);
 
-        if(this_animator.active._Equal(""))
+        if(this_animator.active._Equal("") )
             continue;
         
         auto& this_animation = this_animator.animations[this_animator.active];
@@ -28,10 +28,18 @@ auto system_animation::update(float delta_time) -> void
         const int current_frame = static_cast<int>(this_animation.time);
         float x = normalized_frame_width * static_cast<float>(current_frame);
         
-        this_animation.time += delta_time * this_animation.fps;
-        if(this_animation.time >= this_animation.frames)
-            this_animation.time = 0;
-        
+        this_animation.time += delta_time * this_animation.speed;
+        if(this_animation.time >= this_animation.frames -1)
+        {
+            if(this_animation.has_exit_time)
+            {
+                this_animation.time = this_animation.frames -1;
+            }
+                
+            else
+                this_animation.time = 0;
+            
+        }
         if(x>1 || y>1)
         {
             LOG(error)<<"Tex coords are out of bound in sprite sheet: "<<this_sprite.texture_id;

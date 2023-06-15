@@ -89,15 +89,13 @@ auto scene_main::load() -> void
     auto& player_animator = g_ecs.get_component<animator>(g_player);
     player_animator.animations.emplace("idle",animation(0,{32,31},13,8));
     player_animator.animations.emplace("run",animation(1,{32,32},8,20));
-    player_animator.animations.emplace("attack",animation(4,{32,32},10,24));
-    player_animator.active="idle";
+    player_animator.animations.emplace("attack",animation(4,{32,32},10,30,true));
+    player_animator.change_animation("idle");
     
     //create camera
     g_camera = g_ecs.add_entity();
     g_ecs.add_component<transform>(g_camera);
     g_ecs.add_component<camera>(g_camera);
-   
-    
     
 }
 

@@ -37,12 +37,16 @@ auto system_player_input::handle_event(const input_state& input) -> void
         if(player.direction != glm::vec3(0))
         {
             player.direction = glm::normalize(player.direction);
-            animator.active= "run";
+            animator.change_animation("run");
+        }
+        else
+        {
+            animator.change_animation("idle");
         }
         
         if(input.keyboard_state.is_just_pressed(player.attack_key))
         {
-            animator.active= "attack";
+            animator.change_animation("attack");
         }
         
     }

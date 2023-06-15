@@ -4,13 +4,13 @@
 struct animation
 {
     animation() = default;
-    animation(int row,glm::vec2 frame_size, int frames, float fps,float time =0):
-    row(row),frame_size(frame_size),frames(frames),fps(fps),time(time){}
+    animation(int row,glm::vec2 frame_size, int frames, float speed,bool has_exit_time = false,float time =0):
+    row(row),frame_size(frame_size),frames(frames),speed(speed),time(time),has_exit_time(has_exit_time){}
     
-    int row{1};
+    int row{0}; // starts from 0
     glm::vec2 frame_size{32,32};
-    int frames{4};
-    float fps{24.0f};
+    int frames{4};//starts from 1
+    float speed{24.0f};
     float time{0};
-    
+    bool has_exit_time;
 };
