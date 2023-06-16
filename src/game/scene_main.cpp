@@ -138,7 +138,7 @@ auto scene_main::on_gui() -> void
     ImGui::Begin("Debug");
     ImGui::Text("Camera");
     ImGui::SliderFloat3("position",&g_ecs.get_component<transform>(g_camera).position.x,-1280.0f,1280.0f);
-    ImGui::SliderFloat("zoom",&g_ecs.get_component<camera>(g_camera).zoom,0,2.0f);
+    ImGui::SliderFloat("zoom",&g_ecs.get_component<camera>(g_camera).zoom,0,10.0f);
     ImGui::End();
 }
 

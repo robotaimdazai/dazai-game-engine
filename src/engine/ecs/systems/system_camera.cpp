@@ -13,6 +13,6 @@ auto system_camera::update() -> void
         auto view =glm::lookAt(this_transform.position,this_transform.position + (this_camera.inverse_forward),this_camera.up);
         view = glm::scale(view,glm::vec3(this_camera.zoom, this_camera.zoom,1));
         camera::view = view;
-        camera::proj = glm::ortho(0.0f,this_camera.size.x,0.0f,this_camera.size.y,this_camera.near,this_camera.far);
+        camera::proj = glm::ortho(-this_camera.size.x/2,this_camera.size.x/2,-this_camera.size.y/2,this_camera.size.y/2,this_camera.near,this_camera.far);
     }
 }
