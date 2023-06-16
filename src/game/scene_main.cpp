@@ -83,7 +83,7 @@ auto scene_main::load() -> void
     g_ecs.add_component<player_input>(g_player);
     auto& player_sprite =g_ecs.get_component<sprite>(g_player);
     player_sprite.texture_id ="dazai";
-    player_sprite.size ={128,128};
+    player_sprite.size ={64,64};
     g_ecs.add_component<animator>(g_player);
     player_sprite.is_animated = true;
     auto& player_animator = g_ecs.get_component<animator>(g_player);
@@ -136,7 +136,9 @@ float y=0.0f;
 auto scene_main::on_gui() -> void
 {
     ImGui::Begin("Debug");
-    ImGui::SliderFloat3("camera",&g_ecs.get_component<transform>(g_camera).position.x,-1280.0f,1280.0f);
+    ImGui::Text("Camera");
+    ImGui::SliderFloat3("position",&g_ecs.get_component<transform>(g_camera).position.x,-1280.0f,1280.0f);
+    ImGui::SliderFloat("zoom",&g_ecs.get_component<camera>(g_camera).zoom,0,2.0f);
     ImGui::End();
 }
 

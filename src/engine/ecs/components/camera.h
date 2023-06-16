@@ -10,6 +10,7 @@ struct camera
     glm::vec3 inverse_forward{0.0f,0.0f,-1.0f}; // for camera you need to invert forward
     glm::vec3 up{0.0f,1.0f,0.0f};
     glm::vec2 size{1280,720};
+    float zoom{1};
     float near{-1};
     float far{1};
     inline static glm::mat4 view {glm::mat4(1.0f)};
