@@ -64,7 +64,7 @@ auto window_sdl::init(const int x_pos, const int y_pos, const int width, const i
 
         //setting viewport to fit window
         glViewport(0, 0, width, height);
-        glEnable(GL_CULL_FACE);
+        glDisable(GL_CULL_FACE);
         glEnable(GL_BLEND);
         glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
         //enable logging

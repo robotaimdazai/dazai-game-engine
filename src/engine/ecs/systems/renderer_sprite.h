@@ -10,7 +10,6 @@ class renderer_sprite: public system
 public:
     renderer_sprite(const shader& shader);
     ~renderer_sprite();
-    auto update_vertex_buffer(const std::vector<float>& data) const ->void;
     auto render()->void;
 
 private:

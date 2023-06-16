@@ -3,6 +3,7 @@
 #include "../../resource_manager.h"
 #include "../components/animator.h"
 #include "../components/sprite.h"
+#include "../components/transform.h"
 
 extern ecs g_ecs;
 auto system_animation::update(float delta_time) -> void
@@ -11,6 +12,9 @@ auto system_animation::update(float delta_time) -> void
     {
         auto& this_animator = g_ecs.get_component<animator>(entity);
         auto& this_sprite = g_ecs.get_component<sprite>(entity);
+
+        if(!this_sprite.is_animated)
+            continue;
 
         if(this_animator.active._Equal("") )
             continue;
@@ -44,23 +48,14 @@ auto system_animation::update(float delta_time) -> void
         {
             LOG(error)<<"Tex coords are out of bound in sprite sheet: "<<this_sprite.texture_id;
         }
-
-        /*
-        this_sprite.clip_buffer=
-        {
-          -0.5f, -0.5f, 0.0f, x,                          y,
-           0.5f, -0.5f, 0.0f, x + normalized_frame_width, y,
-           0.5f,  0.5f, 0.0f, x + normalized_frame_width, y + normalized_frame_height, 
-          -0.5f,  0.5f, 0.0f, x,                          y + normalized_frame_height  
-        };
-        */
-
+        
         this_sprite.clip_buffer=
         {
             -0.5f, -0.5f, x,                          y,
              0.5f, -0.5f, x + normalized_frame_width, y,
              0.5f,  0.5f, x + normalized_frame_width, y + normalized_frame_height, 
             -0.5f,  0.5f, x,                          y + normalized_frame_height  
-          };
+        };
+        
     }
 }
