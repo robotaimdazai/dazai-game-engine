@@ -13,7 +13,11 @@ auto system_player_input::update(const float delta_time) -> void
         auto& player = g_ecs.get_component<player_input>(entity);
         auto& player_transform = g_ecs.get_component<transform>(entity);
         player_transform.position += player.direction * player.speed * delta_time;
-        
+
+        if(player.direction.x <0)
+            player_transform.scale.x = -1;
+        else
+            player_transform.scale.x = 1;
     }
 }
 

@@ -10,10 +10,10 @@
 extern ecs g_ecs;
 static float vertex_data[]=
 {
-    -0.5f, -0.5f, 0.0f, 0.0f, 0.0f,
-     0.5f, -0.5f, 0.0f, 1.0f, 0.0f,        
-     0.5f,  0.5f, 0.0f, 1.0f, 1.0f,   
-    -0.5f,  0.5f, 0.0f, 0.0f, 1.0f   
+    -0.5f, -0.5f, 0.0f, 0.0f,
+     0.5f, -0.5f, 1.0f, 0.0f,        
+     0.5f,  0.5f, 1.0f, 1.0f,   
+    -0.5f,  0.5f, 0.0f, 1.0f   
 };
 
 
@@ -28,23 +28,23 @@ static unsigned int indices[]=
 renderer_sprite::renderer_sprite(const shader& shader):m_shader_(shader)
 {
     m_vertex_array_ = std::make_unique<vertex_array>();
-    m_vertex_buffer_ =  std::make_unique<vertex_buffer>(vertex_data,4 * 5 * sizeof(float));
+    m_vertex_buffer_ =  std::make_unique<vertex_buffer>(vertex_data,4 * 4 * sizeof(float));
     auto layout = vertex_buffer_layout();
-    layout.push<float>(3);
+    layout.push<float>(2);
     layout.push<float>(2);
     m_vertex_array_->add_buffer(*m_vertex_buffer_,layout);
     //index buffer
     m_index_buffer_ = std::make_unique<index_buffer>(indices,6);
 }
 
-auto renderer_sprite::update_vertex_buffer(const std::vector<float>& data) const -> void
-{
-    m_vertex_buffer_->update(data);
-}
-
 renderer_sprite::~renderer_sprite()
 {
     
+}
+
+auto renderer_sprite::update_vertex_buffer(const std::vector<float>& data) const -> void
+{
+    m_vertex_buffer_->update(data);
 }
 
 auto renderer_sprite::render() -> void
@@ -65,12 +65,10 @@ auto renderer_sprite::render() -> void
         //create translate matrix
         auto world_transform_mat = glm::translate(glm::mat4(1.0f),this_transform.position + this_sprite.offset);
         //rotate from sprite rotation in degree
-        world_transform_mat *= glm::rotate(glm::mat4(1.0f),glm::radians(this_transform.rotation.z),glm::vec3(0.0f,0.0f,1.0f));
-        //create default scale matrix based on texture dimension
-        //world_transform_mat *= scale(glm::mat4(1.0f), glm::vec3(texture.get_size().x,texture.get_size().y,1.0f));
-        world_transform_mat *= scale(glm::mat4(1.0f), glm::vec3(this_sprite.size.x,this_sprite.size.y,1.0f));
+        world_transform_mat = glm::rotate(world_transform_mat,glm::radians(this_transform.rotation.z),glm::vec3(0.0f,0.0f,1.0f));
+        world_transform_mat = glm::scale(world_transform_mat, glm::vec3(this_sprite.size.x,this_sprite.size.y,1.0f));
         //apply transform scale
-        world_transform_mat *= scale(glm::mat4(1.0f),this_transform.scale);
+        world_transform_mat = scale(world_transform_mat, this_transform.scale); // giving abs scale value as - scale is not yet supported
         //pack final model matrix
         auto model = world_transform_mat;
         m_shader_.set_uniform_mat4f("u_model",model);
@@ -85,4 +83,7 @@ auto renderer_sprite::render() -> void
         m_index_buffer_->bind();
         glDrawElements(GL_TRIANGLES,m_index_buffer_->get_count(),GL_UNSIGNED_INT,nullptr);
     }
+
+    
 }
+

@@ -45,6 +45,7 @@ auto system_animation::update(float delta_time) -> void
             LOG(error)<<"Tex coords are out of bound in sprite sheet: "<<this_sprite.texture_id;
         }
 
+        /*
         this_sprite.clip_buffer=
         {
           -0.5f, -0.5f, 0.0f, x,                          y,
@@ -52,5 +53,14 @@ auto system_animation::update(float delta_time) -> void
            0.5f,  0.5f, 0.0f, x + normalized_frame_width, y + normalized_frame_height, 
           -0.5f,  0.5f, 0.0f, x,                          y + normalized_frame_height  
         };
+        */
+
+        this_sprite.clip_buffer=
+        {
+            -0.5f, -0.5f, x,                          y,
+             0.5f, -0.5f, x + normalized_frame_width, y,
+             0.5f,  0.5f, x + normalized_frame_width, y + normalized_frame_height, 
+            -0.5f,  0.5f, x,                          y + normalized_frame_height  
+          };
     }
 }
