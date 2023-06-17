@@ -1,8 +1,8 @@
 ﻿#include "system_player_input.h"
 #include "../ecs.h"
-#include "../components/animator.h"
-#include "../components/player_input.h"
-#include "../components/transform.h"
+#include "../components/component_animator.h"
+#include "../components/component_player_input.h"
+#include "../components/component_transform.h"
 #include "glm/gtx/dual_quaternion.hpp"
 
 extern ecs g_ecs;
@@ -10,8 +10,8 @@ auto system_player_input::update(const float delta_time) -> void
 {
     for (auto const& entity:entities)
     {
-        auto& player = g_ecs.get_component<player_input>(entity);
-        auto& player_transform = g_ecs.get_component<transform>(entity);
+        auto& player = g_ecs.get_component<component_player_input>(entity);
+        auto& player_transform = g_ecs.get_component<component_transform>(entity);
         
         if(m_is_moving_)
         {
@@ -28,8 +28,8 @@ auto system_player_input::handle_event(const input_state& input) -> void
 {
     for (auto const& entity:entities)
     {
-        auto& player = g_ecs.get_component<player_input>(entity);
-        auto& animator = g_ecs.get_component<::animator>(entity);
+        auto& player = g_ecs.get_component<component_player_input>(entity);
+        auto& animator = g_ecs.get_component<::component_animator>(entity);
         
         //player is not moving by default
         m_is_moving_ = false;

@@ -2,11 +2,11 @@
 #include <map>
 #include <string>
 
-#include "animation.h"
+#include "component_animation.h"
 
-struct animator
+struct component_animator
 {
-    std::map<std::string,animation> animations;
+    std::map<std::string,component_animation> animations;
     std::string active{};
     
     auto change_animation(const std::string& animation)->void

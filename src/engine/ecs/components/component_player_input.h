@@ -1,7 +1,8 @@
 ﻿#pragma once
 #include <SDL_scancode.h>
+#include "glm/vec3.hpp"
 
-struct player_input
+struct component_player_input
 {
     //controls
     SDL_Scancode left_key{SDL_SCANCODE_A};

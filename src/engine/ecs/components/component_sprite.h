@@ -3,7 +3,7 @@
 #include "glm/vec2.hpp"
 #include "glm/vec3.hpp"
 
-struct sprite
+struct component_sprite
 {
     std::string texture_id;
     glm::vec3 offset{0,0,0};
@@ -17,6 +17,5 @@ struct sprite
        0.5f,  0.5f, 1.0f, 1.0f, 
       -0.5f,  0.5f, 0.0f, 1.0f        
     };
-    
     
 };

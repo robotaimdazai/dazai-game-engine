@@ -1,17 +1,17 @@
 ﻿#include "system_animation.h"
 #include "../ecs.h"
 #include "../../resource_manager.h"
-#include "../components/animator.h"
-#include "../components/sprite.h"
-#include "../components/transform.h"
+#include "../components/component_animator.h"
+#include "../components/component_sprite.h"
+#include "../components/component_transform.h"
 
 extern ecs g_ecs;
 auto system_animation::update(float delta_time) -> void
 {
     for (const auto& entity:entities)
     {
-        auto& this_animator = g_ecs.get_component<animator>(entity);
-        auto& this_sprite = g_ecs.get_component<sprite>(entity);
+        auto& this_animator = g_ecs.get_component<component_animator>(entity);
+        auto& this_sprite = g_ecs.get_component<component_sprite>(entity);
 
         if(!this_sprite.is_animated)
             continue;

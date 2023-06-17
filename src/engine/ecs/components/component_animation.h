@@ -1,10 +1,10 @@
 ﻿#pragma once
 #include "glm/vec2.hpp"
 
-struct animation
+struct component_animation
 {
-    animation() = default;
-    animation(int row,glm::vec2 frame_size, int frames, float speed,bool has_exit_time = false,float time =0):
+    component_animation() = default;
+    component_animation(int row,glm::vec2 frame_size, int frames, float speed,bool has_exit_time = false,float time =0):
     row(row),frame_size(frame_size),frames(frames),speed(speed),time(time),has_exit_time(has_exit_time){}
     
     int row{0}; // starts from 0

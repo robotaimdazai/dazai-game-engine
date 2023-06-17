@@ -5,7 +5,7 @@
 #include "glm/ext/matrix_transform.hpp"
 
 // this is only for 2d specific right now, for general purpose camera, will need to change code
-struct camera
+struct component_camera
 {
     glm::vec3 inverse_forward{0.0f,0.0f,-1.0f}; // for camera you need to invert forward
     glm::vec3 up{0.0f,1.0f,0.0f};

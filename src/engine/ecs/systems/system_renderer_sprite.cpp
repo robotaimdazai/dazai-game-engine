@@ -1,9 +1,9 @@
-﻿#include "renderer_sprite.h"
+﻿#include "system_renderer_sprite.h"
 #include "../ecs.h"
 #include "../../resource_manager.h"
-#include "../components/camera.h"
-#include "../components/sprite.h"
-#include "../components/transform.h"
+#include "../components/component_camera.h"
+#include "../components/component_sprite.h"
+#include "../components/component_transform.h"
 #include "glm/gtx/quaternion.hpp"
 #include "glm/gtx/transform.hpp"
 
@@ -24,7 +24,7 @@ static unsigned int indices[]=
 };
 
 
-renderer_sprite::renderer_sprite(const shader& shader):m_shader_(shader)
+system_renderer_sprite::system_renderer_sprite(const shader& shader):m_shader_(shader)
 {
     m_vertex_array_ = std::make_unique<vertex_array>();
     m_vertex_buffer_ =  std::make_unique<vertex_buffer>(default_vertex_data,4 * 4 * sizeof(float));
@@ -36,18 +36,18 @@ renderer_sprite::renderer_sprite(const shader& shader):m_shader_(shader)
     m_index_buffer_ = std::make_unique<index_buffer>(indices,6);
 }
 
-renderer_sprite::~renderer_sprite()
+system_renderer_sprite::~system_renderer_sprite()
 {
     
 }
 
 
-auto renderer_sprite::render() -> void
+auto system_renderer_sprite::render() -> void
 {
     for(auto const& entity: entities)
     {
-        auto& this_sprite = g_ecs.get_component<sprite>(entity);
-        const auto& this_transform = g_ecs.get_component<transform>(entity);
+        auto& this_sprite = g_ecs.get_component<component_sprite>(entity);
+        const auto& this_transform = g_ecs.get_component<component_transform>(entity);
         //if sprite is animated update vertex buffer
         m_vertex_buffer_->update(this_sprite.clip_buffer);
         m_shader_.bind();
@@ -63,8 +63,8 @@ auto renderer_sprite::render() -> void
         //pack final model matrix
         auto model = world_transform_mat;
         m_shader_.set_uniform_mat4f("u_model",model);
-        m_shader_.set_uniform_mat4f("u_proj",camera::proj);
-        m_shader_.set_uniform_mat4f("u_view",camera::view);
+        m_shader_.set_uniform_mat4f("u_proj",component_camera::proj);
+        m_shader_.set_uniform_mat4f("u_view",component_camera::view);
         //set color, texture here
         m_shader_.set_uniform4f("u_color",1,1,1,1);
         m_shader_.set_uniform1i("u_texture",texture.get_slot());

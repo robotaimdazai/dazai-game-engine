@@ -5,11 +5,11 @@
 #include "../../vertex_array.h"
 #include "../core/system.h"
 
-class renderer_sprite: public system
+class system_renderer_sprite: public system
 {
 public:
-    renderer_sprite(const shader& shader);
-    ~renderer_sprite();
+    system_renderer_sprite(const shader& shader);
+    ~system_renderer_sprite();
     auto render()->void;
 
 private:
