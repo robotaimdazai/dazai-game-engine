@@ -16,13 +16,24 @@ input_manager::~input_manager()
 
 auto input_manager::init() -> void
 {
+    //for keyboard
     m_input_state_.keyboard_state.m_current_value_ = SDL_GetKeyboardState(nullptr);
     memset(m_input_state_.keyboard_state.m_previous_value_,0,SDL_NUM_SCANCODES);
+
+    //for mouse
+    m_input_state_.mouse_state.m_current_value_ = SDL_GetMouseState(&m_input_state_.mouse_state.m_mouse_x_,
+        &m_input_state_.mouse_state.m_mouse_y_);
+    m_input_state_.mouse_state.m_previous_value_=0;
 }
 
 auto input_manager::prepare_for_update() -> void
 {
     memcpy(m_input_state_.keyboard_state.m_previous_value_,m_input_state_.keyboard_state.m_current_value_,SDL_NUM_SCANCODES);
+
+    //for mouse
+    m_input_state_.mouse_state.m_previous_value_ = m_input_state_.mouse_state.m_current_value_;
+    m_input_state_.mouse_state.m_current_value_ = SDL_GetMouseState(&m_input_state_.mouse_state.m_mouse_x_,
+        &m_input_state_.mouse_state.m_mouse_y_);
 }
 
 auto input_manager::poll_inputs() -> bool

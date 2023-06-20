@@ -109,6 +109,7 @@
     <ClCompile Include="src\engine\input_keyboard_state.cpp" />
     <ClCompile Include="src\engine\input_manager.cpp" />
     <ClCompile Include="src\engine\logger.cpp" />
+    <ClCompile Include="src\engine\input_mouse_state.cpp" />
     <ClCompile Include="src\engine\resource_manager.cpp" />
     <ClCompile Include="src\engine\shader.cpp" />
     <ClCompile Include="src\engine\stb_image.cpp" />
@@ -581,6 +582,7 @@
     <ClInclude Include="src\engine\game.h" />
     <ClInclude Include="src\engine\game_constants.h" />
     <ClInclude Include="src\engine\index_buffer.h" />
+    <ClInclude Include="src\engine\input_mouse_state.h" />
     <ClInclude Include="src\engine\scene.h" />
     <ClInclude Include="src\engine\input_keyboard_state.h" />
     <ClInclude Include="src\engine\input_manager.h" />
