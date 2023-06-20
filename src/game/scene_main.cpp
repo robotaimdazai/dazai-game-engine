@@ -37,10 +37,10 @@ auto scene_main::set_game(game* game) -> void
     g_ecs.register_component<component_animator>();
     
     //loading shader for sprite renderer
-    resource_manager::load_shader(SHADER_SPRITE_PATH, SHADER_SPRITE_NAME);
-    resource_manager::load_shader(SHADER_DEBUG_PATH, SHADER_DEBUG_NAME);
+    resource_manager::load_shader(GLOBALS::SHADER_SPRITE_PATH, GLOBALS::SHADER_SPRITE_NAME);
+    resource_manager::load_shader(GLOBALS::SHADER_DEBUG_PATH, GLOBALS::SHADER_DEBUG_NAME);
     
-    auto sprite_shader =resource_manager::get_shader(SHADER_SPRITE_NAME);
+    auto sprite_shader =resource_manager::get_shader(GLOBALS::SHADER_SPRITE_NAME);
     //registering sprite system
     g_sprite_system = g_ecs.register_system<system_renderer_sprite>(sprite_shader);
     signature sprite_system_signature;

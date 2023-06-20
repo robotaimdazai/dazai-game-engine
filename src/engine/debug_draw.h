@@ -9,13 +9,13 @@
 class debug_draw
 {
 public:
-    static auto rect(glm::vec2 pos, glm::vec2 size) ->void
+    static auto rect(glm::vec2 pos, glm::vec2 size, glm::vec3 color={1,1,1}) ->void
     {
         //attach shader
-        auto debug_shader = resource_manager::get_shader(SHADER_DEBUG_NAME);
+        auto debug_shader = resource_manager::get_shader(GLOBALS::SHADER_DEBUG_NAME);
         debug_shader.bind();
         debug_shader.set_uniform1i("u_use_mvp",1);
-        debug_shader.set_uniform3f("u_color",m_color_.x,m_color_.y,m_color_.z);
+        debug_shader.set_uniform3f("u_color",color.x,color.y,color.z);
         auto model = glm::translate(glm::mat4(1),glm::vec3(pos.x,pos.y,0));
         model = glm::scale(model,glm::vec3(size.x,size.y,0));
         auto mvp = component_camera::proj * component_camera::view * model;
@@ -36,16 +36,16 @@ public:
         glDrawArrays(GL_LINE_LOOP, 0, 4);
     }
 
-    static auto line(const glm::vec2 start, const glm::vec2 end)->void
+    static auto line(const glm::vec2 start, const glm::vec2 end, glm::vec3 color={1,1,1})->void
     {
-        auto debug_shader = resource_manager::get_shader(SHADER_DEBUG_NAME);
+        auto debug_shader = resource_manager::get_shader(GLOBALS::SHADER_DEBUG_NAME);
         debug_shader.bind();
         debug_shader.set_uniform1i("u_use_mvp",0);
-        debug_shader.set_uniform3f("u_color",m_color_.x,m_color_.y,m_color_.z);
+        debug_shader.set_uniform3f("u_color",color.x,color.y,color.z);
         
         float vertices[] = {
-            start.x/1280, start.y/720,
-            end.x/1280, end.y/720,
+            start.x/GLOBALS::screen_size.x, start.y/GLOBALS::screen_size.y,
+            end.x/GLOBALS::screen_size.x, end.y/GLOBALS::screen_size.y,
         };
 
         vertex_array vao;
@@ -57,18 +57,18 @@ public:
         glDrawArrays(GL_LINE_LOOP, 0, 2);
     }
 
-    static auto ray(const glm::vec2 origin, const glm::vec2 direction, const float length = 128)->void
+    static auto ray(const glm::vec2 origin, const glm::vec2 direction, const float length = 128, glm::vec3 color={1,1,1})->void
     {
-        auto debug_shader = resource_manager::get_shader(SHADER_DEBUG_NAME);
+        auto debug_shader = resource_manager::get_shader(GLOBALS::SHADER_DEBUG_NAME);
         debug_shader.bind();
         debug_shader.set_uniform1i("u_use_mvp",0);
-        debug_shader.set_uniform3f("u_color",m_color_.x,m_color_.y,m_color_.z);
+        debug_shader.set_uniform3f("u_color",color.x,color.y,color.z);
         glm::vec2 destination= origin + glm::normalize(direction);
         destination*=length;
         
         float vertices[] = {
-            origin.x/1280, origin.y/720,
-            destination.x/1280, destination.y/720
+            origin.x/GLOBALS::screen_size.x, origin.y/GLOBALS::screen_size.y,
+            destination.x/GLOBALS::screen_size.x, destination.y/GLOBALS::screen_size.y
         };
 
         vertex_array vao;
@@ -80,12 +80,12 @@ public:
         glDrawArrays(GL_LINE_LOOP, 0, 2);
     }
 
-    static auto circle(const glm::vec2 pos,const float radius=128, const int segments =32)->void
+    static auto circle(const glm::vec2 pos,const float radius=128, const int segments =32, glm::vec3 color={1,1,1})->void
     {
-        auto debug_shader = resource_manager::get_shader(SHADER_DEBUG_NAME);
+        auto debug_shader = resource_manager::get_shader(GLOBALS::SHADER_DEBUG_NAME);
         debug_shader.bind();
         debug_shader.set_uniform1i("u_use_mvp",1);
-        debug_shader.set_uniform3f("u_color",m_color_.x,m_color_.y,m_color_.z);
+        debug_shader.set_uniform3f("u_color",color.x,color.y,color.z);
         auto model = glm::translate(glm::mat4(1),glm::vec3(pos.x,pos.y,0));
         model = glm::scale(model,glm::vec3(1,1,0));
         auto mvp = component_camera::proj * component_camera::view * model;
@@ -109,14 +109,5 @@ public:
         vao.add_buffer(vbo,layout);
         vao.bind();
         glDrawArrays(GL_LINE_LOOP, 0, vertices.size()/2);
-        
     }
-
-    static auto set_color(const glm::vec3 color)->void
-    {
-        m_color_ = color;
-    }
-
-private:
-    inline static glm::vec3 m_color_{1,1,1};
 };

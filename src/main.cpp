@@ -4,6 +4,7 @@
 #include "backends/imgui_impl_opengl3.h"
 #include "backends/imgui_impl_sdl2.h"
 #include "engine/game.h"
+#include "engine/game_constants.h"
 #include "engine/logger.h"
 #include "engine/timer.h"
 #include "engine/window.h"
@@ -14,8 +15,6 @@ int main(int argc, char *argv[])
 {
     //create window
     const std::string title = "Dazai";
-    const int screen_width= 1280;
-    const int screen_height= 720;
     log_config.reporting_level = debug;
     log_config.restart = true;
     if(log_config.restart)
@@ -25,10 +24,10 @@ int main(int argc, char *argv[])
     
     
     const auto window =  iwindow::create(title);
-    window->init(SDL_WINDOWPOS_CENTERED,SDL_WINDOWPOS_CENTERED,screen_width,screen_height,false);
+    window->init(SDL_WINDOWPOS_CENTERED,SDL_WINDOWPOS_CENTERED,GLOBALS::screen_size.x,GLOBALS::screen_size.y,false);
     const auto renderer = window->get_sdl_renderer();
     game game;
-    game.init(screen_width,screen_height, renderer);
+    game.init(GLOBALS::screen_size.x,GLOBALS::screen_size.y, renderer);
     game.load();
 
     while(game.is_running)
