@@ -1,5 +1,6 @@
 #include "scene_main.h"
 #include "imgui.h"
+#include "../engine/debug_draw.h"
 #include "../engine/resource_manager.h"
 #include "../engine/ecs/ecs.h"
 #include "../engine/ecs/components/component_animator.h"
@@ -37,6 +38,8 @@ auto scene_main::set_game(game* game) -> void
     
     //loading shader for sprite renderer
     resource_manager::load_shader(SHADER_SPRITE_PATH, SHADER_SPRITE_NAME);
+    resource_manager::load_shader(SHADER_DEBUG_PATH, SHADER_DEBUG_NAME);
+    
     auto sprite_shader =resource_manager::get_shader(SHADER_SPRITE_NAME);
     //registering sprite system
     g_sprite_system = g_ecs.register_system<system_renderer_sprite>(sprite_shader);
@@ -131,15 +134,25 @@ auto scene_main::clean() -> void
 {
    
 }
-float x=0.0f;
-float y=0.0f;
+
+glm::vec2 pos;
+glm::vec2 size;
 auto scene_main::on_gui() -> void
 {
     ImGui::Begin("Debug");
     ImGui::Text("Camera");
     ImGui::SliderFloat3("position",&g_ecs.get_component<component_transform>(g_camera).position.x,-1280.0f,1280.0f);
     ImGui::SliderFloat("zoom",&g_ecs.get_component<component_camera>(g_camera).zoom,0,10.0f);
+    ImGui::NewLine();
+    ImGui::Text("rect");
+    ImGui::SliderFloat2("rect_pos",&pos.x,-1280,1280);
+    ImGui::SliderFloat2("rect_size",&size.x,-1280,1280);
     ImGui::End();
+}
+
+auto scene_main::on_debug_draw() -> void
+{
+    debug_draw::circle(pos,size.x);
 }
 
 

@@ -11,3 +11,5 @@ using entity = uint32_t;
 //shaders
 static const std::string SHADER_SPRITE_PATH="assets/shaders/sprite.glsl";
 static const std::string SHADER_SPRITE_NAME="sprite.glsl";
+static const std::string SHADER_DEBUG_PATH="assets/shaders/debug.glsl";
+static const std::string SHADER_DEBUG_NAME="debug.glsl";

@@ -18,6 +18,7 @@ public:
     auto set_game(game* game) -> void override;
     auto handle_event(const input_state&) -> void override;
     auto on_gui() -> void override;
+    auto on_debug_draw() -> void override;
 
 private:
     game* m_game_{};

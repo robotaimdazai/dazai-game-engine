@@ -23,6 +23,7 @@ public:
     auto push_scene(std::unique_ptr<i_scene>)->void;
     auto pop_scene()->void;
     auto on_gui()->void;
+    auto on_debug_draw()->void;
     bool is_running;
     int window_width, window_height;
     SDL_Renderer* window_renderer;

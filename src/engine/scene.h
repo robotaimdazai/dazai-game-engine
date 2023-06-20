@@ -14,5 +14,6 @@ public:
     virtual auto set_game(game* game)->void=0;
     virtual auto handle_event(const input_state&)->void = 0;
     virtual auto on_gui()->void =0;
+    virtual auto on_debug_draw()->void =0;
     
 };

@@ -54,6 +54,7 @@ int main(int argc, char *argv[])
         //render here----------------
         window->clear();
         game.render();
+        game.on_debug_draw();
         ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
         //----------------------------
 

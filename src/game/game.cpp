@@ -79,5 +79,10 @@ auto game::on_gui() -> void
     m_game_scenes_.back()->on_gui();
 }
 
+auto game::on_debug_draw() -> void
+{
+    m_game_scenes_.back()->on_debug_draw();
+}
+
 
 

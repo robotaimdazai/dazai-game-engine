@@ -91,6 +91,11 @@ auto shader::get_uniform_location(const std::string& uniform) -> int
     return location;
 }
 
+auto shader::set_uniform3f(const std::string& uniform, float f1, float f2, float f3) -> void
+{
+    glUniform3f(get_uniform_location(uniform),f1,f2,f3);
+}
+
 auto shader::set_uniform4f(const std::string& uniform,float f1, float f2, float f3, float f4) -> void
 {
     glUniform4f(get_uniform_location(uniform),f1,f2,f3,f4);

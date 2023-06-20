@@ -15,6 +15,7 @@ public:
     shader()= default;
     shader(const std::string& path);
     auto set_uniform4f(const std::string&, float f1, float f2, float f3, float f4)->void;
+    auto set_uniform3f(const std::string&, float f1, float f2, float f3)->void;
     auto set_uniform1i(const std::string&,int value)->void;
     auto set_uniform1f(const std::string&,float value)->void;
     auto set_uniform_mat4f(const std::string&,const glm::mat4& matrix)->void;
