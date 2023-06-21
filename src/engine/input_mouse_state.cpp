@@ -2,14 +2,17 @@
 
 #include <SDL_mouse.h>
 
-auto mouse_state::get_mouse_x() const -> int
-{
-    return m_mouse_x_;
-}
+#include "globals.h"
 
-auto mouse_state::get_mouse_y() const -> int
+auto mouse_state::get_mouse_pos() const -> glm::vec2
 {
-    return m_mouse_y_;
+    glm::vec2 normalized ={static_cast<float>(m_mouse_x_)/GLOBALS::screen_size.x,
+        1-(static_cast<float>(m_mouse_y_)/GLOBALS::screen_size.y)};
+
+    float ndc_x = (2*normalized.x)-1;
+    float ndc_y = (2*normalized.y)-1;
+
+    return {ndc_x,ndc_y};
 }
 
 auto mouse_state::get_key_value(int index) const -> bool

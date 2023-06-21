@@ -1,5 +1,5 @@
 ﻿#pragma once
-#include "../../game_constants.h"
+#include "../../globals.h"
 class i_component_array
 {
 public:

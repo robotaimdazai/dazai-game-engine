@@ -82,11 +82,13 @@ auto scene_main::load() -> void
     //player
     g_player = g_ecs.add_entity();
     g_ecs.add_component<component_transform>(g_player);
+    auto& player_transform =g_ecs.get_component<component_transform>(g_player);
+    player_transform.position={0,0,0};
     g_ecs.add_component<component_sprite>(g_player);
     g_ecs.add_component<component_player_input>(g_player);
     auto& player_sprite =g_ecs.get_component<component_sprite>(g_player);
     player_sprite.texture_id ="dazai";
-    player_sprite.size ={96,96};
+    player_sprite.size ={128,128};
     g_ecs.add_component<component_animator>(g_player);
     player_sprite.is_animated = true;
     auto& player_animator = g_ecs.get_component<component_animator>(g_player);
@@ -118,7 +120,10 @@ auto scene_main::render() -> void
 auto scene_main::handle_event(const input_state& input_state) -> void
 {
     g_player_movement->handle_event(input_state);
-    LOG(info)<<input_state.mouse_state.get_mouse_y();
+    auto world_pos = component_camera::screen_to_world_pos(input_state.mouse_state.get_mouse_pos());
+    //LOG(info)<< input_state.mouse_state.get_mouse_pos().x<< ", "<<input_state.mouse_state.get_mouse_pos().y;
+    LOG(info)<< world_pos.x<< ", "<<world_pos.y;
+    
 }
 
 

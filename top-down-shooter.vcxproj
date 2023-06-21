@@ -580,7 +580,7 @@
     <ClInclude Include="src\engine\ecs\systems\system_camera.h" />
     <ClInclude Include="src\engine\ecs\systems\system_player_input.h" />
     <ClInclude Include="src\engine\game.h" />
-    <ClInclude Include="src\engine\game_constants.h" />
+    <ClInclude Include="src\engine\globals.h" />
     <ClInclude Include="src\engine\index_buffer.h" />
     <ClInclude Include="src\engine\input_mouse_state.h" />
     <ClInclude Include="src\engine\scene.h" />

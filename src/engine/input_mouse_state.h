@@ -2,15 +2,14 @@
 #include <cstdint>
 
 #include "input_keyboard_state.h"
+#include "glm/vec2.hpp"
 
 class mouse_state
 {
     friend class input_manager;
     
 public:
-    auto get_mouse_x()const -> int;
-    auto get_mouse_y()const -> int;
-    
+    auto get_mouse_pos()const -> glm::vec2;
     auto is_up(int index)const->bool;
     auto is_free(int index)const->bool;
     auto is_just_pressed(int index)const->bool;

@@ -3,7 +3,7 @@
 #include <memory>
 #include <unordered_map>
 #include "system.h"
-#include "../../game_constants.h"
+#include "../../globals.h"
 
 class system_manager
 {

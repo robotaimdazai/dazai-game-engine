@@ -1,7 +1,7 @@
 ﻿#pragma once
 #include <bitset>
 #include <queue>
-#include "../../game_constants.h"
+#include "../../globals.h"
 
 
 class entity_manager

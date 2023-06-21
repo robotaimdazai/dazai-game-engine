@@ -1,5 +1,5 @@
 ﻿#pragma once
-#include "game_constants.h"
+#include "globals.h"
 #include "resource_manager.h"
 #include "vertex_array.h"
 #include "ecs/components/component_camera.h"

@@ -3,7 +3,7 @@
 #include <typeindex>
 #include <unordered_map>
 #include "i_component_array.h"
-#include "../../game_constants.h"
+#include "../../globals.h"
 #include "../../logger.h"
 
 template<typename T>
