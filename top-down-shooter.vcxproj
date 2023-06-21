@@ -562,7 +562,7 @@
     <ClInclude Include="src\engine\ecs\components\component_animation.h" />
     <ClInclude Include="src\engine\ecs\components\component_animator.h" />
     <ClInclude Include="src\engine\ecs\components\component_camera.h" />
-    <ClInclude Include="src\engine\ecs\components\component_box_collider2d.h" />
+    <ClInclude Include="src\engine\ecs\components\component_box_collider.h" />
     <ClInclude Include="src\engine\ecs\components\component_player_input.h" />
     <ClInclude Include="src\engine\ecs\components\component_rigidbody2d.h" />
     <ClInclude Include="src\engine\ecs\components\component_sprite.h" />
@@ -583,6 +583,7 @@
     <ClInclude Include="src\engine\globals.h" />
     <ClInclude Include="src\engine\index_buffer.h" />
     <ClInclude Include="src\engine\input_mouse_state.h" />
+    <ClInclude Include="src\engine\physics2d.h" />
     <ClInclude Include="src\engine\scene.h" />
     <ClInclude Include="src\engine\input_keyboard_state.h" />
     <ClInclude Include="src\engine\input_manager.h" />

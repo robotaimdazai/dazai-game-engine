@@ -4,7 +4,7 @@
 #include "backends/imgui_impl_opengl3.h"
 #include "backends/imgui_impl_sdl2.h"
 #include "engine/game.h"
-#include "engine/game_constants.h"
+#include "engine/globals.h"
 #include "engine/logger.h"
 #include "engine/timer.h"
 #include "engine/window.h"

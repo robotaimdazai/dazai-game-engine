@@ -1,9 +1,11 @@
 #include "scene_main.h"
 #include "imgui.h"
 #include "../engine/debug_draw.h"
+#include "../engine/physics2d.h"
 #include "../engine/resource_manager.h"
 #include "../engine/ecs/ecs.h"
 #include "../engine/ecs/components/component_animator.h"
+#include "../engine/ecs/components/component_box_collider.h"
 #include "../engine/ecs/components/component_camera.h"
 #include "../engine/ecs/components/component_player_input.h"
 #include "../engine/ecs/components/component_sprite.h"
@@ -11,6 +13,7 @@
 #include "../engine/ecs/systems/system_renderer_sprite.h"
 #include "../engine/ecs/systems/system_animation.h"
 #include "../engine/ecs/systems/system_camera.h"
+#include "../engine/ecs/systems/system_collision_detection.h"
 #include "../engine/ecs/systems/system_player_input.h"
 
 ecs g_ecs;
@@ -18,6 +21,7 @@ std::shared_ptr<system_camera> g_camera_system;
 std::shared_ptr<system_renderer_sprite> g_sprite_system;
 std::shared_ptr<system_player_input> g_player_movement;
 std::shared_ptr<system_animation> g_animation_system;
+std::shared_ptr<system_collision_detection> g_collision_detection_system;
 
 
 //entities/gameobjects  in scene
@@ -35,6 +39,7 @@ auto scene_main::set_game(game* game) -> void
     g_ecs.register_component<component_camera>();
     g_ecs.register_component<component_player_input>();
     g_ecs.register_component<component_animator>();
+    g_ecs.register_component<component_box_collider>();
     
     //loading shader for sprite renderer
     resource_manager::load_shader(GLOBALS::SHADER_SPRITE_PATH, GLOBALS::SHADER_SPRITE_NAME);
@@ -70,8 +75,14 @@ auto scene_main::set_game(game* game) -> void
     animation_signature.set(g_ecs.get_component_type<component_sprite>());
     animation_signature.set(g_ecs.get_component_type<component_animator>());
     g_ecs.set_system_signature<system_animation>(animation_signature);
-    
 
+    //registering collision detection system
+    g_collision_detection_system = g_ecs.register_system<system_collision_detection>();
+    signature signature_collision_detection;
+    signature_collision_detection.set(g_ecs.get_component_type<component_transform>());
+    signature_collision_detection.set(g_ecs.get_component_type<component_box_collider>());
+    g_ecs.set_system_signature<system_collision_detection>(signature_collision_detection);
+    
 }
 
 auto scene_main::load() -> void
@@ -96,6 +107,11 @@ auto scene_main::load() -> void
     player_animator.animations.emplace("run",component_animation(1,{32,32},8,20));
     player_animator.animations.emplace("attack",component_animation(4,{32,32},10,30,true));
     player_animator.change_animation("idle");
+    //add collider to player
+    g_ecs.add_component<component_box_collider>(g_player);
+    auto& collider = g_ecs.get_component<component_box_collider>(g_player);
+    collider.size ={128,128};
+    collider.offset = {-32,-32};
     
     //create camera
     g_camera = g_ecs.add_entity();
@@ -109,6 +125,7 @@ auto scene_main::update(const float delta_time) -> void
     g_camera_system->update();
     g_player_movement->update(delta_time);
     g_animation_system->update(delta_time);
+    g_collision_detection_system->update(delta_time);
 }
 
 auto scene_main::render() -> void
@@ -116,16 +133,12 @@ auto scene_main::render() -> void
     //render all entities
     g_sprite_system->render();
 }
-
+glm::vec2 mouse_pos;
 auto scene_main::handle_event(const input_state& input_state) -> void
 {
     g_player_movement->handle_event(input_state);
-    auto world_pos = component_camera::screen_to_world_pos(input_state.mouse_state.get_mouse_pos());
-    //LOG(info)<< input_state.mouse_state.get_mouse_pos().x<< ", "<<input_state.mouse_state.get_mouse_pos().y;
-    LOG(info)<< world_pos.x<< ", "<<world_pos.y;
-    
+    mouse_pos = component_camera::screen_to_world_pos(input_state.mouse_state.get_mouse_pos());
 }
-
 
 
 auto scene_main::pause() -> void
@@ -142,25 +155,30 @@ auto scene_main::clean() -> void
    
 }
 
-glm::vec2 pos;
-glm::vec2 size;
+
 auto scene_main::on_gui() -> void
 {
     ImGui::Begin("Debug");
     ImGui::Text("Camera");
     ImGui::SliderFloat3("position",&g_ecs.get_component<component_transform>(g_camera).position.x,-1280.0f,1280.0f);
     ImGui::SliderFloat("zoom",&g_ecs.get_component<component_camera>(g_camera).zoom,0,10.0f);
-    ImGui::NewLine();
-    ImGui::Text("rect");
-    ImGui::SliderFloat2("rect_pos",&pos.x,-1280,1280);
-    ImGui::SliderFloat2("rect_size",&size.x,0,10);
     ImGui::End();
 }
 
 auto scene_main::on_debug_draw() -> void
 {
-    debug_draw::circle(pos,size.x);
-    debug_draw::rect(pos,size);
+    rect rectA = {{100,100},{100,100}};
+    auto& player_collider = g_ecs.get_component<component_box_collider>(g_player);
+    rect rectB = {player_collider.position + player_collider.offset,player_collider.size};
+    glm::vec3 color = {1,1,1};
+    if(physics2d::rect_intersects_rect(rectA,rectB))
+    {
+        color ={1,0,0};
+    }
+    debug_draw::rect(rectA.position,rectA.size,color);
+    debug_draw::rect(rectB.position,rectB.size,color);
+   
+    
 }
 
 

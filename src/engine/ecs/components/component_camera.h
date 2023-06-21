@@ -1,7 +1,6 @@
 ﻿#pragma once
 #include "glm/fwd.hpp"
 #include "glm/vec3.hpp"
-#include "glm/ext/matrix_clip_space.hpp"
 #include "glm/ext/matrix_transform.hpp"
 
 // this is only for 2d specific right now, for general purpose camera, will need to change code
