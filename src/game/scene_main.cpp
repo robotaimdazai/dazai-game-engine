@@ -17,7 +17,7 @@ ecs g_ecs;
 std::shared_ptr<system_camera> g_camera_system;
 std::shared_ptr<system_renderer_sprite> g_sprite_system;
 std::shared_ptr<system_player_input> g_player_movement;
-std::shared_ptr<system_animation> g_animation_system;;
+std::shared_ptr<system_animation> g_animation_system;
 
 
 //entities/gameobjects  in scene
@@ -118,6 +118,7 @@ auto scene_main::render() -> void
 auto scene_main::handle_event(const input_state& input_state) -> void
 {
     g_player_movement->handle_event(input_state);
+    LOG(info)<<input_state.mouse_state.get_mouse_y();
 }
 
 
@@ -147,13 +148,14 @@ auto scene_main::on_gui() -> void
     ImGui::NewLine();
     ImGui::Text("rect");
     ImGui::SliderFloat2("rect_pos",&pos.x,-1280,1280);
-    ImGui::SliderFloat2("rect_size",&size.x,-1280,1280);
+    ImGui::SliderFloat2("rect_size",&size.x,0,10);
     ImGui::End();
 }
 
 auto scene_main::on_debug_draw() -> void
 {
     debug_draw::circle(pos,size.x);
+    debug_draw::rect(pos,size);
 }
 
 

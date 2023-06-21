@@ -98,8 +98,8 @@ public:
             float theta = 2.0f * M_PI * static_cast<float>(i) / static_cast<float>(segments);
             float x = radius * cosf(theta);
             float y = radius * sinf(theta);
-            vertices.push_back(pos.x + x);
-            vertices.push_back(pos.y + y);
+            vertices.push_back(x);
+            vertices.push_back(y);
         }
 
         vertex_array vao;
