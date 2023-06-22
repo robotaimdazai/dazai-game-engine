@@ -3,8 +3,8 @@
 #include "resource_manager.h"
 #include "vertex_array.h"
 #include "ecs/components/component_camera.h"
-#include "glm/vec2.hpp"
 #include "glm/gtx/transform.hpp"
+#include <SDL_stdinc.h>
 
 class debug_draw
 {

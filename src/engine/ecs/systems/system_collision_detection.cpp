@@ -1,7 +1,8 @@
 ﻿#include "system_collision_detection.h"
+#include "system_collider_renderer.h"
 #include "../ecs.h"
-#include "../components/component_box_collider.h"
-#include "../components/component_transform.h"
+#include "../../physics2d.h"
+
 
 extern ecs g_ecs;
 
@@ -9,10 +10,23 @@ auto system_collision_detection::update(float delta_time) -> void
 {
     for(auto const& entity:entities)
     {
-        auto& transform = g_ecs.get_component<component_transform>(entity);
-        auto& collider = g_ecs.get_component<component_box_collider>(entity);
-        glm::vec2 pos = {transform.position.x,transform.position.y};
-        collider.position = pos + collider.offset;
+        auto& entity_a = entity;
+        
+        for(auto const& entity:entities) // optimize this with spatial partitioning 
+        {
+            auto& entity_b = entity;
+            
+            if(entity_a == entity_b) //skip self
+                continue;
+
+            auto rect_a = system_collider_renderer::get_collider_rect(entity_a);
+            auto rect_b = system_collider_renderer::get_collider_rect(entity_b);
+
+            if(physics2d::rect_intersects_rect(rect_a,rect_b))
+            {
+                LOG(info)<<"collision";
+            }
+        }
     }
 }
 

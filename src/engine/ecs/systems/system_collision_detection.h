@@ -5,5 +5,4 @@ class system_collision_detection:public system
 {
 public:
     auto update(float delta_time)->void;
-    
 };

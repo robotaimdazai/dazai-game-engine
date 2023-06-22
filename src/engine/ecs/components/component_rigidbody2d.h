@@ -4,4 +4,5 @@
 struct component_rigidbody2d
 {
     glm::vec2 velocity;
+    glm::vec2 acceleration;
 };
