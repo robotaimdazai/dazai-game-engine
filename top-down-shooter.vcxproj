@@ -100,6 +100,7 @@
       <SDLCheck>true</SDLCheck>
       <LinkCompiled>true</LinkCompiled>
     </ClCompile>
+    <ClCompile Include="src\engine\ecs\systems\system_collider_renderer.cpp" />
     <ClCompile Include="src\engine\ecs\systems\system_collision_detection.cpp" />
     <ClCompile Include="src\engine\ecs\systems\system_renderer_sprite.cpp" />
     <ClCompile Include="src\engine\ecs\systems\system_animation.cpp" />
@@ -574,6 +575,7 @@
     <ClInclude Include="src\engine\ecs\core\system.h" />
     <ClInclude Include="src\engine\ecs\core\system_manager.h" />
     <ClInclude Include="src\engine\ecs\ecs.h" />
+    <ClInclude Include="src\engine\ecs\systems\system_collider_renderer.h" />
     <ClInclude Include="src\engine\ecs\systems\system_collision_detection.h" />
     <ClInclude Include="src\engine\ecs\systems\system_renderer_sprite.h" />
     <ClInclude Include="src\engine\ecs\systems\system_animation.h" />
