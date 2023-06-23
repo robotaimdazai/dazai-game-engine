@@ -32,6 +32,5 @@
 *.app
 
 #custom
-*.sln
 *.idea
 x64\
