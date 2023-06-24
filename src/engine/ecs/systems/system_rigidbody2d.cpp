@@ -13,6 +13,6 @@ auto system_rigidbody2d::update(float delta_time) -> void
         auto& transform = g_ecs.get_component<component_transform>(entity);
         //move
         const glm::vec3 velocity = {rigidbody.velocity.x,rigidbody.velocity.y,0};
-        transform.position+=velocity *delta_time;
+        transform.position+=velocity ;
     }
 }

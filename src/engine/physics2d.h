@@ -51,18 +51,28 @@ public:
             if(direction.x<0)
             {
                 contact_normal = {1,0};
-            }else
+            }
+            else if(direction.x>0)
             {
                 contact_normal ={-1,0};
+            }
+            else
+            {
+                contact_normal={0,0};
             }
         }else if(t_near.x<t_near.y)
         {
             if(direction.y<0)
             {
                 contact_normal = {0,1};
-            }else
+            }
+            else if(direction.y>0)
             {
                 contact_normal ={0,-1};
+            }
+            else
+            {
+                contact_normal={0,0};
             }
         }
         
@@ -81,7 +91,8 @@ public:
         expanded_target.size = rect_b.size + rect_a.size;
    
         const glm::vec2 ray_origin = rect_a.position + size_a;
-        if(ray_intersects_rect(ray_origin,rect_a_velocity * delta_time, expanded_target,contact_point,contact_normal,contact_time))
+        if(ray_intersects_rect(ray_origin,rect_a_velocity * delta_time, expanded_target,contact_point,
+            contact_normal,contact_time))
         {
             if(contact_time<=1.0f)return true;
         }

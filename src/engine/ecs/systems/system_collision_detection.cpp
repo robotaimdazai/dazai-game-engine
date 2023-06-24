@@ -7,6 +7,8 @@
 #include "../components/component_transform.h"
 extern ecs g_ecs;
 
+glm::vec2 origin,direction;
+rect expaded;
 auto system_collision_detection::update(float delta_time) -> void
 {
     for(auto const& entity:entities)
@@ -35,15 +37,19 @@ auto system_collision_detection::update(float delta_time) -> void
                 glm::vec2 cp{0,0};
                 glm::vec2 cn{0,0};
                 float t=0;
+                glm::vec2 offset = {rect_a.size.x/2,rect_a.size.y/2};
+                origin = rect_a.position + offset;
+                direction =rigidbody.velocity;
+                expaded.position = rect_b.position -offset;
+                expaded.size  = rect_b.size + rect_a.size;
                 if(physics2d::dynamic_rect_intersects_rect(rigidbody.velocity,rect_a,rect_b,cp,
-                    cn,t,delta_time))
+                    cn,t))
                 {
-                    rigidbody.velocity += glm::abs(rigidbody.velocity) * (1-t) *cn;
-                    
-                    const glm::vec3 velocity = {rigidbody.velocity.x,rigidbody.velocity.y,0};
-                    transform.position+=velocity * delta_time;
+                    rigidbody.velocity += cn * glm::abs(rigidbody.velocity) * (1-t);
                     //LOG(info)<<rigidbody.velocity.x;
                     LOG(info)<<cn.x<<", "<<cn.y;
+                    glm::vec3 velocity = {rigidbody.velocity.x,rigidbody.velocity.y,0};
+                    transform.position+=velocity ;
 
                     //rigidbody.velocity = glm::vec2(0);
                 } 
@@ -58,6 +64,12 @@ auto system_collision_detection::update(float delta_time) -> void
             }
         }
     }
+}
+
+auto system_collision_detection::debug_draw() -> void
+{
+    debug_draw::ray(origin,direction);
+    debug_draw::rect(expaded.position,expaded.size,{0,1,1});
 }
 
 

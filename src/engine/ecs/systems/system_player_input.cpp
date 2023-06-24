@@ -22,7 +22,7 @@ auto system_player_input::update(const float delta_time) -> void
             else
                 player_transform.scale.x = 1;
 
-            rigidbody.velocity *= player.speed ;
+            rigidbody.velocity *= player.speed  * delta_time;
         }
         
     }
