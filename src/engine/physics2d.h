@@ -58,7 +58,8 @@ public:
             {
                 contact_normal ={-1,0};
             }
-        }else if(t_near.x<t_near.y)
+        }
+        else if(t_near.x<t_near.y)
         {
             if(direction.y<0)
             {

@@ -132,8 +132,8 @@ auto scene_main::load() -> void
     //add collider to player
     g_ecs.add_component<component_box_collider>(g_player);
     auto& collider = g_ecs.get_component<component_box_collider>(g_player);
-    collider.size ={64,64};
-    collider.offset = {-32,-32};
+    collider.size ={64,96};
+    collider.offset = {-32,-48};
     collider.is_trigger =false;
     //add rigidbody to player
     g_ecs.add_component<component_rigidbody2d>(g_player);
@@ -206,30 +206,6 @@ auto scene_main::on_debug_draw() -> void
 {
     g_collider_renderer->render();
     g_collision_detection_system->debug_draw();
-    glm::vec2 origin ={-100,0};
-    glm::vec2 direction = mouse_pos -origin;
-    debug_draw::line(origin,mouse_pos);
-    rect box={{-150,0},{100,100}};
-    glm::vec2 cp,cn;
-    float t;
-    if(physics2d::ray_intersects_rect(origin,direction,box,cp,cn,t) && t<1)
-    {
-        debug_draw::rect(box.position,box.size,{0,0,1});
-        debug_draw::circle(cp,5,{1,0,0},true);
-        debug_draw::ray(cp,cn);
-    }
-    else
-    {
-        debug_draw::rect(box.position,box.size);
-    }
-
-    rect rect_a{{0,0},{64,64}};
-    rect expanded_target{};
-    auto size_a= glm::vec2(rect_a.size.x/2, rect_a.size.y/2);
-    expanded_target.position =box.position - size_a;
-    expanded_target.size = box.size + rect_a.size;
-
-    debug_draw::rect(expanded_target.position,expanded_target.size,{0,1,1});
    
 }
 
