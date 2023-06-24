@@ -5,7 +5,7 @@
 #include "../components/component_transform.h"
 
 extern ecs g_ecs;
-auto system_rigidbody2d::update(float delta_time) -> void
+auto system_rigidbody2d::fixed_update(float fixed_delta_time) -> void
 {
     for (auto& entity:entities)
     {

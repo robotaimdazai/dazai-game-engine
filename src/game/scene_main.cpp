@@ -156,10 +156,13 @@ auto scene_main::update(const float delta_time) -> void
 {
     g_camera_system->update();
     g_animation_system->update(delta_time);
-    g_player_movement->update(delta_time);
-    g_rigidbody_system->update(delta_time);
-    g_collision_detection_system->update(delta_time);
-    
+}
+
+auto scene_main::fixed_update(float fixed_delta_time) -> void
+{
+    g_player_movement->fixed_update(fixed_delta_time);
+    g_rigidbody_system->fixed_update(fixed_delta_time);
+    g_collision_detection_system->fixed_update(fixed_delta_time);
 }
 
 auto scene_main::render() -> void
@@ -203,10 +206,10 @@ auto scene_main::on_debug_draw() -> void
 {
     g_collider_renderer->render();
     g_collision_detection_system->debug_draw();
-    glm::vec2 origin ={1,-50};
+    glm::vec2 origin ={-100,0};
     glm::vec2 direction = mouse_pos -origin;
     debug_draw::line(origin,mouse_pos);
-    rect box={{-100,-100},{100,100}};
+    rect box={{-150,0},{100,100}};
     glm::vec2 cp,cn;
     float t;
     if(physics2d::ray_intersects_rect(origin,direction,box,cp,cn,t) && t<1)

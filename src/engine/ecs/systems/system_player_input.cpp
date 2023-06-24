@@ -7,7 +7,7 @@
 #include "glm/gtx/dual_quaternion.hpp"
 
 extern ecs g_ecs;
-auto system_player_input::update(const float delta_time) -> void
+auto system_player_input::fixed_update(const float fixed_delta_time) -> void
 {
     for (auto const& entity:entities)
     {
@@ -22,7 +22,7 @@ auto system_player_input::update(const float delta_time) -> void
             else
                 player_transform.scale.x = 1;
 
-            rigidbody.velocity *= player.speed  * delta_time;
+            rigidbody.velocity *= player.speed  * fixed_delta_time;
         }
         
     }

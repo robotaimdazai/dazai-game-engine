@@ -21,6 +21,8 @@ int main(int argc, char *argv[])
         logger::restart();
 
     timer time;
+    const float FIXED_DELTA_TIME = 1.0f/GLOBALS::target_fps;
+    float accumulated_time=0.0f;
     
     
     const auto window =  iwindow::create(title);
@@ -33,13 +35,22 @@ int main(int argc, char *argv[])
     while(game.is_running)
     {
         //calculate delta time and fps
-        const float delta_time = time.delta_time();
+        float delta_time = time.delta_time();
         window->update_fps_counter(delta_time);
+        delta_time /=1000;
+        accumulated_time+=delta_time;
         //----------------------------
         
         //updates here----------------
         game.handle_inputs();
-        game.update(delta_time/1000);
+        //update
+        game.update(delta_time);
+        //fixed update
+        if(accumulated_time>=FIXED_DELTA_TIME)
+        {
+            game.fixed_update(FIXED_DELTA_TIME);
+            accumulated_time-=FIXED_DELTA_TIME;
+        }
         //----------------------------
         
         //imGUI render---------------

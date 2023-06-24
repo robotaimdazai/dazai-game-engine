@@ -4,6 +4,6 @@
 class system_rigidbody2d: public system
 {
 public:
-    auto update(float delta_time)->void;
+    auto fixed_update(float fixed_delta_time)->void;
     
 };

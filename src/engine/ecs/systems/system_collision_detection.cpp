@@ -9,7 +9,7 @@ extern ecs g_ecs;
 
 glm::vec2 origin,direction;
 rect expaded;
-auto system_collision_detection::update(float delta_time) -> void
+auto system_collision_detection::fixed_update(float fixed_delta_time) -> void
 {
     for(auto const& entity:entities)
     {
@@ -45,15 +45,10 @@ auto system_collision_detection::update(float delta_time) -> void
                 if(physics2d::dynamic_rect_intersects_rect(rigidbody.velocity,rect_a,rect_b,cp,
                     cn,t))
                 {
-                    rigidbody.velocity += cn * glm::abs(rigidbody.velocity) * (1-t);
-                    //LOG(info)<<rigidbody.velocity.x;
-                    LOG(info)<<cn.x<<", "<<cn.y;
+                    rigidbody.velocity += cn * glm::vec2(std::abs(rigidbody.velocity.x),std::abs(rigidbody.velocity.y)) * (1-t);
                     glm::vec3 velocity = {rigidbody.velocity.x,rigidbody.velocity.y,0};
                     transform.position+=velocity ;
-
-                    //rigidbody.velocity = glm::vec2(0);
                 } 
-                
             }
             else
             {

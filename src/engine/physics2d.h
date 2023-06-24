@@ -31,6 +31,8 @@ public:
     static auto ray_intersects_rect(const glm::vec2& origin, const glm::vec2& direction, const rect& rect,
         glm::vec2& contact_point, glm::vec2& contact_normal, float& contact_time) -> bool
     {
+        
+        
         glm::vec2 t_near = (rect.position-origin)/direction;
         glm::vec2 t_far = (rect.position+rect.size - origin)/direction;
 
@@ -52,13 +54,9 @@ public:
             {
                 contact_normal = {1,0};
             }
-            else if(direction.x>0)
-            {
-                contact_normal ={-1,0};
-            }
             else
             {
-                contact_normal={0,0};
+                contact_normal ={-1,0};
             }
         }else if(t_near.x<t_near.y)
         {
@@ -66,13 +64,9 @@ public:
             {
                 contact_normal = {0,1};
             }
-            else if(direction.y>0)
-            {
-                contact_normal ={0,-1};
-            }
             else
             {
-                contact_normal={0,0};
+                contact_normal ={0,-1};
             }
         }
         
@@ -87,7 +81,7 @@ public:
 
         rect expanded_target{};
         auto size_a= glm::vec2(rect_a.size.x/2, rect_a.size.y/2);
-        expanded_target.position =rect_b.position - size_a;
+        expanded_target.position = rect_b.position - size_a;
         expanded_target.size = rect_b.size + rect_a.size;
    
         const glm::vec2 ray_origin = rect_a.position + size_a;

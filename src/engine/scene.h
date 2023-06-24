@@ -8,6 +8,7 @@ public:
     virtual auto load()->void =0;
     virtual auto clean()->void =0;
     virtual auto update(float delta_time)->void=0;
+    virtual auto fixed_update(float fixed_delta_time) -> void =0;
     virtual auto render()->void = 0;
     virtual auto pause()->void = 0;
     virtual auto resume()->void = 0;

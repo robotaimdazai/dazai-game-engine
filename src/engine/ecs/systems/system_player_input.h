@@ -5,7 +5,7 @@
 class system_player_input : public system
 {
 public:
-    auto update(const float delta_time) ->void;
+    auto fixed_update(const float fixed_delta_time) ->void;
     auto handle_event(const input_state& input)->void;
 
 private:

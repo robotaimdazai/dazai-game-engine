@@ -41,6 +41,11 @@ auto game::update(float delta_time) -> void
     m_game_scenes_.back()->update(delta_time);
 }
 
+auto game::fixed_update(float fixed_delta_time) -> void
+{
+    m_game_scenes_.back()->fixed_update(fixed_delta_time);
+}
+
 auto game::render() -> void
 {
     m_game_scenes_.back()->render();

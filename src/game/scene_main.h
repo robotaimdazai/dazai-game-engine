@@ -14,6 +14,7 @@ public:
     auto pause() -> void override;
     auto resume() -> void override;
     auto update(float delta_time) -> void override;
+    auto fixed_update(float fixed_delta_time) -> void override;
     auto render() -> void override;
     auto set_game(game* game) -> void override;
     auto handle_event(const input_state&) -> void override;

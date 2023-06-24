@@ -13,6 +13,7 @@ namespace GLOBALS
 {
     //game settings
     static const glm::vec2 screen_size{1280,720};
+    static const float target_fps =120;
 
     //shaders
     static const std::string SHADER_SPRITE_PATH="assets/shaders/sprite.glsl";

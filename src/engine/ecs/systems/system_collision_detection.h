@@ -4,6 +4,6 @@
 class system_collision_detection:public system
 {
 public:
-    auto update(float delta_time)->void;
+    auto fixed_update(float fixed_delta_time)->void;
     auto debug_draw()->void;
 };
