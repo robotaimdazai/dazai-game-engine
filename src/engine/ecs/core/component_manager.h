@@ -42,6 +42,12 @@ public:
         return get_component_array<T>()->get_data(entity);
     }
 
+    template<typename T>
+    auto try_get_component(const entity& entity)->T*
+    {
+        return get_component_array<T>()->try_get_data(entity);
+    }
+
     auto entity_destroyed(entity entity) ->void
     {
         for(auto const& pair : m_component_arrays_)

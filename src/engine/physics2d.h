@@ -32,9 +32,12 @@ public:
         glm::vec2& contact_point, glm::vec2& contact_normal, float& contact_time) -> bool
     {
         
-        
         glm::vec2 t_near = (rect.position-origin)/direction;
         glm::vec2 t_far = (rect.position+rect.size - origin)/direction;
+
+        //check if divide by zero occured then return no collision(when direction/velocity is zero)
+        if(std::isnan(t_near.x) || std::isnan(t_near.y)) return false;
+        if(std::isnan(t_far.x) || std::isnan(t_far.y)) return false;
 
         if(t_near.x> t_far.x) std::swap(t_near.x,t_far.x);
         if(t_near.y> t_far.y) std::swap(t_near.y,t_far.y);

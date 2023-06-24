@@ -1,13 +1,13 @@
-23-06-24 18:32:19 INFO: 	Subsystems init success
-23-06-24 18:32:19 INFO: 	Window created
-23-06-24 18:32:19 INFO: 	Windows renderer created
-23-06-24 18:32:19 INFO: 	openGL context init successful
-23-06-24 18:32:19 INFO: 	glew init successful
-23-06-24 18:32:19 INFO: 	Component manager created: struct component_sprite
-23-06-24 18:32:19 INFO: 	Component manager created: struct component_transform
-23-06-24 18:32:19 INFO: 	Component manager created: struct component_camera
-23-06-24 18:32:19 INFO: 	Component manager created: struct component_player_input
-23-06-24 18:32:19 INFO: 	Component manager created: struct component_animator
-23-06-24 18:32:19 INFO: 	Component manager created: struct component_box_collider
-23-06-24 18:32:19 INFO: 	Component manager created: struct component_rigidbody2d
-23-06-24 18:33:05 INFO: 	Resources cleared
+23-06-25 04:33:36 INFO: 	Subsystems init success
+23-06-25 04:33:36 INFO: 	Window created
+23-06-25 04:33:36 INFO: 	Windows renderer created
+23-06-25 04:33:36 INFO: 	openGL context init successful
+23-06-25 04:33:36 INFO: 	glew init successful
+23-06-25 04:33:36 INFO: 	Component manager created: struct component_sprite
+23-06-25 04:33:36 INFO: 	Component manager created: struct component_transform
+23-06-25 04:33:36 INFO: 	Component manager created: struct component_camera
+23-06-25 04:33:36 INFO: 	Component manager created: struct component_player_input
+23-06-25 04:33:36 INFO: 	Component manager created: struct component_animator
+23-06-25 04:33:36 INFO: 	Component manager created: struct component_box_collider
+23-06-25 04:33:36 INFO: 	Component manager created: struct component_rigidbody2d
+23-06-25 04:33:54 INFO: 	Resources cleared

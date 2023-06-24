@@ -26,31 +26,36 @@ auto system_collision_detection::fixed_update(float fixed_delta_time) -> void
             auto rect_a = system_collider_renderer::get_collider_rect(entity_a);
             auto rect_b = system_collider_renderer::get_collider_rect(entity_b);
 
-            if(!collider_a.is_trigger)
-            {
-                // means it must have a rigidbody attached
-                //resolve for rigidbody types here
-                auto& rigidbody = g_ecs.get_component<component_rigidbody2d>(entity_a);
-                auto& transform = g_ecs.get_component<component_transform>(entity_a);
-                glm::vec2 cp{0,0};
-                glm::vec2 cn{0,0};
-                float t=0;
-                glm::vec2 offset = {rect_a.size.x/2,rect_a.size.y/2};
-                if(physics2d::dynamic_rect_intersects_rect(rigidbody.velocity,rect_a,rect_b,cp,
-                    cn,t))
-                {
-                    rigidbody.velocity += m_collision_resolution_factor_ * cn * glm::vec2(std::abs(rigidbody.velocity.x),std::abs(rigidbody.velocity.y)) * (1-t);
-                    glm::vec3 velocity = {rigidbody.velocity.x,rigidbody.velocity.y,0};
-                    transform.position+=velocity ;
-                } 
-            }
-            else
+            if(collider_a.is_trigger)
             {
                 if(physics2d::rect_intersects_rect(rect_a,rect_b))
                 {
                     //resolve for trigger types here
                 }
             }
+            else
+            {
+                auto rigidbody = g_ecs.try_get_component<component_rigidbody2d>(entity_a);
+                
+                if(rigidbody!=nullptr)
+                {
+                    // means it must have a rigidbody attached
+                    //resolve for rigidbody types here
+                    auto& transform = g_ecs.get_component<component_transform>(entity_a);
+                    glm::vec2 cp{0,0};
+                    glm::vec2 cn{0,0};
+                    float t=0;
+                    glm::vec2 offset = {rect_a.size.x/2,rect_a.size.y/2};
+                    if(physics2d::dynamic_rect_intersects_rect(rigidbody->velocity,rect_a,rect_b,cp,
+                        cn,t))
+                    {
+                        rigidbody->velocity += m_collision_resolution_factor_ * cn * glm::vec2(std::abs(rigidbody->velocity.x),std::abs(rigidbody->velocity.y)) * (1-t);
+                        glm::vec3 velocity = {rigidbody->velocity.x,rigidbody->velocity.y,0};
+                        transform.position+=velocity ;
+                    } 
+                }
+            }
+            
         }
     }
 }

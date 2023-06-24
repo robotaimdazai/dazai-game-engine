@@ -61,6 +61,12 @@ public:
     }
 
     template<typename T>
+    auto try_get_component(const entity& entity)->T*
+    {
+        return m_component_manager_->try_get_component<T>(entity);
+    }
+
+    template<typename T>
     auto get_component_type()->uint8_t
     {
         return m_component_manager_->get_component_type<T>();

@@ -32,7 +32,6 @@ std::shared_ptr<system_rigidbody2d> g_rigidbody_system;
 //entities/gameobjects  in scene
 entity g_player;
 entity g_camera;
-entity g_block;
 
 auto scene_main::set_game(game* game) -> void
 {
@@ -139,11 +138,23 @@ auto scene_main::load() -> void
     g_ecs.add_component<component_rigidbody2d>(g_player);
 
     //create a block for collision detection
-    g_block = g_ecs.add_entity();
+    auto g_block = g_ecs.add_entity();
     g_ecs.add_component<component_transform>(g_block);
     g_ecs.add_component<component_box_collider>(g_block);
     auto& block_transform = g_ecs.get_component<component_transform>(g_block);
     block_transform.position ={150,60,0};
+
+    auto g_block2 = g_ecs.add_entity();
+    g_ecs.add_component<component_transform>(g_block2);
+    g_ecs.add_component<component_box_collider>(g_block2);
+    auto& block2_transform = g_ecs.get_component<component_transform>(g_block2);
+    block2_transform.position ={250,60,0};
+
+    auto g_block3 = g_ecs.add_entity();
+    g_ecs.add_component<component_transform>(g_block3);
+    g_ecs.add_component<component_box_collider>(g_block3);
+    auto& block3_transform = g_ecs.get_component<component_transform>(g_block3);
+    block3_transform.position ={350,60,0};
     
     //create camera
     g_camera = g_ecs.add_entity();
