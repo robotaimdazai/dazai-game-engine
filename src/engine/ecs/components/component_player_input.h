@@ -12,6 +12,5 @@ struct component_player_input
     SDL_Scancode attack_key{SDL_SCANCODE_SPACE};
 
     //attributes
-    float speed = 500.0f;
-    glm::vec3 direction{0.0f,0.0f,0.0f};
+    float speed{300};
 };

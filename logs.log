@@ -1,2807 +1,1778 @@
-23-06-23 19:09:04 INFO: 	Subsystems init success
-23-06-23 19:09:04 INFO: 	Window created
-23-06-23 19:09:04 INFO: 	Windows renderer created
-23-06-23 19:09:04 INFO: 	openGL context init successful
-23-06-23 19:09:04 INFO: 	glew init successful
-23-06-23 19:09:04 INFO: 	Component manager created: struct component_sprite
-23-06-23 19:09:04 INFO: 	Component manager created: struct component_transform
-23-06-23 19:09:04 INFO: 	Component manager created: struct component_camera
-23-06-23 19:09:04 INFO: 	Component manager created: struct component_player_input
-23-06-23 19:09:04 INFO: 	Component manager created: struct component_animator
-23-06-23 19:09:04 INFO: 	Component manager created: struct component_box_collider
-23-06-23 19:09:04 INFO: 	Component manager created: struct component_rigidbody2d
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:10 INFO: 	collision
-23-06-23 19:09:11 INFO: 	collision
-23-06-23 19:09:11 INFO: 	collision
-23-06-23 19:09:11 INFO: 	collision
-23-06-23 19:09:11 INFO: 	collision
-23-06-23 19:09:11 INFO: 	collision
-23-06-23 19:09:11 INFO: 	collision
-23-06-23 19:09:11 INFO: 	collision
-23-06-23 19:09:11 INFO: 	collision
-23-06-23 19:09:11 INFO: 	collision
-23-06-23 19:09:11 INFO: 	collision
-23-06-23 19:09:11 INFO: 	collision
-23-06-23 19:09:11 INFO: 	collision
-23-06-23 19:09:11 INFO: 	collision
-23-06-23 19:09:11 INFO: 	collision
-23-06-23 19:09:11 INFO: 	collision
-23-06-23 19:09:11 INFO: 	collision
-23-06-23 19:09:11 INFO: 	collision
-23-06-23 19:09:11 INFO: 	collision
-23-06-23 19:09:11 INFO: 	collision
-23-06-23 19:09:11 INFO: 	collision
-23-06-23 19:09:11 INFO: 	collision
-23-06-23 19:09:11 INFO: 	collision
-23-06-23 19:09:11 INFO: 	collision
-23-06-23 19:09:11 INFO: 	collision
-23-06-23 19:09:11 INFO: 	collision
-23-06-23 19:09:11 INFO: 	collision
-23-06-23 19:09:11 INFO: 	collision
-23-06-23 19:09:11 INFO: 	collision
-23-06-23 19:09:11 INFO: 	collision
-23-06-23 19:09:11 INFO: 	collision
-23-06-23 19:09:11 INFO: 	collision
-23-06-23 19:09:11 INFO: 	collision
-23-06-23 19:09:11 INFO: 	collision
-23-06-23 19:09:11 INFO: 	collision
-23-06-23 19:09:11 INFO: 	collision
-23-06-23 19:09:11 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:18 INFO: 	collision
-23-06-23 19:09:19 INFO: 	collision
-23-06-23 19:09:19 INFO: 	collision
-23-06-23 19:09:19 INFO: 	collision
-23-06-23 19:09:19 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:25 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:26 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:27 INFO: 	collision
-23-06-23 19:09:28 INFO: 	collision
-23-06-23 19:09:28 INFO: 	collision
-23-06-23 19:09:28 INFO: 	collision
-23-06-23 19:09:28 INFO: 	collision
-23-06-23 19:09:28 INFO: 	collision
-23-06-23 19:09:28 INFO: 	collision
-23-06-23 19:09:28 INFO: 	collision
-23-06-23 19:09:28 INFO: 	collision
-23-06-23 19:09:28 INFO: 	collision
-23-06-23 19:09:28 INFO: 	collision
-23-06-23 19:09:28 INFO: 	collision
-23-06-23 19:09:28 INFO: 	collision
-23-06-23 19:09:28 INFO: 	collision
-23-06-23 19:09:28 INFO: 	collision
-23-06-23 19:09:28 INFO: 	collision
-23-06-23 19:09:28 INFO: 	collision
-23-06-23 19:09:28 INFO: 	collision
-23-06-23 19:09:28 INFO: 	collision
-23-06-23 19:09:28 INFO: 	collision
-23-06-23 19:09:28 INFO: 	collision
-23-06-23 19:09:28 INFO: 	collision
-23-06-23 19:09:28 INFO: 	collision
-23-06-23 19:09:28 INFO: 	collision
-23-06-23 19:09:28 INFO: 	collision
-23-06-23 19:09:28 INFO: 	collision
-23-06-23 19:09:28 INFO: 	collision
-23-06-23 19:09:28 INFO: 	collision
-23-06-23 19:09:28 INFO: 	collision
-23-06-23 19:09:29 INFO: 	collision
-23-06-23 19:09:29 INFO: 	collision
-23-06-23 19:09:29 INFO: 	collision
-23-06-23 19:09:29 INFO: 	collision
-23-06-23 19:09:29 INFO: 	collision
-23-06-23 19:09:29 INFO: 	collision
-23-06-23 19:09:29 INFO: 	collision
-23-06-23 19:09:29 INFO: 	collision
-23-06-23 19:09:29 INFO: 	collision
-23-06-23 19:09:29 INFO: 	collision
-23-06-23 19:09:29 INFO: 	collision
-23-06-23 19:09:29 INFO: 	collision
-23-06-23 19:09:29 INFO: 	collision
-23-06-23 19:09:29 INFO: 	collision
-23-06-23 19:09:29 INFO: 	collision
-23-06-23 19:09:29 INFO: 	collision
-23-06-23 19:09:29 INFO: 	collision
-23-06-23 19:09:29 INFO: 	collision
-23-06-23 19:09:29 INFO: 	collision
-23-06-23 19:09:29 INFO: 	collision
-23-06-23 19:09:29 INFO: 	collision
-23-06-23 19:09:29 INFO: 	collision
-23-06-23 19:09:29 INFO: 	collision
-23-06-23 19:09:29 INFO: 	collision
-23-06-23 19:09:29 INFO: 	collision
-23-06-23 19:09:29 INFO: 	collision
-23-06-23 19:09:29 INFO: 	collision
-23-06-23 19:09:29 INFO: 	collision
-23-06-23 19:09:29 INFO: 	collision
-23-06-23 19:09:29 INFO: 	collision
-23-06-23 19:09:29 INFO: 	collision
-23-06-23 19:09:29 INFO: 	collision
-23-06-23 19:09:29 INFO: 	collision
-23-06-23 19:09:29 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:30 INFO: 	collision
-23-06-23 19:09:33 INFO: 	collision
-23-06-23 19:09:33 INFO: 	collision
-23-06-23 19:09:33 INFO: 	collision
-23-06-23 19:09:33 INFO: 	collision
-23-06-23 19:09:33 INFO: 	collision
-23-06-23 19:09:33 INFO: 	collision
-23-06-23 19:09:33 INFO: 	collision
-23-06-23 19:09:33 INFO: 	collision
-23-06-23 19:09:33 INFO: 	collision
-23-06-23 19:09:33 INFO: 	collision
-23-06-23 19:09:33 INFO: 	collision
-23-06-23 19:09:33 INFO: 	collision
-23-06-23 19:09:33 INFO: 	collision
-23-06-23 19:09:33 INFO: 	collision
-23-06-23 19:09:33 INFO: 	collision
-23-06-23 19:09:33 INFO: 	collision
-23-06-23 19:09:33 INFO: 	collision
-23-06-23 19:09:33 INFO: 	collision
-23-06-23 19:09:33 INFO: 	collision
-23-06-23 19:09:33 INFO: 	collision
-23-06-23 19:09:33 INFO: 	collision
-23-06-23 19:09:33 INFO: 	collision
-23-06-23 19:09:33 INFO: 	collision
-23-06-23 19:09:33 INFO: 	collision
-23-06-23 19:09:33 INFO: 	collision
-23-06-23 19:09:33 INFO: 	collision
-23-06-23 19:09:33 INFO: 	collision
-23-06-23 19:09:33 INFO: 	collision
-23-06-23 19:09:33 INFO: 	collision
-23-06-23 19:09:33 INFO: 	collision
-23-06-23 19:09:33 INFO: 	collision
-23-06-23 19:09:33 INFO: 	collision
-23-06-23 19:09:33 INFO: 	collision
-23-06-23 19:09:33 INFO: 	collision
-23-06-23 19:09:33 INFO: 	collision
-23-06-23 19:09:33 INFO: 	collision
-23-06-23 19:09:33 INFO: 	collision
-23-06-23 19:09:33 INFO: 	collision
-23-06-23 19:09:33 INFO: 	collision
-23-06-23 19:09:33 INFO: 	collision
-23-06-23 19:09:33 INFO: 	collision
-23-06-23 19:09:33 INFO: 	collision
-23-06-23 19:09:33 INFO: 	collision
-23-06-23 19:09:33 INFO: 	collision
-23-06-23 19:09:33 INFO: 	collision
-23-06-23 19:09:33 INFO: 	collision
-23-06-23 19:09:33 INFO: 	collision
-23-06-23 19:09:33 INFO: 	collision
-23-06-23 19:09:33 INFO: 	collision
-23-06-23 19:09:33 INFO: 	collision
-23-06-23 19:09:33 INFO: 	collision
-23-06-23 19:09:33 INFO: 	collision
-23-06-23 19:09:33 INFO: 	collision
-23-06-23 19:09:33 INFO: 	collision
-23-06-23 19:09:33 INFO: 	collision
-23-06-23 19:09:33 INFO: 	collision
-23-06-23 19:09:33 INFO: 	collision
-23-06-23 19:09:33 INFO: 	collision
-23-06-23 19:09:33 INFO: 	collision
-23-06-23 19:09:33 INFO: 	collision
-23-06-23 19:09:33 INFO: 	collision
-23-06-23 19:09:33 INFO: 	collision
-23-06-23 19:09:33 INFO: 	collision
-23-06-23 19:09:33 INFO: 	collision
-23-06-23 19:09:33 INFO: 	collision
-23-06-23 19:09:33 INFO: 	collision
-23-06-23 19:09:33 INFO: 	collision
-23-06-23 19:09:33 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:34 INFO: 	collision
-23-06-23 19:09:35 INFO: 	collision
-23-06-23 19:09:35 INFO: 	collision
-23-06-23 19:09:35 INFO: 	collision
-23-06-23 19:09:35 INFO: 	collision
-23-06-23 19:09:35 INFO: 	collision
-23-06-23 19:09:35 INFO: 	collision
-23-06-23 19:09:35 INFO: 	collision
-23-06-23 19:09:35 INFO: 	collision
-23-06-23 19:09:35 INFO: 	collision
-23-06-23 19:09:35 INFO: 	collision
-23-06-23 19:09:35 INFO: 	collision
-23-06-23 19:09:35 INFO: 	collision
-23-06-23 19:09:35 INFO: 	collision
-23-06-23 19:09:35 INFO: 	collision
-23-06-23 19:09:35 INFO: 	collision
-23-06-23 19:09:35 INFO: 	collision
-23-06-23 19:09:35 INFO: 	collision
-23-06-23 19:09:35 INFO: 	collision
-23-06-23 19:09:35 INFO: 	collision
-23-06-23 19:09:35 INFO: 	collision
-23-06-23 19:09:35 INFO: 	collision
-23-06-23 19:09:35 INFO: 	collision
-23-06-23 19:09:35 INFO: 	collision
-23-06-23 19:09:35 INFO: 	collision
-23-06-23 19:09:35 INFO: 	collision
-23-06-23 19:09:35 INFO: 	collision
-23-06-23 19:09:35 INFO: 	collision
-23-06-23 19:09:35 INFO: 	collision
-23-06-23 19:09:35 INFO: 	collision
-23-06-23 19:09:35 INFO: 	collision
-23-06-23 19:09:35 INFO: 	collision
-23-06-23 19:09:35 INFO: 	collision
-23-06-23 19:09:35 INFO: 	collision
-23-06-23 19:09:35 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:36 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:37 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:38 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:39 INFO: 	collision
-23-06-23 19:09:40 INFO: 	collision
-23-06-23 19:09:40 INFO: 	collision
-23-06-23 19:09:40 INFO: 	collision
-23-06-23 19:09:40 INFO: 	collision
-23-06-23 19:09:40 INFO: 	collision
-23-06-23 19:09:40 INFO: 	collision
-23-06-23 19:09:40 INFO: 	collision
-23-06-23 19:09:40 INFO: 	collision
-23-06-23 19:09:40 INFO: 	collision
-23-06-23 19:09:40 INFO: 	collision
-23-06-23 19:09:40 INFO: 	collision
-23-06-23 19:09:40 INFO: 	collision
-23-06-23 19:09:40 INFO: 	collision
-23-06-23 19:09:40 INFO: 	collision
-23-06-23 19:09:40 INFO: 	collision
-23-06-23 19:09:40 INFO: 	collision
-23-06-23 19:09:40 INFO: 	collision
-23-06-23 19:09:40 INFO: 	collision
-23-06-23 19:09:40 INFO: 	collision
-23-06-23 19:09:40 INFO: 	collision
-23-06-23 19:09:40 INFO: 	collision
-23-06-23 19:09:40 INFO: 	collision
-23-06-23 19:09:40 INFO: 	collision
-23-06-23 19:09:40 INFO: 	collision
-23-06-23 19:09:40 INFO: 	collision
-23-06-23 19:09:40 INFO: 	collision
-23-06-23 19:09:40 INFO: 	collision
-23-06-23 19:09:40 INFO: 	collision
-23-06-23 19:09:40 INFO: 	collision
-23-06-23 19:09:40 INFO: 	collision
-23-06-23 19:09:40 INFO: 	collision
-23-06-23 19:09:40 INFO: 	collision
-23-06-23 19:09:40 INFO: 	collision
-23-06-23 19:09:40 INFO: 	collision
-23-06-23 19:09:40 INFO: 	collision
-23-06-23 19:09:40 INFO: 	collision
-23-06-23 19:09:40 INFO: 	collision
-23-06-23 19:09:40 INFO: 	collision
-23-06-23 19:09:40 INFO: 	collision
-23-06-23 19:09:40 INFO: 	collision
-23-06-23 19:09:40 INFO: 	collision
-23-06-23 19:09:40 INFO: 	collision
-23-06-23 19:09:40 INFO: 	collision
-23-06-23 19:09:40 INFO: 	collision
-23-06-23 19:09:40 INFO: 	collision
-23-06-23 19:09:40 INFO: 	collision
-23-06-23 19:09:40 INFO: 	collision
-23-06-23 19:09:40 INFO: 	collision
-23-06-23 19:09:40 INFO: 	collision
-23-06-23 19:09:40 INFO: 	collision
-23-06-23 19:09:40 INFO: 	collision
-23-06-23 19:09:40 INFO: 	collision
-23-06-23 19:09:40 INFO: 	collision
-23-06-23 19:09:40 INFO: 	collision
-23-06-23 19:09:40 INFO: 	collision
-23-06-23 19:09:40 INFO: 	collision
-23-06-23 19:09:40 INFO: 	collision
-23-06-23 19:09:40 INFO: 	collision
-23-06-23 19:09:40 INFO: 	collision
-23-06-23 19:09:40 INFO: 	collision
-23-06-23 19:09:40 INFO: 	collision
-23-06-23 19:09:40 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:43 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:44 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:45 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:46 INFO: 	collision
-23-06-23 19:09:47 INFO: 	collision
-23-06-23 19:09:47 INFO: 	collision
-23-06-23 19:09:47 INFO: 	collision
-23-06-23 19:09:47 INFO: 	collision
-23-06-23 19:09:47 INFO: 	collision
-23-06-23 19:09:47 INFO: 	collision
-23-06-23 19:09:47 INFO: 	collision
-23-06-23 19:09:47 INFO: 	collision
-23-06-23 19:09:47 INFO: 	collision
-23-06-23 19:09:47 INFO: 	collision
-23-06-23 19:09:47 INFO: 	collision
-23-06-23 19:09:47 INFO: 	collision
-23-06-23 19:09:47 INFO: 	Resources cleared
+23-06-24 06:02:57 INFO: 	Subsystems init success
+23-06-24 06:02:58 INFO: 	Window created
+23-06-24 06:02:58 INFO: 	Windows renderer created
+23-06-24 06:02:58 INFO: 	openGL context init successful
+23-06-24 06:02:58 INFO: 	glew init successful
+23-06-24 06:02:58 INFO: 	Component manager created: struct component_sprite
+23-06-24 06:02:58 INFO: 	Component manager created: struct component_transform
+23-06-24 06:02:58 INFO: 	Component manager created: struct component_camera
+23-06-24 06:02:58 INFO: 	Component manager created: struct component_player_input
+23-06-24 06:02:58 INFO: 	Component manager created: struct component_animator
+23-06-24 06:02:58 INFO: 	Component manager created: struct component_box_collider
+23-06-24 06:02:58 INFO: 	Component manager created: struct component_rigidbody2d
+23-06-24 06:02:59 INFO: 	-1, 0
+23-06-24 06:02:59 INFO: 	-1, 0
+23-06-24 06:02:59 INFO: 	-1, 0
+23-06-24 06:02:59 INFO: 	-1, 0
+23-06-24 06:02:59 INFO: 	-1, 0
+23-06-24 06:02:59 INFO: 	-1, 0
+23-06-24 06:02:59 INFO: 	-1, 0
+23-06-24 06:02:59 INFO: 	-1, 0
+23-06-24 06:02:59 INFO: 	-1, 0
+23-06-24 06:02:59 INFO: 	-1, 0
+23-06-24 06:02:59 INFO: 	-1, 0
+23-06-24 06:02:59 INFO: 	-1, 0
+23-06-24 06:02:59 INFO: 	-1, 0
+23-06-24 06:02:59 INFO: 	-1, 0
+23-06-24 06:02:59 INFO: 	-1, 0
+23-06-24 06:02:59 INFO: 	-1, 0
+23-06-24 06:02:59 INFO: 	-1, 0
+23-06-24 06:02:59 INFO: 	-1, 0
+23-06-24 06:02:59 INFO: 	-1, 0
+23-06-24 06:02:59 INFO: 	-1, 0
+23-06-24 06:02:59 INFO: 	-1, 0
+23-06-24 06:02:59 INFO: 	1, 0
+23-06-24 06:03:00 INFO: 	1, 0
+23-06-24 06:03:00 INFO: 	1, 0
+23-06-24 06:03:00 INFO: 	1, 0
+23-06-24 06:03:00 INFO: 	1, 0
+23-06-24 06:03:00 INFO: 	1, 0
+23-06-24 06:03:00 INFO: 	1, 0
+23-06-24 06:03:00 INFO: 	1, 0
+23-06-24 06:03:00 INFO: 	1, 0
+23-06-24 06:03:00 INFO: 	1, 0
+23-06-24 06:03:00 INFO: 	1, 0
+23-06-24 06:03:00 INFO: 	1, 0
+23-06-24 06:03:00 INFO: 	1, 0
+23-06-24 06:03:00 INFO: 	1, 0
+23-06-24 06:03:00 INFO: 	1, 0
+23-06-24 06:03:00 INFO: 	1, 0
+23-06-24 06:03:00 INFO: 	1, 0
+23-06-24 06:03:00 INFO: 	1, 0
+23-06-24 06:03:00 INFO: 	1, 0
+23-06-24 06:03:00 INFO: 	1, 0
+23-06-24 06:03:00 INFO: 	1, 0
+23-06-24 06:03:00 INFO: 	1, 0
+23-06-24 06:03:00 INFO: 	1, 0
+23-06-24 06:03:00 INFO: 	1, 0
+23-06-24 06:03:00 INFO: 	1, 0
+23-06-24 06:03:00 INFO: 	1, 0
+23-06-24 06:03:00 INFO: 	1, 0
+23-06-24 06:03:01 INFO: 	1, 0
+23-06-24 06:03:01 INFO: 	1, 0
+23-06-24 06:03:01 INFO: 	1, 0
+23-06-24 06:03:01 INFO: 	1, 0
+23-06-24 06:03:01 INFO: 	1, 0
+23-06-24 06:03:01 INFO: 	1, 0
+23-06-24 06:03:01 INFO: 	1, 0
+23-06-24 06:03:01 INFO: 	1, 0
+23-06-24 06:03:01 INFO: 	1, 0
+23-06-24 06:03:01 INFO: 	1, 0
+23-06-24 06:03:01 INFO: 	1, 0
+23-06-24 06:03:01 INFO: 	1, 0
+23-06-24 06:03:01 INFO: 	1, 0
+23-06-24 06:03:01 INFO: 	1, 0
+23-06-24 06:03:01 INFO: 	1, 0
+23-06-24 06:03:01 INFO: 	1, 0
+23-06-24 06:03:01 INFO: 	1, 0
+23-06-24 06:03:01 INFO: 	1, 0
+23-06-24 06:03:01 INFO: 	1, 0
+23-06-24 06:03:02 INFO: 	-1, 0
+23-06-24 06:03:02 INFO: 	-1, 0
+23-06-24 06:03:02 INFO: 	-1, 0
+23-06-24 06:03:02 INFO: 	-1, 0
+23-06-24 06:03:02 INFO: 	-1, 0
+23-06-24 06:03:02 INFO: 	-1, 0
+23-06-24 06:03:02 INFO: 	-1, 0
+23-06-24 06:03:02 INFO: 	-1, 0
+23-06-24 06:03:02 INFO: 	-1, 0
+23-06-24 06:03:02 INFO: 	-1, 0
+23-06-24 06:03:02 INFO: 	-1, 0
+23-06-24 06:03:02 INFO: 	-1, 0
+23-06-24 06:03:02 INFO: 	-1, 0
+23-06-24 06:03:02 INFO: 	-1, 0
+23-06-24 06:03:02 INFO: 	-1, 0
+23-06-24 06:03:02 INFO: 	-1, 0
+23-06-24 06:03:02 INFO: 	-1, 0
+23-06-24 06:03:02 INFO: 	-1, 0
+23-06-24 06:03:02 INFO: 	-1, 0
+23-06-24 06:03:02 INFO: 	-1, 0
+23-06-24 06:03:02 INFO: 	-1, 0
+23-06-24 06:03:02 INFO: 	-1, 0
+23-06-24 06:03:02 INFO: 	-1, 0
+23-06-24 06:03:02 INFO: 	-1, 0
+23-06-24 06:03:02 INFO: 	-1, 0
+23-06-24 06:03:02 INFO: 	-1, 0
+23-06-24 06:03:02 INFO: 	-1, 0
+23-06-24 06:03:02 INFO: 	-1, 0
+23-06-24 06:03:02 INFO: 	-1, 0
+23-06-24 06:03:02 INFO: 	-1, 0
+23-06-24 06:03:02 INFO: 	-1, 0
+23-06-24 06:03:02 INFO: 	-1, 0
+23-06-24 06:03:02 INFO: 	-1, 0
+23-06-24 06:03:02 INFO: 	-1, 0
+23-06-24 06:03:02 INFO: 	-1, 0
+23-06-24 06:03:02 INFO: 	-1, 0
+23-06-24 06:03:02 INFO: 	-1, 0
+23-06-24 06:03:02 INFO: 	-1, 0
+23-06-24 06:03:02 INFO: 	-1, 0
+23-06-24 06:03:02 INFO: 	-1, 0
+23-06-24 06:03:02 INFO: 	-1, 0
+23-06-24 06:03:02 INFO: 	-1, 0
+23-06-24 06:03:03 INFO: 	-1, 0
+23-06-24 06:03:03 INFO: 	-1, 0
+23-06-24 06:03:03 INFO: 	-1, 0
+23-06-24 06:03:03 INFO: 	-1, 0
+23-06-24 06:03:03 INFO: 	-1, 0
+23-06-24 06:03:03 INFO: 	-1, 0
+23-06-24 06:03:03 INFO: 	-1, 0
+23-06-24 06:03:03 INFO: 	-1, 0
+23-06-24 06:03:03 INFO: 	-1, 0
+23-06-24 06:03:03 INFO: 	-1, 0
+23-06-24 06:03:03 INFO: 	-1, 0
+23-06-24 06:03:03 INFO: 	-1, 0
+23-06-24 06:03:03 INFO: 	-1, 0
+23-06-24 06:03:03 INFO: 	-1, 0
+23-06-24 06:03:03 INFO: 	-1, 0
+23-06-24 06:03:03 INFO: 	-1, 0
+23-06-24 06:03:03 INFO: 	-1, 0
+23-06-24 06:03:03 INFO: 	-1, 0
+23-06-24 06:03:03 INFO: 	-1, 0
+23-06-24 06:03:03 INFO: 	-1, 0
+23-06-24 06:03:03 INFO: 	-1, 0
+23-06-24 06:03:03 INFO: 	-1, 0
+23-06-24 06:03:03 INFO: 	-1, 0
+23-06-24 06:03:03 INFO: 	-1, 0
+23-06-24 06:03:03 INFO: 	-1, 0
+23-06-24 06:03:03 INFO: 	-1, 0
+23-06-24 06:03:03 INFO: 	-1, 0
+23-06-24 06:03:03 INFO: 	-1, 0
+23-06-24 06:03:03 INFO: 	-1, 0
+23-06-24 06:03:04 INFO: 	0, -1
+23-06-24 06:03:04 INFO: 	0, -1
+23-06-24 06:03:04 INFO: 	0, -1
+23-06-24 06:03:04 INFO: 	0, -1
+23-06-24 06:03:04 INFO: 	0, -1
+23-06-24 06:03:04 INFO: 	0, -1
+23-06-24 06:03:04 INFO: 	0, -1
+23-06-24 06:03:04 INFO: 	0, -1
+23-06-24 06:03:04 INFO: 	0, -1
+23-06-24 06:03:05 INFO: 	-1, 0
+23-06-24 06:03:05 INFO: 	-1, 0
+23-06-24 06:03:05 INFO: 	-1, 0
+23-06-24 06:03:05 INFO: 	-1, 0
+23-06-24 06:03:05 INFO: 	-1, 0
+23-06-24 06:03:05 INFO: 	-1, 0
+23-06-24 06:03:05 INFO: 	-1, 0
+23-06-24 06:03:05 INFO: 	-1, 0
+23-06-24 06:03:05 INFO: 	-1, 0
+23-06-24 06:03:05 INFO: 	-1, 0
+23-06-24 06:03:05 INFO: 	-1, 0
+23-06-24 06:03:05 INFO: 	-1, 0
+23-06-24 06:03:05 INFO: 	-1, 0
+23-06-24 06:03:05 INFO: 	-1, 0
+23-06-24 06:03:05 INFO: 	-1, 0
+23-06-24 06:03:05 INFO: 	-1, 0
+23-06-24 06:03:05 INFO: 	-1, 0
+23-06-24 06:03:05 INFO: 	-1, 0
+23-06-24 06:03:05 INFO: 	-1, 0
+23-06-24 06:03:05 INFO: 	-1, 0
+23-06-24 06:03:05 INFO: 	-1, 0
+23-06-24 06:03:05 INFO: 	-1, 0
+23-06-24 06:03:05 INFO: 	-1, 0
+23-06-24 06:03:05 INFO: 	-1, 0
+23-06-24 06:03:05 INFO: 	-1, 0
+23-06-24 06:03:05 INFO: 	-1, 0
+23-06-24 06:03:05 INFO: 	-1, 0
+23-06-24 06:03:05 INFO: 	-1, 0
+23-06-24 06:03:05 INFO: 	-1, 0
+23-06-24 06:03:05 INFO: 	-1, 0
+23-06-24 06:03:05 INFO: 	-1, 0
+23-06-24 06:03:05 INFO: 	-1, 0
+23-06-24 06:03:05 INFO: 	-1, 0
+23-06-24 06:03:05 INFO: 	-1, 0
+23-06-24 06:03:05 INFO: 	-1, 0
+23-06-24 06:03:05 INFO: 	-1, 0
+23-06-24 06:03:05 INFO: 	-1, 0
+23-06-24 06:03:05 INFO: 	-1, 0
+23-06-24 06:03:05 INFO: 	-1, 0
+23-06-24 06:03:05 INFO: 	-1, 0
+23-06-24 06:03:05 INFO: 	-1, 0
+23-06-24 06:03:05 INFO: 	-1, 0
+23-06-24 06:03:05 INFO: 	-1, 0
+23-06-24 06:03:05 INFO: 	-1, 0
+23-06-24 06:03:05 INFO: 	-1, 0
+23-06-24 06:03:05 INFO: 	-1, 0
+23-06-24 06:03:05 INFO: 	-1, 0
+23-06-24 06:03:05 INFO: 	-1, 0
+23-06-24 06:03:05 INFO: 	-1, 0
+23-06-24 06:03:05 INFO: 	-1, 0
+23-06-24 06:03:05 INFO: 	-1, 0
+23-06-24 06:03:05 INFO: 	-1, 0
+23-06-24 06:03:05 INFO: 	-1, 0
+23-06-24 06:03:05 INFO: 	-1, 0
+23-06-24 06:03:05 INFO: 	-1, 0
+23-06-24 06:03:05 INFO: 	-1, 0
+23-06-24 06:03:05 INFO: 	-1, 0
+23-06-24 06:03:05 INFO: 	-1, 0
+23-06-24 06:03:05 INFO: 	-1, 0
+23-06-24 06:03:05 INFO: 	-1, 0
+23-06-24 06:03:06 INFO: 	0, 1
+23-06-24 06:03:06 INFO: 	0, 1
+23-06-24 06:03:06 INFO: 	0, 1
+23-06-24 06:03:06 INFO: 	0, 1
+23-06-24 06:03:06 INFO: 	0, 1
+23-06-24 06:03:06 INFO: 	0, 1
+23-06-24 06:03:06 INFO: 	0, 1
+23-06-24 06:03:06 INFO: 	0, 1
+23-06-24 06:03:06 INFO: 	0, 1
+23-06-24 06:03:06 INFO: 	0, 1
+23-06-24 06:03:06 INFO: 	0, 1
+23-06-24 06:03:06 INFO: 	0, 1
+23-06-24 06:03:06 INFO: 	0, 1
+23-06-24 06:03:06 INFO: 	0, 1
+23-06-24 06:03:06 INFO: 	0, 1
+23-06-24 06:03:06 INFO: 	0, 1
+23-06-24 06:03:06 INFO: 	0, 1
+23-06-24 06:03:06 INFO: 	0, 1
+23-06-24 06:03:06 INFO: 	0, 1
+23-06-24 06:03:06 INFO: 	0, 1
+23-06-24 06:03:06 INFO: 	0, 1
+23-06-24 06:03:06 INFO: 	0, 1
+23-06-24 06:03:06 INFO: 	0, 1
+23-06-24 06:03:06 INFO: 	0, 1
+23-06-24 06:03:06 INFO: 	0, 1
+23-06-24 06:03:06 INFO: 	0, 1
+23-06-24 06:03:06 INFO: 	0, 1
+23-06-24 06:03:06 INFO: 	0, 1
+23-06-24 06:03:06 INFO: 	0, 1
+23-06-24 06:03:06 INFO: 	-1, 0
+23-06-24 06:03:06 INFO: 	-1, 0
+23-06-24 06:03:07 INFO: 	-1, 0
+23-06-24 06:03:07 INFO: 	-1, 0
+23-06-24 06:03:07 INFO: 	-1, 0
+23-06-24 06:03:07 INFO: 	-1, 0
+23-06-24 06:03:07 INFO: 	-1, 0
+23-06-24 06:03:07 INFO: 	-1, 0
+23-06-24 06:03:07 INFO: 	-1, 0
+23-06-24 06:03:07 INFO: 	-1, 0
+23-06-24 06:03:07 INFO: 	-1, 0
+23-06-24 06:03:07 INFO: 	-1, 0
+23-06-24 06:03:07 INFO: 	-1, 0
+23-06-24 06:03:07 INFO: 	-1, 0
+23-06-24 06:03:07 INFO: 	-1, 0
+23-06-24 06:03:07 INFO: 	-1, 0
+23-06-24 06:03:07 INFO: 	-1, 0
+23-06-24 06:03:07 INFO: 	-1, 0
+23-06-24 06:03:07 INFO: 	-1, 0
+23-06-24 06:03:07 INFO: 	-1, 0
+23-06-24 06:03:07 INFO: 	-1, 0
+23-06-24 06:03:07 INFO: 	-1, 0
+23-06-24 06:03:07 INFO: 	-1, 0
+23-06-24 06:03:07 INFO: 	-1, 0
+23-06-24 06:03:07 INFO: 	-1, 0
+23-06-24 06:03:07 INFO: 	-1, 0
+23-06-24 06:03:07 INFO: 	-1, 0
+23-06-24 06:03:07 INFO: 	-1, 0
+23-06-24 06:03:07 INFO: 	-1, 0
+23-06-24 06:03:07 INFO: 	-1, 0
+23-06-24 06:03:07 INFO: 	-1, 0
+23-06-24 06:03:07 INFO: 	-1, 0
+23-06-24 06:03:07 INFO: 	-1, 0
+23-06-24 06:03:07 INFO: 	-1, 0
+23-06-24 06:03:07 INFO: 	-1, 0
+23-06-24 06:03:07 INFO: 	-1, 0
+23-06-24 06:03:07 INFO: 	-1, 0
+23-06-24 06:03:07 INFO: 	-1, 0
+23-06-24 06:03:07 INFO: 	-1, 0
+23-06-24 06:03:07 INFO: 	-1, 0
+23-06-24 06:03:07 INFO: 	-1, 0
+23-06-24 06:03:07 INFO: 	-1, 0
+23-06-24 06:03:07 INFO: 	-1, 0
+23-06-24 06:03:07 INFO: 	-1, 0
+23-06-24 06:03:07 INFO: 	-1, 0
+23-06-24 06:03:07 INFO: 	-1, 0
+23-06-24 06:03:07 INFO: 	-1, 0
+23-06-24 06:03:07 INFO: 	-1, 0
+23-06-24 06:03:08 INFO: 	0, -1
+23-06-24 06:03:08 INFO: 	0, -1
+23-06-24 06:03:08 INFO: 	0, -1
+23-06-24 06:03:08 INFO: 	0, -1
+23-06-24 06:03:08 INFO: 	0, -1
+23-06-24 06:03:08 INFO: 	0, -1
+23-06-24 06:03:08 INFO: 	0, -1
+23-06-24 06:03:08 INFO: 	0, -1
+23-06-24 06:03:08 INFO: 	0, -1
+23-06-24 06:03:08 INFO: 	0, -1
+23-06-24 06:03:08 INFO: 	0, -1
+23-06-24 06:03:08 INFO: 	0, -1
+23-06-24 06:03:08 INFO: 	0, -1
+23-06-24 06:03:08 INFO: 	0, -1
+23-06-24 06:03:08 INFO: 	0, -1
+23-06-24 06:03:08 INFO: 	0, -1
+23-06-24 06:03:08 INFO: 	0, -1
+23-06-24 06:03:08 INFO: 	0, -1
+23-06-24 06:03:08 INFO: 	0, -1
+23-06-24 06:03:08 INFO: 	0, -1
+23-06-24 06:03:08 INFO: 	0, -1
+23-06-24 06:03:08 INFO: 	0, -1
+23-06-24 06:03:08 INFO: 	0, -1
+23-06-24 06:03:08 INFO: 	0, -1
+23-06-24 06:03:08 INFO: 	0, -1
+23-06-24 06:03:09 INFO: 	0, 1
+23-06-24 06:03:09 INFO: 	0, 1
+23-06-24 06:03:09 INFO: 	0, 1
+23-06-24 06:03:09 INFO: 	0, 1
+23-06-24 06:03:09 INFO: 	0, 1
+23-06-24 06:03:09 INFO: 	0, 1
+23-06-24 06:03:09 INFO: 	0, 1
+23-06-24 06:03:09 INFO: 	0, 1
+23-06-24 06:03:09 INFO: 	0, 1
+23-06-24 06:03:09 INFO: 	0, 1
+23-06-24 06:03:09 INFO: 	0, 1
+23-06-24 06:03:09 INFO: 	0, 1
+23-06-24 06:03:09 INFO: 	0, 1
+23-06-24 06:03:09 INFO: 	0, 1
+23-06-24 06:03:09 INFO: 	0, 1
+23-06-24 06:03:09 INFO: 	0, 1
+23-06-24 06:03:09 INFO: 	0, 1
+23-06-24 06:03:09 INFO: 	0, 1
+23-06-24 06:03:09 INFO: 	0, 1
+23-06-24 06:03:09 INFO: 	0, 1
+23-06-24 06:03:09 INFO: 	0, 1
+23-06-24 06:03:09 INFO: 	0, 1
+23-06-24 06:03:09 INFO: 	0, 1
+23-06-24 06:03:09 INFO: 	0, 1
+23-06-24 06:03:09 INFO: 	0, 1
+23-06-24 06:03:09 INFO: 	0, 1
+23-06-24 06:03:09 INFO: 	0, 1
+23-06-24 06:03:09 INFO: 	0, 1
+23-06-24 06:03:09 INFO: 	0, 1
+23-06-24 06:03:09 INFO: 	0, 1
+23-06-24 06:03:09 INFO: 	0, 1
+23-06-24 06:03:09 INFO: 	0, 1
+23-06-24 06:03:09 INFO: 	0, 1
+23-06-24 06:03:09 INFO: 	0, 1
+23-06-24 06:03:09 INFO: 	0, 1
+23-06-24 06:03:09 INFO: 	0, 1
+23-06-24 06:03:09 INFO: 	0, 1
+23-06-24 06:03:09 INFO: 	0, 1
+23-06-24 06:03:09 INFO: 	0, 1
+23-06-24 06:03:09 INFO: 	0, 1
+23-06-24 06:03:09 INFO: 	0, 1
+23-06-24 06:03:09 INFO: 	0, 1
+23-06-24 06:03:09 INFO: 	0, 1
+23-06-24 06:03:09 INFO: 	0, 1
+23-06-24 06:03:09 INFO: 	0, 1
+23-06-24 06:03:09 INFO: 	0, 1
+23-06-24 06:03:09 INFO: 	0, 1
+23-06-24 06:03:09 INFO: 	0, 1
+23-06-24 06:03:09 INFO: 	0, 1
+23-06-24 06:03:09 INFO: 	0, 1
+23-06-24 06:03:09 INFO: 	0, 1
+23-06-24 06:03:10 INFO: 	0, 1
+23-06-24 06:03:10 INFO: 	0, 1
+23-06-24 06:03:10 INFO: 	0, 1
+23-06-24 06:03:10 INFO: 	0, 1
+23-06-24 06:03:10 INFO: 	0, 1
+23-06-24 06:03:10 INFO: 	0, 1
+23-06-24 06:03:10 INFO: 	0, 1
+23-06-24 06:03:10 INFO: 	0, 1
+23-06-24 06:03:10 INFO: 	0, 1
+23-06-24 06:03:10 INFO: 	0, 1
+23-06-24 06:03:10 INFO: 	0, 1
+23-06-24 06:03:10 INFO: 	0, 1
+23-06-24 06:03:10 INFO: 	0, 1
+23-06-24 06:03:10 INFO: 	0, 1
+23-06-24 06:03:10 INFO: 	0, 1
+23-06-24 06:03:10 INFO: 	0, 1
+23-06-24 06:03:10 INFO: 	0, 1
+23-06-24 06:03:10 INFO: 	0, 1
+23-06-24 06:03:10 INFO: 	0, 1
+23-06-24 06:03:10 INFO: 	0, 1
+23-06-24 06:03:10 INFO: 	0, 1
+23-06-24 06:03:10 INFO: 	0, 1
+23-06-24 06:03:10 INFO: 	0, 1
+23-06-24 06:03:10 INFO: 	0, 1
+23-06-24 06:03:10 INFO: 	0, 1
+23-06-24 06:03:10 INFO: 	0, 1
+23-06-24 06:03:10 INFO: 	0, 1
+23-06-24 06:03:10 INFO: 	0, 1
+23-06-24 06:03:10 INFO: 	0, 1
+23-06-24 06:03:10 INFO: 	0, 1
+23-06-24 06:03:10 INFO: 	0, 1
+23-06-24 06:03:10 INFO: 	0, 1
+23-06-24 06:03:10 INFO: 	0, 1
+23-06-24 06:03:10 INFO: 	0, 1
+23-06-24 06:03:10 INFO: 	0, 1
+23-06-24 06:03:10 INFO: 	0, 1
+23-06-24 06:03:10 INFO: 	0, 1
+23-06-24 06:03:10 INFO: 	0, 1
+23-06-24 06:03:10 INFO: 	0, 1
+23-06-24 06:03:10 INFO: 	0, 1
+23-06-24 06:03:10 INFO: 	0, 1
+23-06-24 06:03:10 INFO: 	0, 1
+23-06-24 06:03:10 INFO: 	0, 1
+23-06-24 06:03:10 INFO: 	0, 1
+23-06-24 06:03:10 INFO: 	0, 1
+23-06-24 06:03:10 INFO: 	0, 1
+23-06-24 06:03:10 INFO: 	0, 1
+23-06-24 06:03:10 INFO: 	0, -1
+23-06-24 06:03:11 INFO: 	0, -1
+23-06-24 06:03:11 INFO: 	0, -1
+23-06-24 06:03:11 INFO: 	0, -1
+23-06-24 06:03:11 INFO: 	0, -1
+23-06-24 06:03:11 INFO: 	0, -1
+23-06-24 06:03:11 INFO: 	0, -1
+23-06-24 06:03:11 INFO: 	0, -1
+23-06-24 06:03:11 INFO: 	0, -1
+23-06-24 06:03:11 INFO: 	0, -1
+23-06-24 06:03:11 INFO: 	0, -1
+23-06-24 06:03:11 INFO: 	0, -1
+23-06-24 06:03:11 INFO: 	0, -1
+23-06-24 06:03:11 INFO: 	0, -1
+23-06-24 06:03:11 INFO: 	0, -1
+23-06-24 06:03:11 INFO: 	0, -1
+23-06-24 06:03:11 INFO: 	0, -1
+23-06-24 06:03:11 INFO: 	0, -1
+23-06-24 06:03:11 INFO: 	0, -1
+23-06-24 06:03:11 INFO: 	0, -1
+23-06-24 06:03:11 INFO: 	0, -1
+23-06-24 06:03:11 INFO: 	0, -1
+23-06-24 06:03:11 INFO: 	0, -1
+23-06-24 06:03:11 INFO: 	0, -1
+23-06-24 06:03:11 INFO: 	0, -1
+23-06-24 06:03:11 INFO: 	0, -1
+23-06-24 06:03:11 INFO: 	0, -1
+23-06-24 06:03:11 INFO: 	0, -1
+23-06-24 06:03:11 INFO: 	0, -1
+23-06-24 06:03:11 INFO: 	0, -1
+23-06-24 06:03:11 INFO: 	0, -1
+23-06-24 06:03:11 INFO: 	0, -1
+23-06-24 06:03:11 INFO: 	0, -1
+23-06-24 06:03:11 INFO: 	0, -1
+23-06-24 06:03:11 INFO: 	0, -1
+23-06-24 06:03:11 INFO: 	0, -1
+23-06-24 06:03:11 INFO: 	0, -1
+23-06-24 06:03:11 INFO: 	0, -1
+23-06-24 06:03:11 INFO: 	0, -1
+23-06-24 06:03:11 INFO: 	0, -1
+23-06-24 06:03:11 INFO: 	0, -1
+23-06-24 06:03:11 INFO: 	0, -1
+23-06-24 06:03:11 INFO: 	0, -1
+23-06-24 06:03:11 INFO: 	0, -1
+23-06-24 06:03:11 INFO: 	0, -1
+23-06-24 06:03:11 INFO: 	0, -1
+23-06-24 06:03:11 INFO: 	0, -1
+23-06-24 06:03:11 INFO: 	0, -1
+23-06-24 06:03:11 INFO: 	0, -1
+23-06-24 06:03:11 INFO: 	0, -1
+23-06-24 06:03:11 INFO: 	0, -1
+23-06-24 06:03:11 INFO: 	0, -1
+23-06-24 06:03:11 INFO: 	0, -1
+23-06-24 06:03:11 INFO: 	0, -1
+23-06-24 06:03:11 INFO: 	0, -1
+23-06-24 06:03:11 INFO: 	0, -1
+23-06-24 06:03:11 INFO: 	0, -1
+23-06-24 06:03:11 INFO: 	0, -1
+23-06-24 06:03:11 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:12 INFO: 	0, 1
+23-06-24 06:03:13 INFO: 	0, 1
+23-06-24 06:03:13 INFO: 	0, 1
+23-06-24 06:03:13 INFO: 	0, 1
+23-06-24 06:03:13 INFO: 	0, 1
+23-06-24 06:03:13 INFO: 	0, 1
+23-06-24 06:03:13 INFO: 	0, 1
+23-06-24 06:03:13 INFO: 	0, 1
+23-06-24 06:03:13 INFO: 	0, 1
+23-06-24 06:03:13 INFO: 	0, 1
+23-06-24 06:03:13 INFO: 	0, 1
+23-06-24 06:03:13 INFO: 	0, 1
+23-06-24 06:03:13 INFO: 	0, 1
+23-06-24 06:03:13 INFO: 	0, 1
+23-06-24 06:03:13 INFO: 	0, 1
+23-06-24 06:03:13 INFO: 	0, 1
+23-06-24 06:03:13 INFO: 	0, 1
+23-06-24 06:03:13 INFO: 	0, 1
+23-06-24 06:03:13 INFO: 	0, 1
+23-06-24 06:03:13 INFO: 	1, 0
+23-06-24 06:03:13 INFO: 	1, 0
+23-06-24 06:03:13 INFO: 	1, 0
+23-06-24 06:03:13 INFO: 	1, 0
+23-06-24 06:03:13 INFO: 	1, 0
+23-06-24 06:03:13 INFO: 	1, 0
+23-06-24 06:03:13 INFO: 	1, 0
+23-06-24 06:03:13 INFO: 	1, 0
+23-06-24 06:03:13 INFO: 	1, 0
+23-06-24 06:03:13 INFO: 	1, 0
+23-06-24 06:03:13 INFO: 	1, 0
+23-06-24 06:03:13 INFO: 	1, 0
+23-06-24 06:03:13 INFO: 	1, 0
+23-06-24 06:03:13 INFO: 	1, 0
+23-06-24 06:03:13 INFO: 	1, 0
+23-06-24 06:03:13 INFO: 	1, 0
+23-06-24 06:03:13 INFO: 	1, 0
+23-06-24 06:03:13 INFO: 	1, 0
+23-06-24 06:03:13 INFO: 	1, 0
+23-06-24 06:03:13 INFO: 	1, 0
+23-06-24 06:03:13 INFO: 	1, 0
+23-06-24 06:03:13 INFO: 	1, 0
+23-06-24 06:03:13 INFO: 	1, 0
+23-06-24 06:03:13 INFO: 	1, 0
+23-06-24 06:03:13 INFO: 	1, 0
+23-06-24 06:03:13 INFO: 	1, 0
+23-06-24 06:03:13 INFO: 	1, 0
+23-06-24 06:03:13 INFO: 	1, 0
+23-06-24 06:03:13 INFO: 	1, 0
+23-06-24 06:03:13 INFO: 	1, 0
+23-06-24 06:03:13 INFO: 	1, 0
+23-06-24 06:03:13 INFO: 	1, 0
+23-06-24 06:03:13 INFO: 	1, 0
+23-06-24 06:03:13 INFO: 	1, 0
+23-06-24 06:03:13 INFO: 	1, 0
+23-06-24 06:03:13 INFO: 	1, 0
+23-06-24 06:03:13 INFO: 	1, 0
+23-06-24 06:03:13 INFO: 	1, 0
+23-06-24 06:03:13 INFO: 	1, 0
+23-06-24 06:03:13 INFO: 	1, 0
+23-06-24 06:03:13 INFO: 	1, 0
+23-06-24 06:03:13 INFO: 	1, 0
+23-06-24 06:03:13 INFO: 	1, 0
+23-06-24 06:03:13 INFO: 	1, 0
+23-06-24 06:03:13 INFO: 	1, 0
+23-06-24 06:03:13 INFO: 	1, 0
+23-06-24 06:03:13 INFO: 	1, 0
+23-06-24 06:03:13 INFO: 	1, 0
+23-06-24 06:03:13 INFO: 	1, 0
+23-06-24 06:03:13 INFO: 	1, 0
+23-06-24 06:03:13 INFO: 	1, 0
+23-06-24 06:03:13 INFO: 	1, 0
+23-06-24 06:03:13 INFO: 	1, 0
+23-06-24 06:03:13 INFO: 	1, 0
+23-06-24 06:03:13 INFO: 	1, 0
+23-06-24 06:03:13 INFO: 	1, 0
+23-06-24 06:03:13 INFO: 	1, 0
+23-06-24 06:03:13 INFO: 	1, 0
+23-06-24 06:03:13 INFO: 	0, 1
+23-06-24 06:03:14 INFO: 	0, 1
+23-06-24 06:03:14 INFO: 	0, 1
+23-06-24 06:03:14 INFO: 	0, 1
+23-06-24 06:03:14 INFO: 	0, 1
+23-06-24 06:03:14 INFO: 	0, 1
+23-06-24 06:03:14 INFO: 	0, 1
+23-06-24 06:03:14 INFO: 	0, 1
+23-06-24 06:03:14 INFO: 	0, 1
+23-06-24 06:03:14 INFO: 	0, 1
+23-06-24 06:03:14 INFO: 	0, 1
+23-06-24 06:03:14 INFO: 	0, 1
+23-06-24 06:03:14 INFO: 	0, 1
+23-06-24 06:03:14 INFO: 	0, 1
+23-06-24 06:03:14 INFO: 	0, 1
+23-06-24 06:03:14 INFO: 	0, 1
+23-06-24 06:03:14 INFO: 	0, 1
+23-06-24 06:03:14 INFO: 	0, 1
+23-06-24 06:03:14 INFO: 	0, 1
+23-06-24 06:03:14 INFO: 	0, 1
+23-06-24 06:03:14 INFO: 	0, 1
+23-06-24 06:03:14 INFO: 	0, 1
+23-06-24 06:03:14 INFO: 	0, 1
+23-06-24 06:03:14 INFO: 	0, 1
+23-06-24 06:03:14 INFO: 	0, 1
+23-06-24 06:03:14 INFO: 	0, 1
+23-06-24 06:03:14 INFO: 	0, 1
+23-06-24 06:03:14 INFO: 	0, 1
+23-06-24 06:03:14 INFO: 	0, 1
+23-06-24 06:03:14 INFO: 	0, 1
+23-06-24 06:03:14 INFO: 	0, 1
+23-06-24 06:03:14 INFO: 	0, 1
+23-06-24 06:03:14 INFO: 	0, 1
+23-06-24 06:03:14 INFO: 	0, 1
+23-06-24 06:03:14 INFO: 	0, 1
+23-06-24 06:03:14 INFO: 	0, 1
+23-06-24 06:03:14 INFO: 	0, 1
+23-06-24 06:03:14 INFO: 	0, 1
+23-06-24 06:03:14 INFO: 	0, 1
+23-06-24 06:03:14 INFO: 	0, 1
+23-06-24 06:03:14 INFO: 	0, 1
+23-06-24 06:03:14 INFO: 	0, 1
+23-06-24 06:03:14 INFO: 	0, 1
+23-06-24 06:03:14 INFO: 	0, 1
+23-06-24 06:03:14 INFO: 	0, 1
+23-06-24 06:03:14 INFO: 	0, 1
+23-06-24 06:03:14 INFO: 	0, 1
+23-06-24 06:03:14 INFO: 	-1, 0
+23-06-24 06:03:14 INFO: 	-1, 0
+23-06-24 06:03:14 INFO: 	-1, 0
+23-06-24 06:03:14 INFO: 	-1, 0
+23-06-24 06:03:14 INFO: 	-1, 0
+23-06-24 06:03:14 INFO: 	-1, 0
+23-06-24 06:03:14 INFO: 	-1, 0
+23-06-24 06:03:14 INFO: 	-1, 0
+23-06-24 06:03:14 INFO: 	-1, 0
+23-06-24 06:03:14 INFO: 	-1, 0
+23-06-24 06:03:14 INFO: 	-1, 0
+23-06-24 06:03:14 INFO: 	-1, 0
+23-06-24 06:03:14 INFO: 	-1, 0
+23-06-24 06:03:14 INFO: 	-1, 0
+23-06-24 06:03:14 INFO: 	-1, 0
+23-06-24 06:03:14 INFO: 	-1, 0
+23-06-24 06:03:14 INFO: 	-1, 0
+23-06-24 06:03:14 INFO: 	-1, 0
+23-06-24 06:03:14 INFO: 	-1, 0
+23-06-24 06:03:14 INFO: 	-1, 0
+23-06-24 06:03:14 INFO: 	-1, 0
+23-06-24 06:03:14 INFO: 	-1, 0
+23-06-24 06:03:14 INFO: 	-1, 0
+23-06-24 06:03:14 INFO: 	-1, 0
+23-06-24 06:03:14 INFO: 	-1, 0
+23-06-24 06:03:14 INFO: 	-1, 0
+23-06-24 06:03:14 INFO: 	-1, 0
+23-06-24 06:03:14 INFO: 	-1, 0
+23-06-24 06:03:14 INFO: 	-1, 0
+23-06-24 06:03:14 INFO: 	-1, 0
+23-06-24 06:03:14 INFO: 	-1, 0
+23-06-24 06:03:14 INFO: 	-1, 0
+23-06-24 06:03:14 INFO: 	-1, 0
+23-06-24 06:03:14 INFO: 	-1, 0
+23-06-24 06:03:14 INFO: 	-1, 0
+23-06-24 06:03:14 INFO: 	-1, 0
+23-06-24 06:03:14 INFO: 	-1, 0
+23-06-24 06:03:14 INFO: 	-1, 0
+23-06-24 06:03:14 INFO: 	-1, 0
+23-06-24 06:03:14 INFO: 	-1, 0
+23-06-24 06:03:14 INFO: 	-1, 0
+23-06-24 06:03:14 INFO: 	-1, 0
+23-06-24 06:03:14 INFO: 	-1, 0
+23-06-24 06:03:15 INFO: 	0, -1
+23-06-24 06:03:15 INFO: 	0, -1
+23-06-24 06:03:15 INFO: 	0, -1
+23-06-24 06:03:15 INFO: 	0, -1
+23-06-24 06:03:15 INFO: 	0, -1
+23-06-24 06:03:15 INFO: 	0, -1
+23-06-24 06:03:15 INFO: 	0, -1
+23-06-24 06:03:15 INFO: 	1, 0
+23-06-24 06:03:16 INFO: 	1, 0
+23-06-24 06:03:16 INFO: 	1, 0
+23-06-24 06:03:16 INFO: 	1, 0
+23-06-24 06:03:16 INFO: 	1, 0
+23-06-24 06:03:16 INFO: 	1, 0
+23-06-24 06:03:16 INFO: 	1, 0
+23-06-24 06:03:16 INFO: 	1, 0
+23-06-24 06:03:16 INFO: 	1, 0
+23-06-24 06:03:16 INFO: 	1, 0
+23-06-24 06:03:16 INFO: 	1, 0
+23-06-24 06:03:16 INFO: 	1, 0
+23-06-24 06:03:16 INFO: 	1, 0
+23-06-24 06:03:16 INFO: 	1, 0
+23-06-24 06:03:16 INFO: 	1, 0
+23-06-24 06:03:16 INFO: 	1, 0
+23-06-24 06:03:16 INFO: 	1, 0
+23-06-24 06:03:16 INFO: 	1, 0
+23-06-24 06:03:16 INFO: 	1, 0
+23-06-24 06:03:16 INFO: 	1, 0
+23-06-24 06:03:16 INFO: 	1, 0
+23-06-24 06:03:16 INFO: 	1, 0
+23-06-24 06:03:16 INFO: 	1, 0
+23-06-24 06:03:16 INFO: 	1, 0
+23-06-24 06:03:16 INFO: 	1, 0
+23-06-24 06:03:16 INFO: 	1, 0
+23-06-24 06:03:16 INFO: 	1, 0
+23-06-24 06:03:16 INFO: 	1, 0
+23-06-24 06:03:16 INFO: 	1, 0
+23-06-24 06:03:16 INFO: 	1, 0
+23-06-24 06:03:16 INFO: 	1, 0
+23-06-24 06:03:16 INFO: 	1, 0
+23-06-24 06:03:16 INFO: 	1, 0
+23-06-24 06:03:16 INFO: 	1, 0
+23-06-24 06:03:16 INFO: 	1, 0
+23-06-24 06:03:16 INFO: 	1, 0
+23-06-24 06:03:16 INFO: 	1, 0
+23-06-24 06:03:16 INFO: 	1, 0
+23-06-24 06:03:16 INFO: 	1, 0
+23-06-24 06:03:16 INFO: 	1, 0
+23-06-24 06:03:16 INFO: 	1, 0
+23-06-24 06:03:16 INFO: 	1, 0
+23-06-24 06:03:16 INFO: 	1, 0
+23-06-24 06:03:16 INFO: 	1, 0
+23-06-24 06:03:16 INFO: 	1, 0
+23-06-24 06:03:16 INFO: 	1, 0
+23-06-24 06:03:16 INFO: 	1, 0
+23-06-24 06:03:16 INFO: 	1, 0
+23-06-24 06:03:16 INFO: 	1, 0
+23-06-24 06:03:16 INFO: 	0, 1
+23-06-24 06:03:16 INFO: 	0, 1
+23-06-24 06:03:16 INFO: 	0, 1
+23-06-24 06:03:16 INFO: 	0, 1
+23-06-24 06:03:16 INFO: 	0, 1
+23-06-24 06:03:16 INFO: 	0, 1
+23-06-24 06:03:16 INFO: 	0, 1
+23-06-24 06:03:16 INFO: 	0, 1
+23-06-24 06:03:16 INFO: 	0, 1
+23-06-24 06:03:17 INFO: 	0, 1
+23-06-24 06:03:17 INFO: 	0, 1
+23-06-24 06:03:17 INFO: 	0, 1
+23-06-24 06:03:17 INFO: 	-1, 0
+23-06-24 06:03:17 INFO: 	-1, 0
+23-06-24 06:03:17 INFO: 	-1, 0
+23-06-24 06:03:17 INFO: 	-1, 0
+23-06-24 06:03:17 INFO: 	-1, 0
+23-06-24 06:03:17 INFO: 	-1, 0
+23-06-24 06:03:17 INFO: 	-1, 0
+23-06-24 06:03:17 INFO: 	-1, 0
+23-06-24 06:03:17 INFO: 	-1, 0
+23-06-24 06:03:17 INFO: 	-1, 0
+23-06-24 06:03:17 INFO: 	-1, 0
+23-06-24 06:03:17 INFO: 	-1, 0
+23-06-24 06:03:17 INFO: 	-1, 0
+23-06-24 06:03:17 INFO: 	-1, 0
+23-06-24 06:03:17 INFO: 	-1, 0
+23-06-24 06:03:17 INFO: 	-1, 0
+23-06-24 06:03:17 INFO: 	-1, 0
+23-06-24 06:03:17 INFO: 	-1, 0
+23-06-24 06:03:17 INFO: 	-1, 0
+23-06-24 06:03:17 INFO: 	-1, 0
+23-06-24 06:03:17 INFO: 	-1, 0
+23-06-24 06:03:17 INFO: 	-1, 0
+23-06-24 06:03:17 INFO: 	-1, 0
+23-06-24 06:03:17 INFO: 	-1, 0
+23-06-24 06:03:17 INFO: 	-1, 0
+23-06-24 06:03:17 INFO: 	-1, 0
+23-06-24 06:03:17 INFO: 	-1, 0
+23-06-24 06:03:17 INFO: 	-1, 0
+23-06-24 06:03:18 INFO: 	0, -1
+23-06-24 06:03:18 INFO: 	0, -1
+23-06-24 06:03:18 INFO: 	0, -1
+23-06-24 06:03:18 INFO: 	0, -1
+23-06-24 06:03:18 INFO: 	0, -1
+23-06-24 06:03:18 INFO: 	0, -1
+23-06-24 06:03:18 INFO: 	0, -1
+23-06-24 06:03:18 INFO: 	0, -1
+23-06-24 06:03:18 INFO: 	0, -1
+23-06-24 06:03:18 INFO: 	0, -1
+23-06-24 06:03:18 INFO: 	0, -1
+23-06-24 06:03:18 INFO: 	0, -1
+23-06-24 06:03:18 INFO: 	0, -1
+23-06-24 06:03:18 INFO: 	0, -1
+23-06-24 06:03:18 INFO: 	0, -1
+23-06-24 06:03:18 INFO: 	1, 0
+23-06-24 06:03:18 INFO: 	1, 0
+23-06-24 06:03:18 INFO: 	1, 0
+23-06-24 06:03:18 INFO: 	1, 0
+23-06-24 06:03:18 INFO: 	1, 0
+23-06-24 06:03:18 INFO: 	1, 0
+23-06-24 06:03:18 INFO: 	1, 0
+23-06-24 06:03:18 INFO: 	1, 0
+23-06-24 06:03:18 INFO: 	1, 0
+23-06-24 06:03:18 INFO: 	1, 0
+23-06-24 06:03:18 INFO: 	1, 0
+23-06-24 06:03:18 INFO: 	1, 0
+23-06-24 06:03:18 INFO: 	1, 0
+23-06-24 06:03:18 INFO: 	1, 0
+23-06-24 06:03:18 INFO: 	1, 0
+23-06-24 06:03:18 INFO: 	1, 0
+23-06-24 06:03:18 INFO: 	1, 0
+23-06-24 06:03:18 INFO: 	1, 0
+23-06-24 06:03:18 INFO: 	1, 0
+23-06-24 06:03:18 INFO: 	1, 0
+23-06-24 06:03:18 INFO: 	1, 0
+23-06-24 06:03:18 INFO: 	1, 0
+23-06-24 06:03:18 INFO: 	1, 0
+23-06-24 06:03:18 INFO: 	1, 0
+23-06-24 06:03:18 INFO: 	1, 0
+23-06-24 06:03:18 INFO: 	1, 0
+23-06-24 06:03:18 INFO: 	1, 0
+23-06-24 06:03:18 INFO: 	1, 0
+23-06-24 06:03:18 INFO: 	1, 0
+23-06-24 06:03:18 INFO: 	1, 0
+23-06-24 06:03:18 INFO: 	1, 0
+23-06-24 06:03:18 INFO: 	1, 0
+23-06-24 06:03:18 INFO: 	1, 0
+23-06-24 06:03:18 INFO: 	1, 0
+23-06-24 06:03:18 INFO: 	1, 0
+23-06-24 06:03:18 INFO: 	1, 0
+23-06-24 06:03:18 INFO: 	1, 0
+23-06-24 06:03:18 INFO: 	1, 0
+23-06-24 06:03:18 INFO: 	1, 0
+23-06-24 06:03:18 INFO: 	1, 0
+23-06-24 06:03:18 INFO: 	1, 0
+23-06-24 06:03:19 INFO: 	1, 0
+23-06-24 06:03:19 INFO: 	1, 0
+23-06-24 06:03:19 INFO: 	1, 0
+23-06-24 06:03:19 INFO: 	1, 0
+23-06-24 06:03:19 INFO: 	1, 0
+23-06-24 06:03:19 INFO: 	1, 0
+23-06-24 06:03:19 INFO: 	1, 0
+23-06-24 06:03:19 INFO: 	1, 0
+23-06-24 06:03:19 INFO: 	1, 0
+23-06-24 06:03:19 INFO: 	1, 0
+23-06-24 06:03:19 INFO: 	1, 0
+23-06-24 06:03:19 INFO: 	1, 0
+23-06-24 06:03:19 INFO: 	1, 0
+23-06-24 06:03:19 INFO: 	1, 0
+23-06-24 06:03:19 INFO: 	1, 0
+23-06-24 06:03:19 INFO: 	1, 0
+23-06-24 06:03:19 INFO: 	0, 1
+23-06-24 06:03:19 INFO: 	0, 1
+23-06-24 06:03:19 INFO: 	0, 1
+23-06-24 06:03:19 INFO: 	0, 1
+23-06-24 06:03:19 INFO: 	0, 1
+23-06-24 06:03:19 INFO: 	0, 1
+23-06-24 06:03:19 INFO: 	0, 1
+23-06-24 06:03:19 INFO: 	0, 1
+23-06-24 06:03:19 INFO: 	0, 1
+23-06-24 06:03:19 INFO: 	0, 1
+23-06-24 06:03:19 INFO: 	0, 1
+23-06-24 06:03:19 INFO: 	0, 1
+23-06-24 06:03:19 INFO: 	0, 1
+23-06-24 06:03:19 INFO: 	0, 1
+23-06-24 06:03:19 INFO: 	0, 1
+23-06-24 06:03:19 INFO: 	0, 1
+23-06-24 06:03:19 INFO: 	0, 1
+23-06-24 06:03:19 INFO: 	0, 1
+23-06-24 06:03:19 INFO: 	0, 1
+23-06-24 06:03:19 INFO: 	0, 1
+23-06-24 06:03:19 INFO: 	0, 1
+23-06-24 06:03:19 INFO: 	0, 1
+23-06-24 06:03:19 INFO: 	0, 1
+23-06-24 06:03:19 INFO: 	0, 1
+23-06-24 06:03:19 INFO: 	0, 1
+23-06-24 06:03:19 INFO: 	0, 1
+23-06-24 06:03:19 INFO: 	0, 1
+23-06-24 06:03:19 INFO: 	0, 1
+23-06-24 06:03:19 INFO: 	0, 1
+23-06-24 06:03:19 INFO: 	0, 1
+23-06-24 06:03:19 INFO: 	-1, 0
+23-06-24 06:03:19 INFO: 	-1, 0
+23-06-24 06:03:19 INFO: 	-1, 0
+23-06-24 06:03:19 INFO: 	-1, 0
+23-06-24 06:03:19 INFO: 	-1, 0
+23-06-24 06:03:19 INFO: 	-1, 0
+23-06-24 06:03:19 INFO: 	-1, 0
+23-06-24 06:03:19 INFO: 	-1, 0
+23-06-24 06:03:19 INFO: 	-1, 0
+23-06-24 06:03:19 INFO: 	-1, 0
+23-06-24 06:03:19 INFO: 	-1, 0
+23-06-24 06:03:19 INFO: 	-1, 0
+23-06-24 06:03:19 INFO: 	-1, 0
+23-06-24 06:03:19 INFO: 	-1, 0
+23-06-24 06:03:19 INFO: 	-1, 0
+23-06-24 06:03:19 INFO: 	-1, 0
+23-06-24 06:03:19 INFO: 	-1, 0
+23-06-24 06:03:19 INFO: 	-1, 0
+23-06-24 06:03:19 INFO: 	-1, 0
+23-06-24 06:03:19 INFO: 	-1, 0
+23-06-24 06:03:19 INFO: 	-1, 0
+23-06-24 06:03:19 INFO: 	-1, 0
+23-06-24 06:03:19 INFO: 	-1, 0
+23-06-24 06:03:19 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:20 INFO: 	-1, 0
+23-06-24 06:03:21 INFO: 	0, -1
+23-06-24 06:03:21 INFO: 	0, -1
+23-06-24 06:03:21 INFO: 	0, -1
+23-06-24 06:03:21 INFO: 	0, -1
+23-06-24 06:03:21 INFO: 	0, -1
+23-06-24 06:03:21 INFO: 	0, -1
+23-06-24 06:03:21 INFO: 	0, -1
+23-06-24 06:03:21 INFO: 	0, -1
+23-06-24 06:03:21 INFO: 	0, -1
+23-06-24 06:03:21 INFO: 	0, -1
+23-06-24 06:03:21 INFO: 	0, -1
+23-06-24 06:03:21 INFO: 	0, -1
+23-06-24 06:03:21 INFO: 	0, -1
+23-06-24 06:03:21 INFO: 	0, -1
+23-06-24 06:03:21 INFO: 	0, -1
+23-06-24 06:03:21 INFO: 	-1, 0
+23-06-24 06:03:21 INFO: 	-1, 0
+23-06-24 06:03:21 INFO: 	-1, 0
+23-06-24 06:03:21 INFO: 	-1, 0
+23-06-24 06:03:21 INFO: 	-1, 0
+23-06-24 06:03:21 INFO: 	-1, 0
+23-06-24 06:03:21 INFO: 	-1, 0
+23-06-24 06:03:21 INFO: 	-1, 0
+23-06-24 06:03:21 INFO: 	-1, 0
+23-06-24 06:03:21 INFO: 	-1, 0
+23-06-24 06:03:21 INFO: 	-1, 0
+23-06-24 06:03:21 INFO: 	-1, 0
+23-06-24 06:03:21 INFO: 	-1, 0
+23-06-24 06:03:21 INFO: 	-1, 0
+23-06-24 06:03:21 INFO: 	-1, 0
+23-06-24 06:03:21 INFO: 	-1, 0
+23-06-24 06:03:21 INFO: 	-1, 0
+23-06-24 06:03:21 INFO: 	-1, 0
+23-06-24 06:03:21 INFO: 	-1, 0
+23-06-24 06:03:21 INFO: 	-1, 0
+23-06-24 06:03:21 INFO: 	-1, 0
+23-06-24 06:03:21 INFO: 	-1, 0
+23-06-24 06:03:21 INFO: 	-1, 0
+23-06-24 06:03:21 INFO: 	-1, 0
+23-06-24 06:03:21 INFO: 	-1, 0
+23-06-24 06:03:21 INFO: 	-1, 0
+23-06-24 06:03:21 INFO: 	-1, 0
+23-06-24 06:03:21 INFO: 	-1, 0
+23-06-24 06:03:21 INFO: 	-1, 0
+23-06-24 06:03:21 INFO: 	-1, 0
+23-06-24 06:03:21 INFO: 	-1, 0
+23-06-24 06:03:21 INFO: 	-1, 0
+23-06-24 06:03:21 INFO: 	-1, 0
+23-06-24 06:03:21 INFO: 	-1, 0
+23-06-24 06:03:21 INFO: 	-1, 0
+23-06-24 06:03:21 INFO: 	-1, 0
+23-06-24 06:03:21 INFO: 	-1, 0
+23-06-24 06:03:21 INFO: 	-1, 0
+23-06-24 06:03:21 INFO: 	-1, 0
+23-06-24 06:03:22 INFO: 	-1, 0
+23-06-24 06:03:22 INFO: 	-1, 0
+23-06-24 06:03:22 INFO: 	-1, 0
+23-06-24 06:03:22 INFO: 	-1, 0
+23-06-24 06:03:22 INFO: 	-1, 0
+23-06-24 06:03:22 INFO: 	-1, 0
+23-06-24 06:03:22 INFO: 	-1, 0
+23-06-24 06:03:22 INFO: 	-1, 0
+23-06-24 06:03:22 INFO: 	-1, 0
+23-06-24 06:03:22 INFO: 	-1, 0
+23-06-24 06:03:22 INFO: 	-1, 0
+23-06-24 06:03:22 INFO: 	-1, 0
+23-06-24 06:03:22 INFO: 	-1, 0
+23-06-24 06:03:22 INFO: 	-1, 0
+23-06-24 06:03:22 INFO: 	-1, 0
+23-06-24 06:03:22 INFO: 	-1, 0
+23-06-24 06:03:22 INFO: 	-1, 0
+23-06-24 06:03:22 INFO: 	-1, 0
+23-06-24 06:03:22 INFO: 	-1, 0
+23-06-24 06:03:22 INFO: 	-1, 0
+23-06-24 06:03:22 INFO: 	-1, 0
+23-06-24 06:03:22 INFO: 	-1, 0
+23-06-24 06:03:22 INFO: 	-1, 0
+23-06-24 06:03:22 INFO: 	-1, 0
+23-06-24 06:03:22 INFO: 	-1, 0
+23-06-24 06:03:22 INFO: 	-1, 0
+23-06-24 06:03:22 INFO: 	-1, 0
+23-06-24 06:03:22 INFO: 	-1, 0
+23-06-24 06:03:22 INFO: 	-1, 0
+23-06-24 06:03:22 INFO: 	-1, 0
+23-06-24 06:03:22 INFO: 	-1, 0
+23-06-24 06:03:22 INFO: 	-1, 0
+23-06-24 06:03:22 INFO: 	-1, 0
+23-06-24 06:03:22 INFO: 	-1, 0
+23-06-24 06:03:22 INFO: 	-1, 0
+23-06-24 06:03:22 INFO: 	-1, 0
+23-06-24 06:03:22 INFO: 	-1, 0
+23-06-24 06:03:22 INFO: 	-1, 0
+23-06-24 06:03:22 INFO: 	-1, 0
+23-06-24 06:03:22 INFO: 	-1, 0
+23-06-24 06:03:22 INFO: 	-1, 0
+23-06-24 06:03:22 INFO: 	-1, 0
+23-06-24 06:03:22 INFO: 	-1, 0
+23-06-24 06:03:22 INFO: 	-1, 0
+23-06-24 06:03:22 INFO: 	-1, 0
+23-06-24 06:03:22 INFO: 	-1, 0
+23-06-24 06:03:22 INFO: 	-1, 0
+23-06-24 06:03:22 INFO: 	-1, 0
+23-06-24 06:03:22 INFO: 	-1, 0
+23-06-24 06:03:22 INFO: 	-1, 0
+23-06-24 06:03:22 INFO: 	-1, 0
+23-06-24 06:03:22 INFO: 	-1, 0
+23-06-24 06:03:22 INFO: 	-1, 0
+23-06-24 06:03:22 INFO: 	-1, 0
+23-06-24 06:03:22 INFO: 	-1, 0
+23-06-24 06:03:22 INFO: 	-1, 0
+23-06-24 06:03:22 INFO: 	-1, 0
+23-06-24 06:03:22 INFO: 	-1, 0
+23-06-24 06:03:22 INFO: 	0, -1
+23-06-24 06:03:22 INFO: 	0, -1
+23-06-24 06:03:22 INFO: 	0, -1
+23-06-24 06:03:22 INFO: 	0, -1
+23-06-24 06:03:22 INFO: 	0, -1
+23-06-24 06:03:22 INFO: 	0, -1
+23-06-24 06:03:22 INFO: 	0, -1
+23-06-24 06:03:22 INFO: 	0, -1
+23-06-24 06:03:22 INFO: 	0, -1
+23-06-24 06:03:22 INFO: 	0, -1
+23-06-24 06:03:22 INFO: 	0, -1
+23-06-24 06:03:23 INFO: 	-1, 0
+23-06-24 06:03:23 INFO: 	-1, 0
+23-06-24 06:03:23 INFO: 	-1, 0
+23-06-24 06:03:23 INFO: 	-1, 0
+23-06-24 06:03:23 INFO: 	-1, 0
+23-06-24 06:03:23 INFO: 	-1, 0
+23-06-24 06:03:23 INFO: 	-1, 0
+23-06-24 06:03:23 INFO: 	-1, 0
+23-06-24 06:03:23 INFO: 	-1, 0
+23-06-24 06:03:23 INFO: 	-1, 0
+23-06-24 06:03:23 INFO: 	-1, 0
+23-06-24 06:03:23 INFO: 	-1, 0
+23-06-24 06:03:23 INFO: 	-1, 0
+23-06-24 06:03:23 INFO: 	-1, 0
+23-06-24 06:03:23 INFO: 	-1, 0
+23-06-24 06:03:23 INFO: 	-1, 0
+23-06-24 06:03:23 INFO: 	-1, 0
+23-06-24 06:03:23 INFO: 	-1, 0
+23-06-24 06:03:23 INFO: 	-1, 0
+23-06-24 06:03:23 INFO: 	-1, 0
+23-06-24 06:03:23 INFO: 	-1, 0
+23-06-24 06:03:23 INFO: 	-1, 0
+23-06-24 06:03:23 INFO: 	-1, 0
+23-06-24 06:03:23 INFO: 	-1, 0
+23-06-24 06:03:23 INFO: 	-1, 0
+23-06-24 06:03:23 INFO: 	-1, 0
+23-06-24 06:03:23 INFO: 	-1, 0
+23-06-24 06:03:23 INFO: 	-1, 0
+23-06-24 06:03:23 INFO: 	-1, 0
+23-06-24 06:03:23 INFO: 	-1, 0
+23-06-24 06:03:23 INFO: 	-1, 0
+23-06-24 06:03:23 INFO: 	-1, 0
+23-06-24 06:03:23 INFO: 	-1, 0
+23-06-24 06:03:23 INFO: 	-1, 0
+23-06-24 06:03:23 INFO: 	-1, 0
+23-06-24 06:03:23 INFO: 	-1, 0
+23-06-24 06:03:23 INFO: 	-1, 0
+23-06-24 06:03:23 INFO: 	-1, 0
+23-06-24 06:03:23 INFO: 	-1, 0
+23-06-24 06:03:23 INFO: 	-1, 0
+23-06-24 06:03:23 INFO: 	-1, 0
+23-06-24 06:03:23 INFO: 	-1, 0
+23-06-24 06:03:23 INFO: 	-1, 0
+23-06-24 06:03:23 INFO: 	-1, 0
+23-06-24 06:03:23 INFO: 	-1, 0
+23-06-24 06:03:23 INFO: 	-1, 0
+23-06-24 06:03:23 INFO: 	-1, 0
+23-06-24 06:03:23 INFO: 	-1, 0
+23-06-24 06:03:23 INFO: 	-1, 0
+23-06-24 06:03:23 INFO: 	-1, 0
+23-06-24 06:03:24 INFO: 	-1, 0
+23-06-24 06:03:24 INFO: 	-1, 0
+23-06-24 06:03:24 INFO: 	-1, 0
+23-06-24 06:03:24 INFO: 	-1, 0
+23-06-24 06:03:24 INFO: 	-1, 0
+23-06-24 06:03:24 INFO: 	-1, 0
+23-06-24 06:03:24 INFO: 	-1, 0
+23-06-24 06:03:24 INFO: 	-1, 0
+23-06-24 06:03:24 INFO: 	-1, 0
+23-06-24 06:03:24 INFO: 	-1, 0
+23-06-24 06:03:24 INFO: 	-1, 0
+23-06-24 06:03:24 INFO: 	-1, 0
+23-06-24 06:03:24 INFO: 	-1, 0
+23-06-24 06:03:24 INFO: 	-1, 0
+23-06-24 06:03:24 INFO: 	-1, 0
+23-06-24 06:03:24 INFO: 	-1, 0
+23-06-24 06:03:24 INFO: 	-1, 0
+23-06-24 06:03:24 INFO: 	-1, 0
+23-06-24 06:03:24 INFO: 	-1, 0
+23-06-24 06:03:24 INFO: 	-1, 0
+23-06-24 06:03:24 INFO: 	-1, 0
+23-06-24 06:03:24 INFO: 	-1, 0
+23-06-24 06:03:24 INFO: 	-1, 0
+23-06-24 06:03:24 INFO: 	-1, 0
+23-06-24 06:03:24 INFO: 	-1, 0
+23-06-24 06:03:24 INFO: 	-1, 0
+23-06-24 06:03:24 INFO: 	-1, 0
+23-06-24 06:03:24 INFO: 	-1, 0
+23-06-24 06:03:24 INFO: 	-1, 0
+23-06-24 06:03:24 INFO: 	-1, 0
+23-06-24 06:03:24 INFO: 	-1, 0
+23-06-24 06:03:24 INFO: 	-1, 0
+23-06-24 06:03:24 INFO: 	-1, 0
+23-06-24 06:03:24 INFO: 	-1, 0
+23-06-24 06:03:24 INFO: 	-1, 0
+23-06-24 06:03:24 INFO: 	-1, 0
+23-06-24 06:03:24 INFO: 	-1, 0
+23-06-24 06:03:24 INFO: 	-1, 0
+23-06-24 06:03:24 INFO: 	-1, 0
+23-06-24 06:03:24 INFO: 	-1, 0
+23-06-24 06:03:24 INFO: 	-1, 0
+23-06-24 06:03:24 INFO: 	-1, 0
+23-06-24 06:03:24 INFO: 	-1, 0
+23-06-24 06:03:24 INFO: 	-1, 0
+23-06-24 06:03:24 INFO: 	-1, 0
+23-06-24 06:03:24 INFO: 	-1, 0
+23-06-24 06:03:24 INFO: 	-1, 0
+23-06-24 06:03:24 INFO: 	-1, 0
+23-06-24 06:03:24 INFO: 	-1, 0
+23-06-24 06:03:24 INFO: 	-1, 0
+23-06-24 06:03:24 INFO: 	-1, 0
+23-06-24 06:03:25 INFO: 	0, -1
+23-06-24 06:03:25 INFO: 	0, -1
+23-06-24 06:03:25 INFO: 	0, -1
+23-06-24 06:03:25 INFO: 	0, -1
+23-06-24 06:03:25 INFO: 	0, -1
+23-06-24 06:03:25 INFO: 	0, -1
+23-06-24 06:03:25 INFO: 	0, -1
+23-06-24 06:03:25 INFO: 	0, -1
+23-06-24 06:03:25 INFO: 	0, -1
+23-06-24 06:03:25 INFO: 	0, -1
+23-06-24 06:03:25 INFO: 	0, -1
+23-06-24 06:03:25 INFO: 	0, -1
+23-06-24 06:03:25 INFO: 	0, -1
+23-06-24 06:03:25 INFO: 	0, -1
+23-06-24 06:03:25 INFO: 	0, -1
+23-06-24 06:03:25 INFO: 	0, -1
+23-06-24 06:03:27 INFO: 	0, -1
+23-06-24 06:03:27 INFO: 	0, -1
+23-06-24 06:03:27 INFO: 	0, -1
+23-06-24 06:03:27 INFO: 	0, -1
+23-06-24 06:03:27 INFO: 	0, -1
+23-06-24 06:03:27 INFO: 	0, -1
+23-06-24 06:03:27 INFO: 	0, -1
+23-06-24 06:03:27 INFO: 	0, -1
+23-06-24 06:03:27 INFO: 	0, -1
+23-06-24 06:03:27 INFO: 	0, -1
+23-06-24 06:03:27 INFO: 	0, -1
+23-06-24 06:03:27 INFO: 	0, -1
+23-06-24 06:03:27 INFO: 	0, -1
+23-06-24 06:03:27 INFO: 	0, -1
+23-06-24 06:03:27 INFO: 	0, -1
+23-06-24 06:03:27 INFO: 	0, -1
+23-06-24 06:03:27 INFO: 	0, -1
+23-06-24 06:03:27 INFO: 	0, -1
+23-06-24 06:03:27 INFO: 	0, -1
+23-06-24 06:03:27 INFO: 	0, -1
+23-06-24 06:03:27 INFO: 	0, -1
+23-06-24 06:03:27 INFO: 	0, -1
+23-06-24 06:03:27 INFO: 	0, -1
+23-06-24 06:03:27 INFO: 	0, -1
+23-06-24 06:03:27 INFO: 	0, -1
+23-06-24 06:03:27 INFO: 	0, -1
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:28 INFO: 	-1, 0
+23-06-24 06:03:29 INFO: 	0, -1
+23-06-24 06:03:29 INFO: 	0, -1
+23-06-24 06:03:29 INFO: 	0, -1
+23-06-24 06:03:29 INFO: 	0, -1
+23-06-24 06:03:29 INFO: 	0, -1
+23-06-24 06:03:29 INFO: 	0, -1
+23-06-24 06:03:29 INFO: 	0, -1
+23-06-24 06:03:29 INFO: 	0, -1
+23-06-24 06:03:29 INFO: 	0, -1
+23-06-24 06:03:29 INFO: 	0, -1
+23-06-24 06:03:29 INFO: 	0, -1
+23-06-24 06:03:29 INFO: 	0, -1
+23-06-24 06:03:29 INFO: 	0, -1
+23-06-24 06:03:29 INFO: 	0, -1
+23-06-24 06:03:29 INFO: 	0, -1
+23-06-24 06:03:29 INFO: 	0, -1
+23-06-24 06:03:29 INFO: 	0, -1
+23-06-24 06:03:29 INFO: 	0, -1
+23-06-24 06:03:29 INFO: 	0, -1
+23-06-24 06:03:29 INFO: 	0, -1
+23-06-24 06:03:29 INFO: 	0, -1
+23-06-24 06:03:29 INFO: 	0, -1
+23-06-24 06:03:29 INFO: 	0, -1
+23-06-24 06:03:29 INFO: 	0, -1
+23-06-24 06:03:29 INFO: 	0, -1
+23-06-24 06:03:29 INFO: 	0, -1
+23-06-24 06:03:29 INFO: 	0, -1
+23-06-24 06:03:29 INFO: 	0, -1
+23-06-24 06:03:29 INFO: 	0, -1
+23-06-24 06:03:29 INFO: 	0, -1
+23-06-24 06:03:29 INFO: 	0, -1
+23-06-24 06:03:30 INFO: 	0, -1
+23-06-24 06:03:30 INFO: 	0, -1
+23-06-24 06:03:30 INFO: 	0, -1
+23-06-24 06:03:30 INFO: 	0, -1
+23-06-24 06:03:30 INFO: 	0, -1
+23-06-24 06:03:30 INFO: 	0, -1
+23-06-24 06:03:30 INFO: 	0, -1
+23-06-24 06:03:30 INFO: 	0, -1
+23-06-24 06:03:30 INFO: 	0, -1
+23-06-24 06:03:30 INFO: 	0, -1
+23-06-24 06:03:30 INFO: 	0, -1
+23-06-24 06:03:30 INFO: 	0, -1
+23-06-24 06:03:30 INFO: 	0, -1
+23-06-24 06:03:30 INFO: 	0, -1
+23-06-24 06:03:30 INFO: 	0, -1
+23-06-24 06:03:30 INFO: 	0, -1
+23-06-24 06:03:30 INFO: 	0, -1
+23-06-24 06:03:30 INFO: 	0, -1
+23-06-24 06:03:30 INFO: 	0, -1
+23-06-24 06:03:30 INFO: 	0, -1
+23-06-24 06:03:30 INFO: 	0, -1
+23-06-24 06:03:30 INFO: 	0, -1
+23-06-24 06:03:30 INFO: 	0, -1
+23-06-24 06:03:30 INFO: 	0, -1
+23-06-24 06:03:30 INFO: 	0, -1
+23-06-24 06:03:30 INFO: 	0, -1
+23-06-24 06:03:30 INFO: 	-1, 0
+23-06-24 06:03:30 INFO: 	-1, 0
+23-06-24 06:03:30 INFO: 	-1, 0
+23-06-24 06:03:30 INFO: 	-1, 0
+23-06-24 06:03:30 INFO: 	-1, 0
+23-06-24 06:03:30 INFO: 	-1, 0
+23-06-24 06:03:30 INFO: 	-1, 0
+23-06-24 06:03:30 INFO: 	-1, 0
+23-06-24 06:03:30 INFO: 	-1, 0
+23-06-24 06:03:30 INFO: 	-1, 0
+23-06-24 06:03:30 INFO: 	-1, 0
+23-06-24 06:03:30 INFO: 	-1, 0
+23-06-24 06:03:30 INFO: 	-1, 0
+23-06-24 06:03:30 INFO: 	-1, 0
+23-06-24 06:03:30 INFO: 	-1, 0
+23-06-24 06:03:30 INFO: 	-1, 0
+23-06-24 06:03:30 INFO: 	-1, 0
+23-06-24 06:03:30 INFO: 	-1, 0
+23-06-24 06:03:30 INFO: 	-1, 0
+23-06-24 06:03:30 INFO: 	-1, 0
+23-06-24 06:03:30 INFO: 	-1, 0
+23-06-24 06:03:30 INFO: 	-1, 0
+23-06-24 06:03:31 INFO: 	-1, 0
+23-06-24 06:03:31 INFO: 	-1, 0
+23-06-24 06:03:31 INFO: 	-1, 0
+23-06-24 06:03:31 INFO: 	-1, 0
+23-06-24 06:03:31 INFO: 	-1, 0
+23-06-24 06:03:31 INFO: 	-1, 0
+23-06-24 06:03:31 INFO: 	-1, 0
+23-06-24 06:03:31 INFO: 	-1, 0
+23-06-24 06:03:31 INFO: 	-1, 0
+23-06-24 06:03:31 INFO: 	-1, 0
+23-06-24 06:03:31 INFO: 	-1, 0
+23-06-24 06:03:31 INFO: 	-1, 0
+23-06-24 06:03:31 INFO: 	-1, 0
+23-06-24 06:03:31 INFO: 	-1, 0
+23-06-24 06:03:31 INFO: 	-1, 0
+23-06-24 06:03:31 INFO: 	-1, 0
+23-06-24 06:03:31 INFO: 	-1, 0
+23-06-24 06:03:31 INFO: 	-1, 0
+23-06-24 06:03:31 INFO: 	-1, 0
+23-06-24 06:03:31 INFO: 	-1, 0
+23-06-24 06:03:31 INFO: 	-1, 0
+23-06-24 06:03:31 INFO: 	-1, 0
+23-06-24 06:03:31 INFO: 	-1, 0
+23-06-24 06:03:31 INFO: 	-1, 0
+23-06-24 06:03:31 INFO: 	-1, 0
+23-06-24 06:03:31 INFO: 	-1, 0
+23-06-24 06:03:31 INFO: 	-1, 0
+23-06-24 06:03:31 INFO: 	-1, 0
+23-06-24 06:03:31 INFO: 	-1, 0
+23-06-24 06:03:31 INFO: 	-1, 0
+23-06-24 06:03:31 INFO: 	-1, 0
+23-06-24 06:03:31 INFO: 	-1, 0
+23-06-24 06:03:31 INFO: 	-1, 0
+23-06-24 06:03:31 INFO: 	-1, 0
+23-06-24 06:03:31 INFO: 	-1, 0
+23-06-24 06:03:31 INFO: 	-1, 0
+23-06-24 06:03:31 INFO: 	-1, 0
+23-06-24 06:03:31 INFO: 	-1, 0
+23-06-24 06:03:31 INFO: 	-1, 0
+23-06-24 06:03:31 INFO: 	-1, 0
+23-06-24 06:03:31 INFO: 	-1, 0
+23-06-24 06:03:31 INFO: 	-1, 0
+23-06-24 06:03:31 INFO: 	-1, 0
+23-06-24 06:03:31 INFO: 	-1, 0
+23-06-24 06:03:32 INFO: 	0, -1
+23-06-24 06:03:32 INFO: 	0, -1
+23-06-24 06:03:32 INFO: 	0, -1
+23-06-24 06:03:32 INFO: 	0, -1
+23-06-24 06:03:32 INFO: 	0, -1
+23-06-24 06:03:32 INFO: 	0, -1
+23-06-24 06:03:32 INFO: 	0, -1
+23-06-24 06:03:32 INFO: 	0, -1
+23-06-24 06:03:32 INFO: 	0, -1
+23-06-24 06:03:32 INFO: 	0, -1
+23-06-24 06:03:32 INFO: 	0, -1
+23-06-24 06:03:32 INFO: 	0, -1
+23-06-24 06:03:32 INFO: 	0, -1
+23-06-24 06:03:32 INFO: 	0, -1
+23-06-24 06:03:32 INFO: 	0, -1
+23-06-24 06:03:32 INFO: 	0, -1
+23-06-24 06:03:32 INFO: 	0, -1
+23-06-24 06:03:32 INFO: 	0, -1
+23-06-24 06:03:32 INFO: 	0, -1
+23-06-24 06:03:32 INFO: 	0, -1
+23-06-24 06:03:32 INFO: 	0, -1
+23-06-24 06:03:32 INFO: 	0, -1
+23-06-24 06:03:32 INFO: 	0, -1
+23-06-24 06:03:32 INFO: 	0, -1
+23-06-24 06:03:32 INFO: 	0, -1
+23-06-24 06:03:32 INFO: 	1, 0
+23-06-24 06:03:32 INFO: 	1, 0
+23-06-24 06:03:32 INFO: 	1, 0
+23-06-24 06:03:32 INFO: 	1, 0
+23-06-24 06:03:32 INFO: 	1, 0
+23-06-24 06:03:32 INFO: 	1, 0
+23-06-24 06:03:32 INFO: 	1, 0
+23-06-24 06:03:32 INFO: 	1, 0
+23-06-24 06:03:32 INFO: 	1, 0
+23-06-24 06:03:32 INFO: 	1, 0
+23-06-24 06:03:32 INFO: 	1, 0
+23-06-24 06:03:32 INFO: 	1, 0
+23-06-24 06:03:32 INFO: 	1, 0
+23-06-24 06:03:32 INFO: 	1, 0
+23-06-24 06:03:32 INFO: 	1, 0
+23-06-24 06:03:32 INFO: 	1, 0
+23-06-24 06:03:32 INFO: 	1, 0
+23-06-24 06:03:32 INFO: 	1, 0
+23-06-24 06:03:32 INFO: 	1, 0
+23-06-24 06:03:32 INFO: 	1, 0
+23-06-24 06:03:32 INFO: 	1, 0
+23-06-24 06:03:32 INFO: 	1, 0
+23-06-24 06:03:32 INFO: 	1, 0
+23-06-24 06:03:32 INFO: 	1, 0
+23-06-24 06:03:32 INFO: 	1, 0
+23-06-24 06:03:32 INFO: 	1, 0
+23-06-24 06:03:32 INFO: 	1, 0
+23-06-24 06:03:32 INFO: 	1, 0
+23-06-24 06:03:33 INFO: 	0, 1
+23-06-24 06:03:33 INFO: 	0, 1
+23-06-24 06:03:33 INFO: 	0, 1
+23-06-24 06:03:33 INFO: 	0, 1
+23-06-24 06:03:33 INFO: 	0, 1
+23-06-24 06:03:33 INFO: 	0, 1
+23-06-24 06:03:33 INFO: 	0, 1
+23-06-24 06:03:33 INFO: 	0, 1
+23-06-24 06:03:33 INFO: 	0, 1
+23-06-24 06:03:33 INFO: 	0, 1
+23-06-24 06:03:33 INFO: 	0, 1
+23-06-24 06:03:33 INFO: 	0, 1
+23-06-24 06:03:33 INFO: 	0, 1
+23-06-24 06:03:33 INFO: 	0, 1
+23-06-24 06:03:33 INFO: 	0, 1
+23-06-24 06:03:33 INFO: 	0, 1
+23-06-24 06:03:33 INFO: 	0, 1
+23-06-24 06:03:33 INFO: 	0, 1
+23-06-24 06:03:33 INFO: 	0, 1
+23-06-24 06:03:33 INFO: 	0, 1
+23-06-24 06:03:33 INFO: 	0, 1
+23-06-24 06:03:33 INFO: 	0, 1
+23-06-24 06:03:33 INFO: 	0, 1
+23-06-24 06:03:33 INFO: 	0, 1
+23-06-24 06:03:33 INFO: 	0, 1
+23-06-24 06:03:33 INFO: 	0, 1
+23-06-24 06:03:33 INFO: 	0, 1
+23-06-24 06:03:33 INFO: 	0, 1
+23-06-24 06:03:33 INFO: 	0, 1
+23-06-24 06:03:33 INFO: 	0, 1
+23-06-24 06:03:33 INFO: 	0, 1
+23-06-24 06:03:33 INFO: 	0, 1
+23-06-24 06:03:33 INFO: 	0, 1
+23-06-24 06:03:33 INFO: 	0, 1
+23-06-24 06:03:33 INFO: 	0, 1
+23-06-24 06:03:33 INFO: 	0, 1
+23-06-24 06:03:33 INFO: 	0, 1
+23-06-24 06:03:33 INFO: 	0, 1
+23-06-24 06:03:33 INFO: 	0, 1
+23-06-24 06:03:33 INFO: 	0, 1
+23-06-24 06:03:33 INFO: 	0, 1
+23-06-24 06:03:33 INFO: 	0, 1
+23-06-24 06:03:33 INFO: 	0, 1
+23-06-24 06:03:33 INFO: 	0, 1
+23-06-24 06:03:33 INFO: 	0, 1
+23-06-24 06:03:33 INFO: 	0, 1
+23-06-24 06:03:33 INFO: 	0, 1
+23-06-24 06:03:33 INFO: 	0, 1
+23-06-24 06:03:33 INFO: 	0, 1
+23-06-24 06:03:33 INFO: 	-1, 0
+23-06-24 06:03:33 INFO: 	-1, 0
+23-06-24 06:03:33 INFO: 	-1, 0
+23-06-24 06:03:33 INFO: 	-1, 0
+23-06-24 06:03:33 INFO: 	-1, 0
+23-06-24 06:03:33 INFO: 	-1, 0
+23-06-24 06:03:33 INFO: 	-1, 0
+23-06-24 06:03:33 INFO: 	-1, 0
+23-06-24 06:03:34 INFO: 	-1, 0
+23-06-24 06:03:34 INFO: 	-1, 0
+23-06-24 06:03:34 INFO: 	-1, 0
+23-06-24 06:03:34 INFO: 	-1, 0
+23-06-24 06:03:34 INFO: 	-1, 0
+23-06-24 06:03:34 INFO: 	-1, 0
+23-06-24 06:03:34 INFO: 	-1, 0
+23-06-24 06:03:34 INFO: 	-1, 0
+23-06-24 06:03:34 INFO: 	-1, 0
+23-06-24 06:03:34 INFO: 	-1, 0
+23-06-24 06:03:34 INFO: 	-1, 0
+23-06-24 06:03:34 INFO: 	-1, 0
+23-06-24 06:03:34 INFO: 	-1, 0
+23-06-24 06:03:34 INFO: 	-1, 0
+23-06-24 06:03:34 INFO: 	-1, 0
+23-06-24 06:03:34 INFO: 	-1, 0
+23-06-24 06:03:34 INFO: 	-1, 0
+23-06-24 06:03:34 INFO: 	-1, 0
+23-06-24 06:03:34 INFO: 	-1, 0
+23-06-24 06:03:34 INFO: 	-1, 0
+23-06-24 06:03:34 INFO: 	-1, 0
+23-06-24 06:03:34 INFO: 	-1, 0
+23-06-24 06:03:34 INFO: 	-1, 0
+23-06-24 06:03:34 INFO: 	-1, 0
+23-06-24 06:03:34 INFO: 	-1, 0
+23-06-24 06:03:34 INFO: 	-1, 0
+23-06-24 06:03:34 INFO: 	-1, 0
+23-06-24 06:03:34 INFO: 	-1, 0
+23-06-24 06:03:34 INFO: 	-1, 0
+23-06-24 06:03:34 INFO: 	-1, 0
+23-06-24 06:03:34 INFO: 	-1, 0
+23-06-24 06:03:34 INFO: 	-1, 0
+23-06-24 06:03:34 INFO: 	-1, 0
+23-06-24 06:03:34 INFO: 	0, -1
+23-06-24 06:03:34 INFO: 	0, -1
+23-06-24 06:03:34 INFO: 	0, -1
+23-06-24 06:03:34 INFO: 	0, -1
+23-06-24 06:03:34 INFO: 	0, -1
+23-06-24 06:03:34 INFO: 	0, -1
+23-06-24 06:03:34 INFO: 	0, -1
+23-06-24 06:03:34 INFO: 	0, -1
+23-06-24 06:03:34 INFO: 	0, -1
+23-06-24 06:03:34 INFO: 	0, -1
+23-06-24 06:03:34 INFO: 	0, -1
+23-06-24 06:03:34 INFO: 	0, -1
+23-06-24 06:03:34 INFO: 	0, -1
+23-06-24 06:03:34 INFO: 	0, -1
+23-06-24 06:03:34 INFO: 	0, -1
+23-06-24 06:03:34 INFO: 	0, -1
+23-06-24 06:03:34 INFO: 	0, -1
+23-06-24 06:03:34 INFO: 	0, -1
+23-06-24 06:03:35 INFO: 	1, 0
+23-06-24 06:03:35 INFO: 	1, 0
+23-06-24 06:03:35 INFO: 	1, 0
+23-06-24 06:03:35 INFO: 	1, 0
+23-06-24 06:03:35 INFO: 	1, 0
+23-06-24 06:03:35 INFO: 	1, 0
+23-06-24 06:03:35 INFO: 	1, 0
+23-06-24 06:03:35 INFO: 	1, 0
+23-06-24 06:03:35 INFO: 	1, 0
+23-06-24 06:03:35 INFO: 	1, 0
+23-06-24 06:03:35 INFO: 	1, 0
+23-06-24 06:03:35 INFO: 	1, 0
+23-06-24 06:03:35 INFO: 	1, 0
+23-06-24 06:03:35 INFO: 	1, 0
+23-06-24 06:03:35 INFO: 	1, 0
+23-06-24 06:03:35 INFO: 	1, 0
+23-06-24 06:03:36 INFO: 	0, 1
+23-06-24 06:03:36 INFO: 	0, 1
+23-06-24 06:03:36 INFO: 	0, 1
+23-06-24 06:03:36 INFO: 	0, 1
+23-06-24 06:03:36 INFO: 	0, 1
+23-06-24 06:03:36 INFO: 	0, 1
+23-06-24 06:03:36 INFO: 	0, 1
+23-06-24 06:03:36 INFO: 	0, 1
+23-06-24 06:03:36 INFO: 	0, 1
+23-06-24 06:03:36 INFO: 	-1, 0
+23-06-24 06:03:36 INFO: 	-1, 0
+23-06-24 06:03:36 INFO: 	-1, 0
+23-06-24 06:03:36 INFO: 	-1, 0
+23-06-24 06:03:36 INFO: 	-1, 0
+23-06-24 06:03:36 INFO: 	-1, 0
+23-06-24 06:03:36 INFO: 	-1, 0
+23-06-24 06:03:36 INFO: 	-1, 0
+23-06-24 06:03:36 INFO: 	-1, 0
+23-06-24 06:03:36 INFO: 	-1, 0
+23-06-24 06:03:36 INFO: 	-1, 0
+23-06-24 06:03:36 INFO: 	-1, 0
+23-06-24 06:03:36 INFO: 	-1, 0
+23-06-24 06:03:36 INFO: 	-1, 0
+23-06-24 06:03:36 INFO: 	-1, 0
+23-06-24 06:03:36 INFO: 	-1, 0
+23-06-24 06:03:36 INFO: 	-1, 0
+23-06-24 06:03:36 INFO: 	-1, 0
+23-06-24 06:03:36 INFO: 	-1, 0
+23-06-24 06:03:36 INFO: 	-1, 0
+23-06-24 06:03:36 INFO: 	-1, 0
+23-06-24 06:03:36 INFO: 	-1, 0
+23-06-24 06:03:36 INFO: 	-1, 0
+23-06-24 06:03:36 INFO: 	-1, 0
+23-06-24 06:03:36 INFO: 	-1, 0
+23-06-24 06:03:36 INFO: 	-1, 0
+23-06-24 06:03:36 INFO: 	-1, 0
+23-06-24 06:03:36 INFO: 	-1, 0
+23-06-24 06:03:36 INFO: 	-1, 0
+23-06-24 06:03:36 INFO: 	-1, 0
+23-06-24 06:03:36 INFO: 	-1, 0
+23-06-24 06:03:36 INFO: 	-1, 0
+23-06-24 06:03:36 INFO: 	-1, 0
+23-06-24 06:03:36 INFO: 	-1, 0
+23-06-24 06:03:37 INFO: 	-1, 0
+23-06-24 06:03:37 INFO: 	-1, 0
+23-06-24 06:03:37 INFO: 	-1, 0
+23-06-24 06:03:37 INFO: 	-1, 0
+23-06-24 06:03:37 INFO: 	-1, 0
+23-06-24 06:03:37 INFO: 	-1, 0
+23-06-24 06:03:37 INFO: 	-1, 0
+23-06-24 06:03:37 INFO: 	-1, 0
+23-06-24 06:03:37 INFO: 	-1, 0
+23-06-24 06:03:37 INFO: 	-1, 0
+23-06-24 06:03:37 INFO: 	-1, 0
+23-06-24 06:03:37 INFO: 	-1, 0
+23-06-24 06:03:37 INFO: 	-1, 0
+23-06-24 06:03:37 INFO: 	-1, 0
+23-06-24 06:03:37 INFO: 	-1, 0
+23-06-24 06:03:37 INFO: 	-1, 0
+23-06-24 06:03:37 INFO: 	-1, 0
+23-06-24 06:03:37 INFO: 	-1, 0
+23-06-24 06:03:37 INFO: 	-1, 0
+23-06-24 06:03:37 INFO: 	-1, 0
+23-06-24 06:03:40 INFO: 	Resources cleared

@@ -14,7 +14,6 @@ public:
         //attach shader
         auto debug_shader = resource_manager::get_shader(GLOBALS::SHADER_DEBUG_NAME);
         debug_shader.bind();
-        debug_shader.set_uniform1i("u_use_mvp",1);
         debug_shader.set_uniform3f("u_color",color.x,color.y,color.z);
         auto model = glm::translate(glm::mat4(1),glm::vec3(pos.x,pos.y,0));
         model = glm::scale(model,glm::vec3(size.x,size.y,0));
@@ -40,12 +39,15 @@ public:
     {
         auto debug_shader = resource_manager::get_shader(GLOBALS::SHADER_DEBUG_NAME);
         debug_shader.bind();
-        debug_shader.set_uniform1i("u_use_mvp",0);
         debug_shader.set_uniform3f("u_color",color.x,color.y,color.z);
+        auto model = glm::translate(glm::mat4(1),glm::vec3(0,0,0));
+        model = glm::scale(model,glm::vec3(1,1,0));
+        auto mvp = component_camera::proj * component_camera::view * model;
+        debug_shader.set_uniform_mat4f("u_mvp",mvp);
         
         float vertices[] = {
-            start.x/GLOBALS::screen_size.x, start.y/GLOBALS::screen_size.y,
-            end.x/GLOBALS::screen_size.x, end.y/GLOBALS::screen_size.y,
+            start.x, start.y,
+            end.x, end.y,
         };
 
         vertex_array vao;
@@ -54,21 +56,23 @@ public:
         layout.push<float>(2);
         vao.add_buffer(vbo,layout);
         vao.bind();
-        glDrawArrays(GL_LINE_LOOP, 0, 2);
+        glDrawArrays(GL_LINES, 0, 2);
     }
 
     static auto ray(const glm::vec2 origin, const glm::vec2 direction, const float length = 128, glm::vec3 color={1,1,1})->void
     {
         auto debug_shader = resource_manager::get_shader(GLOBALS::SHADER_DEBUG_NAME);
         debug_shader.bind();
-        debug_shader.set_uniform1i("u_use_mvp",0);
         debug_shader.set_uniform3f("u_color",color.x,color.y,color.z);
-        glm::vec2 destination= origin + glm::normalize(direction);
-        destination*=length;
+        auto model = glm::translate(glm::mat4(1),glm::vec3(0,0,0));
+        model = glm::scale(model,glm::vec3(1,1,0));
+        auto mvp = component_camera::proj * component_camera::view * model;
+        debug_shader.set_uniform_mat4f("u_mvp",mvp);
+        glm::vec2 destination= origin + glm::normalize(direction) * length;
         
         float vertices[] = {
-            origin.x/GLOBALS::screen_size.x, origin.y/GLOBALS::screen_size.y,
-            destination.x/GLOBALS::screen_size.x, destination.y/GLOBALS::screen_size.y
+            origin.x, origin.y,
+            destination.x, destination.y
         };
 
         vertex_array vao;
@@ -77,14 +81,13 @@ public:
         layout.push<float>(2);
         vao.add_buffer(vbo,layout);
         vao.bind();
-        glDrawArrays(GL_LINE_LOOP, 0, 2);
+        glDrawArrays(GL_LINES, 0, 2);
     }
 
-    static auto circle(const glm::vec2 pos,const float radius=128, const int segments =32, glm::vec3 color={1,1,1})->void
+    static auto circle(const glm::vec2 pos,const float radius=128, glm::vec3 color={1,1,1},bool fill =false,const int segments =32 )->void
     {
         auto debug_shader = resource_manager::get_shader(GLOBALS::SHADER_DEBUG_NAME);
         debug_shader.bind();
-        debug_shader.set_uniform1i("u_use_mvp",1);
         debug_shader.set_uniform3f("u_color",color.x,color.y,color.z);
         auto model = glm::translate(glm::mat4(1),glm::vec3(pos.x,pos.y,0));
         model = glm::scale(model,glm::vec3(1,1,0));
@@ -108,6 +111,13 @@ public:
         layout.push<float>(2);
         vao.add_buffer(vbo,layout);
         vao.bind();
-        glDrawArrays(GL_LINE_LOOP, 0, vertices.size()/2);
+        if(fill)
+        {
+            glDrawArrays(GL_TRIANGLE_FAN, 0, vertices.size()/2);
+        }else
+        {
+            glDrawArrays(GL_LINE_LOOP, 0, vertices.size()/2);
+        }
+        
     }
 };

@@ -17,6 +17,7 @@
 #include "../engine/ecs/systems/system_collider_renderer.h"
 #include "../engine/ecs/systems/system_collision_detection.h"
 #include "../engine/ecs/systems/system_player_input.h"
+#include "../engine/ecs/systems/system_rigidbody2d.h"
 
 ecs g_ecs;
 std::shared_ptr<system_camera> g_camera_system;
@@ -25,6 +26,7 @@ std::shared_ptr<system_player_input> g_player_movement;
 std::shared_ptr<system_animation> g_animation_system;
 std::shared_ptr<system_collision_detection> g_collision_detection_system;
 std::shared_ptr<system_collider_renderer> g_collider_renderer;
+std::shared_ptr<system_rigidbody2d> g_rigidbody_system;
 
 
 //entities/gameobjects  in scene
@@ -72,6 +74,7 @@ auto scene_main::set_game(game* game) -> void
     movement_signature.set(g_ecs.get_component_type<component_transform>());
     movement_signature.set(g_ecs.get_component_type<component_player_input>());
     movement_signature.set(g_ecs.get_component_type<component_sprite>());
+    movement_signature.set(g_ecs.get_component_type<component_rigidbody2d>());
     g_ecs.set_system_signature<system_player_input>(movement_signature);
 
     //registering animation system
@@ -94,6 +97,13 @@ auto scene_main::set_game(game* game) -> void
     signature_collision_detection.set(g_ecs.get_component_type<component_transform>());
     signature_collision_detection.set(g_ecs.get_component_type<component_box_collider>());
     g_ecs.set_system_signature<system_collision_detection>(signature_collision_detection);
+
+    //registering rigidbody system
+    g_rigidbody_system = g_ecs.register_system<system_rigidbody2d>();
+    signature signature_rigidbody;
+    signature_rigidbody.set(g_ecs.get_component_type<component_transform>());
+    signature_rigidbody.set(g_ecs.get_component_type<component_rigidbody2d>());
+    g_ecs.set_system_signature<system_rigidbody2d>(signature_rigidbody);
     
 }
 
@@ -124,6 +134,7 @@ auto scene_main::load() -> void
     auto& collider = g_ecs.get_component<component_box_collider>(g_player);
     collider.size ={64,64};
     collider.offset = {-32,-32};
+    collider.is_trigger =false;
     //add rigidbody to player
     g_ecs.add_component<component_rigidbody2d>(g_player);
 
@@ -132,7 +143,7 @@ auto scene_main::load() -> void
     g_ecs.add_component<component_transform>(g_block);
     g_ecs.add_component<component_box_collider>(g_block);
     auto& block_transform = g_ecs.get_component<component_transform>(g_block);
-    block_transform.position ={100,60,0};
+    block_transform.position ={150,60,0};
     
     //create camera
     g_camera = g_ecs.add_entity();
@@ -147,6 +158,7 @@ auto scene_main::update(const float delta_time) -> void
     g_player_movement->update(delta_time);
     g_animation_system->update(delta_time);
     g_collision_detection_system->update(delta_time);
+    g_rigidbody_system->update(delta_time);
 }
 
 auto scene_main::render() -> void
@@ -189,7 +201,32 @@ auto scene_main::on_gui() -> void
 auto scene_main::on_debug_draw() -> void
 {
     g_collider_renderer->render();
-    
+
+    glm::vec2 origin ={-100,-100};
+    glm::vec2 direction = mouse_pos -origin;
+    debug_draw::line(origin,mouse_pos);
+    rect box={{300,250},{100,100}};
+    glm::vec2 cp,cn;
+    float t;
+    if(physics2d::ray_intersects_rect(origin,direction,box,cp,cn,t) && t<1)
+    {
+        debug_draw::rect(box.position,box.size,{0,0,1});
+        debug_draw::circle(cp,5,{1,0,0},true);
+        debug_draw::ray(cp,cn);
+    }
+    else
+    {
+        debug_draw::rect(box.position,box.size);
+    }
+
+    rect rect_a{{0,0},{64,64}};
+    rect expanded_target{};
+    auto size_a= glm::vec2(rect_a.size.x/2, rect_a.size.y/2);
+    expanded_target.position =box.position - size_a;
+    expanded_target.size = box.size + rect_a.size;
+
+    debug_draw::rect(expanded_target.position,expanded_target.size,{0,1,1});
+   
 }
 
 
