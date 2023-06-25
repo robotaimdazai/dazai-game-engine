@@ -19,6 +19,7 @@ auto system_collision_box::fixed_update(float fixed_delta_time) -> void
         glm::vec2 contact_point{0,0};
         glm::vec2 contact_normal{0,0};
         float contact_time=0;
+        
         std::vector<std::pair<::entity,float>> sorted_entities;
         
         for(auto const& entity:entities) // optimize this with spatial partitioning 
@@ -70,8 +71,17 @@ auto system_collision_box::fixed_update(float fixed_delta_time) -> void
                 if(physics2d::dynamic_rect_intersects_rect(rigidbody.velocity,selected_rect,other_rect,contact_point,
                     contact_normal,contact_time,fixed_delta_time))
                 {
-                   final_velocity +=  contact_normal *
+                    switch (rigidbody.resolution_type)
+                    {
+                    case slide:
+                        final_velocity +=  contact_normal *
                         glm::vec2(std::abs(rigidbody.velocity.x),std::abs(rigidbody.velocity.y)) * (1-contact_time);
+                        break;
+                    case stop:
+                        break;
+                    case bounce:
+                        break;
+                    }
                 } 
             }
         }
@@ -81,6 +91,7 @@ auto system_collision_box::fixed_update(float fixed_delta_time) -> void
             rigidbody.velocity = final_velocity;
             glm::vec3 velocity = {rigidbody.velocity.x,rigidbody.velocity.y,0};
             selected_transform.position+=velocity * fixed_delta_time;
+            
         }
     }
 }

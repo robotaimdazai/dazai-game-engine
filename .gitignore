@@ -24,7 +24,6 @@
 *.lai
 *.la
 *.a
-*.lib
 
 # Executables
 *.exe
@@ -34,4 +33,3 @@
 #custom
 *.idea
 *.log
-x64\
