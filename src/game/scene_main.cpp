@@ -151,9 +151,8 @@ auto scene_main::load() -> void
     block2_transform.position ={250,60,0};
 
     auto g_block3 = g_ecs.add_entity();
-    g_ecs.add_component<component_transform>(g_block3);
+    auto& block3_transform = g_ecs.add_component<component_transform>(g_block3);
     g_ecs.add_component<component_box_collider>(g_block3);
-    auto& block3_transform = g_ecs.get_component<component_transform>(g_block3);
     block3_transform.position ={350,60,0};
     
     //create camera

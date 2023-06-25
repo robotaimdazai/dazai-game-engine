@@ -25,9 +25,9 @@ public:
         return m_component_types_[type_name];
     }
     template<typename T>
-    auto add_component(entity entity) ->void
+    auto add_component(entity entity) ->T&
     {
-        get_component_array<T>()->set_data(entity);
+        return get_component_array<T>()->set_data(entity);
     }
 
     template <typename T>

@@ -29,23 +29,24 @@ public:
 
     //component-----------------------------
     template<typename T>
-    auto register_component()->void
+    auto register_component() const ->void
     {
         m_component_manager_->register_component<T>();
     }
 
     template<typename T>
-    auto add_component(entity entity)->void
+    auto add_component(entity entity)->T&
     {
-        m_component_manager_->add_component<T>(entity);
+        auto& ret =m_component_manager_->add_component<T>(entity);
         auto signature = m_entity_manager_->get_signature(entity);
         signature.set(m_component_manager_->get_component_type<T>(), true);
         m_entity_manager_->set_signature(entity, signature);
         m_system_manager_->entity_signature_changed(entity, signature);
+        return ret;
     }
 
     template<typename T>
-    auto remove_component(entity entity)->void
+    auto remove_component(entity entity) const ->void
     {
         m_component_manager_->remove_component<T>(entity);
         auto signature = m_entity_manager_->get_signature(entity);
@@ -81,7 +82,7 @@ public:
     }
 
     template<typename T>
-    auto set_system_signature(signature signature)->void
+    auto set_system_signature(signature signature) const ->void
     {
         m_system_manager_->set_signature<T>(signature);
     }

@@ -15,7 +15,7 @@ public:
         LOG(info)<<"Component manager created: "<<std::type_index(typeid(T)).name();
     }
     
-    auto set_data(entity entity) ->void
+    auto set_data(entity entity) ->T&
     {
         assert(m_entity_to_index_.find(entity) == m_entity_to_index_.end() && "Component added to same entity more than once.");
         const size_t new_index = m_size_;
@@ -23,6 +23,7 @@ public:
         m_index_to_entity_[new_index] = entity;
         m_component_array_[new_index] = T{};
         ++m_size_;
+        return m_component_array_[new_index];
     }
 
     auto remove_component(entity entity) ->void
