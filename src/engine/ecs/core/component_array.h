@@ -50,13 +50,9 @@ public:
     {
         if(m_entity_to_index_.find(entity) == m_entity_to_index_.end())
         {
-            LOG(error)<<"Component does not exist.";
             return nullptr;
         }
-        else
-        {
-            return &m_component_array_[m_entity_to_index_[entity]];
-        }
+        return &m_component_array_[m_entity_to_index_[entity]];
     }
     auto entity_destroyed(const entity entity) ->void override
     {

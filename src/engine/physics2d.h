@@ -8,6 +8,13 @@ struct rect
     glm::vec2 size;
 };
 
+enum collision_resolution_type // more types can be added here
+{
+    stop,
+    slide,
+    bounce
+};
+
 class physics2d
 {
 public:
