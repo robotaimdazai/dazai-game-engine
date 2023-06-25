@@ -1,4 +1,4 @@
-﻿#include "system_collision_detection.h"
+﻿#include "system_collision_box.h"
 #include "system_collider_renderer.h"
 #include "../ecs.h"
 #include "../../physics2d.h"
@@ -7,7 +7,7 @@
 #include "../components/component_transform.h"
 extern ecs g_ecs;
 
-auto system_collision_detection::fixed_update(float fixed_delta_time) -> void
+auto system_collision_box::fixed_update(float fixed_delta_time) -> void
 {
     for(auto const& entity:entities)
     {
@@ -42,7 +42,7 @@ auto system_collision_detection::fixed_update(float fixed_delta_time) -> void
                 {
                     auto rigidbody =*selected_rigidbody;
                     if(physics2d::dynamic_rect_intersects_rect(rigidbody.velocity,selected_rect,other_rect,contact_point,
-                        contact_normal,contact_time))
+                        contact_normal,contact_time,fixed_delta_time))
                     {
                         sorted_entities.emplace_back(entity,contact_time);
                     } 
@@ -68,7 +68,7 @@ auto system_collision_detection::fixed_update(float fixed_delta_time) -> void
             {
                 auto rigidbody =*selected_rigidbody;
                 if(physics2d::dynamic_rect_intersects_rect(rigidbody.velocity,selected_rect,other_rect,contact_point,
-                    contact_normal,contact_time))
+                    contact_normal,contact_time,fixed_delta_time))
                 {
                    final_velocity +=  contact_normal *
                         glm::vec2(std::abs(rigidbody.velocity.x),std::abs(rigidbody.velocity.y)) * (1-contact_time);
@@ -80,12 +80,12 @@ auto system_collision_detection::fixed_update(float fixed_delta_time) -> void
             auto rigidbody =*selected_rigidbody;
             rigidbody.velocity = final_velocity;
             glm::vec3 velocity = {rigidbody.velocity.x,rigidbody.velocity.y,0};
-            selected_transform.position+=velocity ;
+            selected_transform.position+=velocity * fixed_delta_time;
         }
     }
 }
 
-auto system_collision_detection::debug_draw() -> void
+auto system_collision_box::debug_draw() -> void
 {
     
 }

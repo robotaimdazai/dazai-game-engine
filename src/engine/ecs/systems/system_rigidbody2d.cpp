@@ -12,7 +12,8 @@ auto system_rigidbody2d::fixed_update(float fixed_delta_time) -> void
         auto& rigidbody = g_ecs.get_component<component_rigidbody2d>(entity);
         auto& transform = g_ecs.get_component<component_transform>(entity);
         //move
+        rigidbody.velocity+=rigidbody.acceleration * fixed_delta_time;
         const glm::vec3 velocity = {rigidbody.velocity.x,rigidbody.velocity.y,0};
-        transform.position+=velocity ;
+        transform.position+=velocity * fixed_delta_time ;
     }
 }

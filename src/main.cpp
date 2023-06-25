@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
         logger::restart();
 
     timer time;
-    const float FIXED_DELTA_TIME = 1.0f/GLOBALS::target_fps;
+    const float FIXED_DELTA_TIME = 1/GLOBALS::target_fps;
     float accumulated_time=0.0f;
     
     
@@ -46,7 +46,7 @@ int main(int argc, char *argv[])
         //update
         game.update(delta_time);
         //fixed update
-        if(accumulated_time>=FIXED_DELTA_TIME)
+        while(accumulated_time>=FIXED_DELTA_TIME)
         {
             game.fixed_update(FIXED_DELTA_TIME);
             accumulated_time-=FIXED_DELTA_TIME;

@@ -33,4 +33,5 @@
 
 #custom
 *.idea
+*.log
 x64\

@@ -15,7 +15,7 @@
 #include "../engine/ecs/systems/system_animation.h"
 #include "../engine/ecs/systems/system_camera.h"
 #include "../engine/ecs/systems/system_collider_renderer.h"
-#include "../engine/ecs/systems/system_collision_detection.h"
+#include "../engine/ecs/systems/system_collision_box.h"
 #include "../engine/ecs/systems/system_player_input.h"
 #include "../engine/ecs/systems/system_rigidbody2d.h"
 
@@ -24,7 +24,7 @@ std::shared_ptr<system_camera> g_camera_system;
 std::shared_ptr<system_renderer_sprite> g_sprite_system;
 std::shared_ptr<system_player_input> g_player_movement;
 std::shared_ptr<system_animation> g_animation_system;
-std::shared_ptr<system_collision_detection> g_collision_detection_system;
+std::shared_ptr<system_collision_box> g_collision_detection_system;
 std::shared_ptr<system_collider_renderer> g_collider_renderer;
 std::shared_ptr<system_rigidbody2d> g_rigidbody_system;
 
@@ -91,11 +91,11 @@ auto scene_main::set_game(game* game) -> void
     g_ecs.set_system_signature<system_collider_renderer>(signature_collider_renderer);
 
     //registering collision detection system
-    g_collision_detection_system = g_ecs.register_system<system_collision_detection>();
+    g_collision_detection_system = g_ecs.register_system<system_collision_box>();
     signature signature_collision_detection;
     signature_collision_detection.set(g_ecs.get_component_type<component_transform>());
     signature_collision_detection.set(g_ecs.get_component_type<component_box_collider>());
-    g_ecs.set_system_signature<system_collision_detection>(signature_collision_detection);
+    g_ecs.set_system_signature<system_collision_box>(signature_collision_detection);
 
     //registering rigidbody system
     g_rigidbody_system = g_ecs.register_system<system_rigidbody2d>();
@@ -171,7 +171,6 @@ auto scene_main::update(const float delta_time) -> void
 
 auto scene_main::fixed_update(float fixed_delta_time) -> void
 {
-    g_player_movement->fixed_update(fixed_delta_time);
     g_rigidbody_system->fixed_update(fixed_delta_time);
     g_collision_detection_system->fixed_update(fixed_delta_time);
 }
