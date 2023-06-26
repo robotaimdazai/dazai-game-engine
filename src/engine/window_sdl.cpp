@@ -100,7 +100,7 @@ auto window_sdl::init(const int x_pos, const int y_pos, const int width, const i
 
 auto window_sdl::clear() -> void
 {
-    glClearColor(0.0f, 0.3f, 0.0f, 1.0f);
+    glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 }
 
