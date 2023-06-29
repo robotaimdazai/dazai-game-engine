@@ -2,6 +2,7 @@
 #include <string>
 #include "glm/vec2.hpp"
 #include "glm/vec3.hpp"
+#include "../../physics2d.h"
 
 struct component_sprite
 {
@@ -9,13 +10,6 @@ struct component_sprite
     glm::vec3 offset{0,0,0};
     glm::vec2 size{64,64};
     bool is_animated{false};
-    
-    std::vector<float> clip_buffer
-    {
-      -0.5f, -0.5f, 0.0f, 0.0f,
-       0.5f, -0.5f, 1.0f, 0.0f, 
-       0.5f,  0.5f, 1.0f, 1.0f, 
-      -0.5f,  0.5f, 0.0f, 1.0f        
-    };
-    
+    rect clip {{0,0},{1,1}};
+    glm::vec4 color={1,1,1,1};
 };

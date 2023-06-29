@@ -6,7 +6,7 @@ class vertex_buffer
 public:
     vertex_buffer(const void* data, unsigned int size);
     ~vertex_buffer();
-    auto update(const std::vector<float>& data) const -> void;
+    auto update(float data[]) const -> void;
     auto bind() const -> void;
     auto unbind() const -> void;
     auto get_id() const -> unsigned int {return m_renderer_id_;}

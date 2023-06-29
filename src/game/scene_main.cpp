@@ -51,9 +51,8 @@ auto scene_main::set_game(game* game) -> void
     resource_manager::load_shader(GLOBALS::SHADER_SPRITE_PATH, GLOBALS::SHADER_SPRITE_NAME);
     resource_manager::load_shader(GLOBALS::SHADER_DEBUG_PATH, GLOBALS::SHADER_DEBUG_NAME);
     
-    auto sprite_shader =resource_manager::get_shader(GLOBALS::SHADER_SPRITE_NAME);
     //registering sprite system
-    g_sprite_system = g_ecs.register_system<system_renderer_sprite>(sprite_shader);
+    g_sprite_system = g_ecs.register_system<system_renderer_sprite>();
     signature sprite_system_signature;
     sprite_system_signature.set(g_ecs.get_component_type<component_sprite>());
     sprite_system_signature.set(g_ecs.get_component_type<component_transform>());
@@ -200,7 +199,6 @@ auto scene_main::clean() -> void
 {
    
 }
-
 
 auto scene_main::on_gui() -> void
 {

@@ -28,6 +28,7 @@ public:
         m_element_layouts_.push_back({count,GL_FLOAT,GL_FALSE,sizeof(GL_FLOAT)});
         m_stride_+=sizeof(GL_FLOAT)* count;
     }
+    
 
     template<>
     auto push<unsigned int>(const unsigned int count)->void

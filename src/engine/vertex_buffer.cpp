@@ -17,10 +17,11 @@ auto vertex_buffer::bind() const -> void
 {
     glBindBuffer(GL_ARRAY_BUFFER,m_renderer_id_);
 }
-auto vertex_buffer::update(const std::vector<float>& data) const -> void
+auto vertex_buffer::update(float data[]) const -> void
 {
     bind();
-    glBufferData(GL_ARRAY_BUFFER,m_size_,data.data(),GL_STATIC_DRAW);
+    //glBufferData(GL_ARRAY_BUFFER,m_size_,data,GL_STATIC_DRAW);
+    glBufferSubData(GL_ARRAY_BUFFER,0,4*5*sizeof(float),data);
     unbind();
 }
 
