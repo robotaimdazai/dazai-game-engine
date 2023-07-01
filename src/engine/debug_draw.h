@@ -18,7 +18,7 @@ public:
         auto model = glm::translate(glm::mat4(1),glm::vec3(pos.x,pos.y,0));
         model = glm::scale(model,glm::vec3(size.x,size.y,0));
         auto mvp = component_camera::proj * component_camera::view * model;
-        debug_shader.set_uniform_mat4f("u_mvp",mvp);
+        debug_shader.set_uniform_mat4fv("u_mvp",mvp);
     
         float vertices[] = {
             0.0f, 0.0f,
@@ -43,7 +43,7 @@ public:
         auto model = glm::translate(glm::mat4(1),glm::vec3(0,0,0));
         model = glm::scale(model,glm::vec3(1,1,0));
         auto mvp = component_camera::proj * component_camera::view * model;
-        debug_shader.set_uniform_mat4f("u_mvp",mvp);
+        debug_shader.set_uniform_mat4fv("u_mvp",mvp);
         
         float vertices[] = {
             start.x, start.y,
@@ -67,7 +67,7 @@ public:
         auto model = glm::translate(glm::mat4(1),glm::vec3(0,0,0));
         model = glm::scale(model,glm::vec3(1,1,0));
         auto mvp = component_camera::proj * component_camera::view * model;
-        debug_shader.set_uniform_mat4f("u_mvp",mvp);
+        debug_shader.set_uniform_mat4fv("u_mvp",mvp);
         glm::vec2 destination= origin + glm::normalize(direction) * length;
         
         float vertices[] = {
@@ -92,7 +92,7 @@ public:
         auto model = glm::translate(glm::mat4(1),glm::vec3(pos.x,pos.y,0));
         model = glm::scale(model,glm::vec3(1,1,0));
         auto mvp = component_camera::proj * component_camera::view * model;
-        debug_shader.set_uniform_mat4f("u_mvp",mvp);
+        debug_shader.set_uniform_mat4fv("u_mvp",mvp);
         
         std::vector<float> vertices;
         vertices.reserve((segments+1)*2);

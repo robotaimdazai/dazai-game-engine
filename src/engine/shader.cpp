@@ -111,9 +111,9 @@ auto shader::set_uniform1f(const std::string& uniform, float value) -> void
     glUniform1f(get_uniform_location(uniform),value);
 }
 
-auto shader::set_uniform_mat4f(const std::string& uniform, const glm::mat4& matrix) -> void
+auto shader::set_uniform_mat4fv(const std::string& uniform, const glm::mat4& matrix, const int count) -> void
 {
-    glUniformMatrix4fv(get_uniform_location(uniform),1,GL_FALSE,&matrix[0][0]);
+    glUniformMatrix4fv(get_uniform_location(uniform),count,GL_FALSE,&matrix[0][0]);
 }
 
 auto shader::bind() const -> void

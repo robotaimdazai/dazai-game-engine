@@ -1,6 +1,8 @@
 #define GLEW_STATIC
 #include "window_sdl.h"
 
+#include <iostream>
+
 #include "imgui.h"
 #include "backends/imgui_impl_opengl3.h"
 #include "backends/imgui_impl_sdl2.h"
@@ -28,8 +30,8 @@ auto window_sdl::init(const int x_pos, const int y_pos, const int width, const i
         LOG(info)<<"Subsystems init success";
         //openGL attrib
         SDL_GL_SetAttribute(SDL_GL_CONTEXT_PROFILE_MASK, SDL_GL_CONTEXT_PROFILE_CORE);
-        SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 3);
-        SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 3);
+        SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 4);
+        SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 0);
         SDL_GL_SetAttribute(SDL_GL_DOUBLEBUFFER, 1);
         SDL_GL_SetAttribute(SDL_GL_DEPTH_SIZE, 24);
         SDL_GL_SetAttribute(SDL_GL_CONTEXT_FLAGS, SDL_GL_CONTEXT_DEBUG_FLAG);
@@ -79,7 +81,7 @@ auto window_sdl::init(const int x_pos, const int y_pos, const int width, const i
             }
             
         },nullptr);
-
+        
         //setup imGUI
         ImGui::CreateContext();
         ImGuiIO& io = ImGui::GetIO(); (void)io;

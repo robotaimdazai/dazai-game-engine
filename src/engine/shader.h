@@ -18,7 +18,7 @@ public:
     auto set_uniform3f(const std::string&, float f1, float f2, float f3)->void;
     auto set_uniform1i(const std::string&,int value)->void;
     auto set_uniform1f(const std::string&,float value)->void;
-    auto set_uniform_mat4f(const std::string&,const glm::mat4& matrix)->void;
+    auto set_uniform_mat4fv(const std::string& uniform, const glm::mat4& matrix, const int count=1)->void;
     auto destroy()->void;
     auto bind() const ->void;
     auto unbind()const->void;

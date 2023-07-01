@@ -23,6 +23,7 @@ int main(int argc, char *argv[])
     timer time;
     const float FIXED_DELTA_TIME = 1/GLOBALS::target_fps;
     float accumulated_time=0.0f;
+
     
     
     const auto window =  iwindow::create(title);
