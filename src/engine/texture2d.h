@@ -11,6 +11,7 @@ public:
     auto get_size()const->glm::vec2;
     auto get_path()const->const std::string&;
     auto get_slot()const->int;
+    auto get_renderer_id()const-> unsigned int;
     auto bind(unsigned int slot =0) ->void;
     auto unbind()->void;
     auto destroy() const ->void;

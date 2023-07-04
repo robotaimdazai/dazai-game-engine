@@ -109,6 +109,7 @@ auto scene_main::load() -> void
 {
     //load all resources
     resource_manager::load_texture("assets/textures/dazai-sheet.png","dazai");
+    resource_manager::load_texture("assets/textures/dazai.png","dazai1");
     
     //player
     g_player = g_ecs.add_entity();
@@ -158,6 +159,13 @@ auto scene_main::load() -> void
     g_camera = g_ecs.add_entity();
     g_ecs.add_component<component_transform>(g_camera);
     g_ecs.add_component<component_camera>(g_camera);
+
+    //create another entity for texture batch testing
+    auto dummy = g_ecs.add_entity();
+    auto& transform = g_ecs.add_component<component_transform>(dummy);
+    transform.position.z =-0.1;
+    auto& dummysprite = g_ecs.add_component<component_sprite>(dummy);
+    dummysprite.texture_id="dazai1";
     
 }
 

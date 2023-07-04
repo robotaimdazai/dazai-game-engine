@@ -42,6 +42,11 @@ auto texture2d::get_slot() const -> int
     return m_slot_;
 }
 
+auto texture2d::get_renderer_id() const -> unsigned int
+{
+    return m_renderer_id_;
+}
+
 auto texture2d::unbind() -> void
 {
     glBindTexture(GL_TEXTURE_2D,0);

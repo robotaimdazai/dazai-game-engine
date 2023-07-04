@@ -25,14 +25,10 @@ auto system_renderer_sprite::render() const -> void
     {
         auto& sprite = g_ecs.get_component<component_sprite>(entity);
         const auto& transform = g_ecs.get_component<component_transform>(entity);
-        
-        for (int i =0;i<10000;i++)
-        {
-            glm::vec3 pos = {rand()%500,rand()%500,0};
-            renderer2d::render_sprite(pos,transform.rotation.z,sprite);
-            
-        }
+        renderer2d::render_sprite(transform.position,transform.rotation.z,sprite);
     }
+
+  
     renderer2d::render_end();
     
 }
