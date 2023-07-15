@@ -119,6 +119,7 @@ auto scene_main::load() -> void
     g_ecs.add_component<component_sprite>(g_player);
     g_ecs.add_component<component_player_input>(g_player);
     auto& player_sprite =g_ecs.get_component<component_sprite>(g_player);
+    player_sprite.blend_mode = transparent;
     player_sprite.texture_id ="dazai";
     player_sprite.size ={128,128};
     g_ecs.add_component<component_animator>(g_player);
@@ -157,13 +158,14 @@ auto scene_main::load() -> void
     
     //create camera
     g_camera = g_ecs.add_entity();
-    g_ecs.add_component<component_transform>(g_camera);
+    auto& camera_transform = g_ecs.add_component<component_transform>(g_camera);
     g_ecs.add_component<component_camera>(g_camera);
+    camera_transform.position.z=-10;
 
     //create another entity for texture batch testing
     auto dummy = g_ecs.add_entity();
     auto& transform = g_ecs.add_component<component_transform>(dummy);
-    transform.position.z =-0.1;
+    transform.position.z =-1;
     auto& dummysprite = g_ecs.add_component<component_sprite>(dummy);
     dummysprite.texture_id="dazai1";
     

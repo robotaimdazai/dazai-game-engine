@@ -10,8 +10,8 @@ struct component_camera
     glm::vec3 up{0.0f,1.0f,0.0f};
     glm::vec2 size{1280,720};
     float zoom{1};
-    float near{-1};
-    float far{1};
+    float near{-24};
+    float far{24};
     inline static glm::mat4 view {glm::mat4(1.0f)};
     inline static glm::mat4 proj {glm::mat4(1.0f)};
 

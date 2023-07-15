@@ -46,6 +46,7 @@ auto system_player_input::handle_event(const input_state& input) -> void
                 player_transform.scale.x = -1;
             else
                 player_transform.scale.x = 1;
+            
 
             rigidbody.velocity *= player.speed;
             animator.change_animation("run");

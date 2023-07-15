@@ -31,7 +31,7 @@ public:
     
 
     template<>
-    auto push<unsigned int>(const unsigned int count)->void
+    auto push<uint32_t>(const uint32_t count)->void
     {
         m_element_layouts_.push_back({count,GL_UNSIGNED_INT,GL_FALSE,sizeof(GL_UNSIGNED_INT)});
         m_stride_+=sizeof(GL_UNSIGNED_INT) * count;

@@ -25,10 +25,9 @@ auto system_renderer_sprite::render() const -> void
     {
         auto& sprite = g_ecs.get_component<component_sprite>(entity);
         const auto& transform = g_ecs.get_component<component_transform>(entity);
-        renderer2d::render_sprite(transform.position,transform.rotation.z,sprite);
+        renderer2d::render_sprite(transform.position,transform.rotation.z,transform.scale,sprite);
     }
-
-  
+    
     renderer2d::render_end();
     
 }

@@ -600,6 +600,7 @@
     <ClInclude Include="src\engine\stb_image.h" />
     <ClInclude Include="src\engine\texture2d.h" />
     <ClInclude Include="src\engine\timer.h" />
+    <ClInclude Include="src\engine\util.h" />
     <ClInclude Include="src\engine\vertex_array.h" />
     <ClInclude Include="src\engine\vertex_buffer.h" />
     <ClInclude Include="src\engine\vertex_buffer_layout.h" />

@@ -68,6 +68,8 @@ auto window_sdl::init(const int x_pos, const int y_pos, const int width, const i
         glViewport(0, 0, width, height);
         glDisable(GL_CULL_FACE);
         glEnable(GL_BLEND);
+        glEnable(GL_DEPTH_TEST);
+        glDepthFunc(GL_LESS);
         glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
         //enable logging
         glEnable(GL_DEBUG_OUTPUT);
