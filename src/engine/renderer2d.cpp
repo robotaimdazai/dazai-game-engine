@@ -174,7 +174,7 @@ auto renderer2d::render_end() -> void
     
 }
 
-auto renderer2d::flush(const int indices, int offset) -> void
+auto renderer2d::flush(const int indices, const int offset) -> void
 {
     if(indices==0)
         glDrawElements(GL_TRIANGLES,state->index_buffer_count,GL_UNSIGNED_INT,nullptr);

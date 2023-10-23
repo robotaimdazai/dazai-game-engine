@@ -1,8 +1,7 @@
 ﻿#include "resource_manager.h"
+#include "font.h"
 #include "logger.h"
 
-//std::map<std::string,texture2d> resource_manager::textures;
-//std::map<std::string,shader> resource_manager::shaders;
 
 auto resource_manager::load_texture(const std::string& file, const std::string& name) -> texture2d
 {
@@ -14,6 +13,12 @@ auto resource_manager::load_shader(const std::string& file,const std::string& na
 {
     shaders.emplace(name, shader(file));
     return shaders[name];
+}
+
+auto resource_manager::load_font(const std::string& file,const std::string& name) -> font
+{
+    fonts.emplace(name,font(file, 16));
+    return fonts[name];
 }
 
 auto resource_manager::get_texture(const std::string& name) -> texture2d&
@@ -29,6 +34,21 @@ auto resource_manager::get_texture(const std::string& name) -> texture2d&
     }
    
 }
+
+auto resource_manager::get_font(const std::string& name) -> font&
+{
+    try
+    {
+        return fonts.at(name);
+    }
+    catch (const std::exception& e)
+    {
+        LOG(error)<<"Unable to get font: "<<name<<" "<<e.what();
+        return fonts[name];
+    }
+   
+}
+
 auto resource_manager::get_shader(const std::string& name) -> shader&
 {
     try

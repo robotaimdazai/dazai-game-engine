@@ -20,5 +20,8 @@ namespace GLOBALS
     static const std::string SHADER_SPRITE_NAME="sprite.glsl";
     static const std::string SHADER_DEBUG_PATH="assets/shaders/debug.glsl";
     static const std::string SHADER_DEBUG_NAME="debug.glsl";
+    static const std::string SHADER_FONT_PATH="assets/shaders/font.glsl";
+    static const std::string SHADER_FONT_NAME="font.glsl";
     
 }
+

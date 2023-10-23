@@ -30,6 +30,7 @@ texture2d::texture2d(const std::string& path):m_width_(0),m_height_(0),m_slot_(-
     stbi_image_free(m_raw_data_);
 }
 
+
 auto texture2d::bind(unsigned int slot) -> void
 {
     m_slot_ = slot;

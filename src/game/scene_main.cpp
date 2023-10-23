@@ -10,6 +10,7 @@
 #include "../engine/ecs/components/component_player_input.h"
 #include "../engine/ecs/components/component_rigidbody2d.h"
 #include "../engine/ecs/components/component_sprite.h"
+#include "../engine/ecs/components/component_text.h"
 #include "../engine/ecs/components/component_transform.h"
 #include "../engine/ecs/systems/system_renderer_sprite.h"
 #include "../engine/ecs/systems/system_animation.h"
@@ -17,6 +18,7 @@
 #include "../engine/ecs/systems/system_collider_renderer.h"
 #include "../engine/ecs/systems/system_collision_box.h"
 #include "../engine/ecs/systems/system_player_input.h"
+#include "../engine/ecs/systems/system_renderer_text.h"
 #include "../engine/ecs/systems/system_rigidbody2d.h"
 
 ecs g_ecs;
@@ -27,6 +29,7 @@ std::shared_ptr<system_animation> g_animation_system;
 std::shared_ptr<system_collision_box> g_collision_detection_system;
 std::shared_ptr<system_collider_renderer> g_collider_renderer;
 std::shared_ptr<system_rigidbody2d> g_rigidbody_system;
+std::shared_ptr<system_renderer_text> g_text_system;
 
 
 //entities/gameobjects  in scene
@@ -46,10 +49,12 @@ auto scene_main::set_game(game* game) -> void
     g_ecs.register_component<component_animator>();
     g_ecs.register_component<component_box_collider>();
     g_ecs.register_component<component_rigidbody2d>();
+    g_ecs.register_component<component_text>();
     
     //loading shader for sprite renderer
     resource_manager::load_shader(GLOBALS::SHADER_SPRITE_PATH, GLOBALS::SHADER_SPRITE_NAME);
     resource_manager::load_shader(GLOBALS::SHADER_DEBUG_PATH, GLOBALS::SHADER_DEBUG_NAME);
+    resource_manager::load_shader(GLOBALS::SHADER_FONT_PATH, GLOBALS::SHADER_FONT_NAME);
     
     //registering sprite system
     g_sprite_system = g_ecs.register_system<system_renderer_sprite>();
@@ -102,6 +107,12 @@ auto scene_main::set_game(game* game) -> void
     signature_rigidbody.set(g_ecs.get_component_type<component_transform>());
     signature_rigidbody.set(g_ecs.get_component_type<component_rigidbody2d>());
     g_ecs.set_system_signature<system_rigidbody2d>(signature_rigidbody);
+
+    g_text_system = g_ecs.register_system<system_renderer_text>();
+    signature signature_text;
+    signature_text.set(g_ecs.get_component_type<component_transform>());
+    signature_text.set(g_ecs.get_component_type<component_text>());
+    g_ecs.set_system_signature<system_renderer_text>(signature_text);
     
 }
 
@@ -110,6 +121,7 @@ auto scene_main::load() -> void
     //load all resources
     resource_manager::load_texture("assets/textures/dazai-sheet.png","dazai");
     resource_manager::load_texture("assets/textures/dazai.png","dazai1");
+    resource_manager::load_font("assets/fonts/arial.ttf","arial");
     
     //player
     g_player = g_ecs.add_entity();
@@ -168,6 +180,15 @@ auto scene_main::load() -> void
     transform.position.z =-1;
     auto& dummysprite = g_ecs.add_component<component_sprite>(dummy);
     dummysprite.texture_id="dazai1";
+
+    //text entity test
+    auto t = g_ecs.add_entity();
+    auto& text=g_ecs.add_component<component_text>(t);
+    auto& t_trans =g_ecs.add_component<component_transform>(t);
+    t_trans.scale = {5,5,1};
+    text.text="DAZAI";
+    text.size = 48;
+    text.font_id="arial";
     
 }
 
@@ -183,10 +204,12 @@ auto scene_main::fixed_update(float fixed_delta_time) -> void
     g_collision_detection_system->fixed_update(fixed_delta_time);
 }
 
+
 auto scene_main::render() -> void
 {
     //render all entities
-    g_sprite_system->render();
+    //g_sprite_system->render();
+    g_text_system->render();
 }
 glm::vec2 mouse_pos;
 auto scene_main::handle_event(const input_state& input_state) -> void
@@ -217,13 +240,53 @@ auto scene_main::on_gui() -> void
     ImGui::SliderFloat3("position",&g_ecs.get_component<component_transform>(g_camera).position.x,-1280.0f,1280.0f);
     ImGui::SliderFloat("zoom",&g_ecs.get_component<component_camera>(g_camera).zoom,0,10.0f);
     ImGui::End();
+
+
+  
+    ImGui::SetNextWindowPos(ImVec2(200, 200));
+    ImGui::SetNextWindowSize(ImVec2(200, 50));
+    ImGui::PushStyleVar(ImGuiStyleVar_WindowPadding, ImVec2(0.0f, 0.0f));
+    
+    
+    ImVec2 button_pos(200,200);
+    ImVec2 button_end_pos(button_pos.x + 200,button_pos.y + 50);
+    bool hover = ImGui::IsMouseHoveringRect(button_pos,button_end_pos);
+    ImVec4 hover_color = {1,1,1,1};
+
+    if(hover)
+    {
+        hover_color={1,1,0.5,1};
+    }
+    
+    ImGui::Begin("button",nullptr,
+        ImGuiWindowFlags_NoTitleBar |
+        ImGuiWindowFlags_NoScrollbar|
+        ImGuiWindowFlags_NoResize);
+
+    
+    bool clicked = ImGui::ImageButton(
+        (ImTextureID)(intptr_t)resource_manager::get_texture("dazai1").get_renderer_id(),
+        ImVec2(200,50),
+        ImVec2(0,1),
+        ImVec2(1,0),
+    0,
+    ImVec4(1,1,1,1),
+    hover_color
+    );
+    
+    ImGui::End();
+    ImGui::PopStyleVar();
+
+    if(clicked)
+        LOG(info)<<"clicked";
+    if(hover)
+        LOG(info)<<"hover";
 }
 
 auto scene_main::on_debug_draw() -> void
 {
     g_collider_renderer->render();
     g_collision_detection_system->debug_draw();
-   
 }
 
 

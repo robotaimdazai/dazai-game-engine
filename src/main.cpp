@@ -9,6 +9,7 @@
 #include "engine/timer.h"
 #include "engine/window.h"
 
+
 struct log_config log_config = {};
 
 int main(int argc, char *argv[])
@@ -23,8 +24,6 @@ int main(int argc, char *argv[])
     timer time;
     const float FIXED_DELTA_TIME = 1/GLOBALS::target_fps;
     float accumulated_time=0.0f;
-
-    
     
     const auto window =  iwindow::create(title);
     window->init(SDL_WINDOWPOS_CENTERED,SDL_WINDOWPOS_CENTERED,GLOBALS::screen_size.x,GLOBALS::screen_size.y,false);
