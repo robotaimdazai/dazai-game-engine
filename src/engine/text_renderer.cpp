@@ -20,7 +20,7 @@ auto text_renderer::render_begin() -> void
     
 }
 
-auto text_renderer::render_text(const std::string& text, const glm::vec3& position,const glm::vec3& scale, const uint8_t& size,
+auto text_renderer::render_text(const std::string& text, const glm::vec3& position,const glm::vec3& scale,
     const glm::vec4& color,const std::string& font_name) -> void
 {
     auto vao = new vertex_array();
@@ -40,9 +40,9 @@ auto text_renderer::render_text(const std::string& text, const glm::vec3& positi
     shader.bind();
     shader.set_uniform_mat4fv("u_proj_view",component_camera::proj * component_camera::view);
     const auto& font = resource_manager::get_font(font_name);
-    auto character = font.characters.at(text[0]);
+    character character = font.characters.at(text[0]);
     auto model = glm::translate(glm::mat4(1.0f),position);
-    model = glm::rotate(model,0.0f,glm::vec3(0,0,1));
+    model = glm::rotate(model,glm::radians(0.0f),glm::vec3(0,0,1));
     model = glm::scale(model,glm::vec3(character.size.x,character.size.y,1));
     model = glm::scale(model,glm::vec3(scale.x,scale.y,1));
     glm::vec3 pos = {-0.5f,-0.5f,0};
@@ -53,12 +53,13 @@ auto text_renderer::render_text(const std::string& text, const glm::vec3& positi
     glm::vec4 transformed_vertex2 = model * glm::vec4(pos2,1);
     glm::vec3 pos3 = {-0.5f,0.5f,0};
     glm::vec4 transformed_vertex3 = model * glm::vec4(pos3,1);
-    float vertex_data[96]=
+    
+    float vertex_data[192]=
     {
-        transformed_vertex.x,transformed_vertex.y,transformed_vertex.z,         0.0f,0.0f,      1,1,1,1,
-        transformed_vertex1.x,transformed_vertex1.y,transformed_vertex1.z,      1.0f,0.0f,      1,1,1,1,
-        transformed_vertex2.x,transformed_vertex2.y,transformed_vertex2.z,      1.0f,1.0f,      1,1,1,1,
-        transformed_vertex3.x,transformed_vertex3.y,transformed_vertex3.z,      0.0f,1.0f,      1,1,1,1,
+        transformed_vertex.x,transformed_vertex.y,transformed_vertex.z,         character.uv.position.x,character.uv.position.y,      1,1,1,1,
+        transformed_vertex1.x,transformed_vertex1.y,transformed_vertex1.z,      character.uv.position.x + character.uv.size.x,character.uv.position.y,      1,1,1,1,
+        transformed_vertex2.x,transformed_vertex2.y,transformed_vertex2.z,      character.uv.position.x + character.uv.size.x,character.uv.position.y + character.uv.size.y,      1,1,1,1,
+        transformed_vertex3.x,transformed_vertex3.y,transformed_vertex3.z,      character.uv.position.x,character.uv.position.y + character.uv.size.y,      1,1,1,1,
     };
     vao->bind();
     vbo->set_data(vertex_data,4*     3 * 2 * 4 * sizeof(float));

@@ -3,21 +3,21 @@
 #include "logger.h"
 
 
-auto resource_manager::load_texture(const std::string& file, const std::string& name) -> texture2d
+auto resource_manager::load_texture(const std::string& file, const std::string& name) -> texture2d&
 {
     textures.emplace(name,texture2d(file));
     return textures[name];
 }
 
-auto resource_manager::load_shader(const std::string& file,const std::string& name) -> shader
+auto resource_manager::load_shader(const std::string& file,const std::string& name) -> shader&
 {
     shaders.emplace(name, shader(file));
     return shaders[name];
 }
 
-auto resource_manager::load_font(const std::string& file,const std::string& name) -> font
+auto resource_manager::load_font(const std::string& file,const std::string& name) -> font&
 {
-    fonts.emplace(name,font(file, 16));
+    fonts.emplace(name,font(file, 32));
     return fonts[name];
 }
 

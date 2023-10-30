@@ -23,7 +23,7 @@ auto system_renderer_text::render() const -> void
     {
         auto& text = g_ecs.get_component<component_text>(entity);
         const auto& transform = g_ecs.get_component<component_transform>(entity);
-        text_renderer::render_text(text.text,transform.position,transform.scale,text.size,text.color,text.font_id);
+        text_renderer::render_text(text.text,transform.position,transform.scale,text.color,text.font_id);
     }
     text_renderer::render_end();
 }

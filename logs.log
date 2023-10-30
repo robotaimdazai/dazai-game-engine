@@ -1,17 +1,18 @@
-23-10-23 12:21:36 INFO: 	Subsystems init success
-23-10-23 12:21:36 INFO: 	Window created
-23-10-23 12:21:37 INFO: 	Windows renderer created
-23-10-23 12:21:37 INFO: 	openGL context init successful
-23-10-23 12:21:37 INFO: 	glew init successful
-23-10-23 12:21:37 INFO: 	Component manager created: struct component_sprite
-23-10-23 12:21:37 INFO: 	Component manager created: struct component_transform
-23-10-23 12:21:37 INFO: 	Component manager created: struct component_camera
-23-10-23 12:21:37 INFO: 	Component manager created: struct component_player_input
-23-10-23 12:21:37 INFO: 	Component manager created: struct component_animator
-23-10-23 12:21:37 INFO: 	Component manager created: struct component_box_collider
-23-10-23 12:21:37 INFO: 	Component manager created: struct component_rigidbody2d
-23-10-23 12:21:37 INFO: 	Component manager created: struct component_text
-23-10-23 12:21:37 INFO: 	Text Renderer:: Init
-23-10-23 12:21:37 INFO: 	Free Type Lib Init: Success
-23-10-23 12:21:37 INFO: 	Font created: assets/fonts/arial.ttf
-23-10-23 12:21:43 INFO: 	Resources cleared
+23-10-30 20:14:14 INFO: 	Subsystems init success
+23-10-30 20:14:14 INFO: 	Window created
+23-10-30 20:14:14 INFO: 	Windows renderer created
+23-10-30 20:14:14 INFO: 	openGL context init successful
+23-10-30 20:14:14 INFO: 	glew init successful
+23-10-30 20:14:14 INFO: 	Component manager created: struct component_sprite
+23-10-30 20:14:14 INFO: 	Component manager created: struct component_transform
+23-10-30 20:14:14 INFO: 	Component manager created: struct component_camera
+23-10-30 20:14:14 INFO: 	Component manager created: struct component_player_input
+23-10-30 20:14:14 INFO: 	Component manager created: struct component_animator
+23-10-30 20:14:14 INFO: 	Component manager created: struct component_box_collider
+23-10-30 20:14:14 INFO: 	Component manager created: struct component_rigidbody2d
+23-10-30 20:14:14 INFO: 	Component manager created: struct component_text
+23-10-30 20:14:14 INFO: 	Text Renderer:: Init
+23-10-30 20:14:14 INFO: 	Free Type Lib Init: Success
+23-10-30 20:14:14 INFO: 	Font created: assets/fonts/arial.ttf
+23-10-30 20:14:14 WARN: 	Font destructor
+23-10-30 20:14:22 INFO: 	Resources cleared

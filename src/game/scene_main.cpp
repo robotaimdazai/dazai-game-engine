@@ -185,9 +185,8 @@ auto scene_main::load() -> void
     auto t = g_ecs.add_entity();
     auto& text=g_ecs.add_component<component_text>(t);
     auto& t_trans =g_ecs.add_component<component_transform>(t);
-    t_trans.scale = {5,5,1};
+    t_trans.scale = {1,1,1};
     text.text="DAZAI";
-    text.size = 48;
     text.font_id="arial";
     
 }
