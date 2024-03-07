@@ -120,6 +120,7 @@ auto scene_main::load() -> void
 {
     //load all resources
     resource_manager::load_texture("assets/textures/dazai-sheet.png","dazai");
+    resource_manager::load_texture("assets/textures/button.png","button");
     resource_manager::load_texture("assets/textures/dazai.png","dazai1");
     resource_manager::load_font("assets/fonts/arial.ttf","arial");
     
@@ -153,7 +154,10 @@ auto scene_main::load() -> void
     //create a block for collision detection
     auto g_block = g_ecs.add_entity();
     g_ecs.add_component<component_transform>(g_block);
-    g_ecs.add_component<component_box_collider>(g_block);
+    auto& col = g_ecs.add_component<component_box_collider>(g_block);
+    col.size ={64,64};
+    col.offset ={-32,-32};
+    g_ecs.add_component<component_sprite>(g_block).texture_id = "dazai1";
     auto& block_transform = g_ecs.get_component<component_transform>(g_block);
     block_transform.position ={150,60,0};
 
@@ -180,6 +184,7 @@ auto scene_main::load() -> void
     transform.position.z =-1;
     auto& dummysprite = g_ecs.add_component<component_sprite>(dummy);
     dummysprite.texture_id="dazai1";
+    
 
     //text entity test
     auto t = g_ecs.add_entity();
@@ -207,8 +212,8 @@ auto scene_main::fixed_update(float fixed_delta_time) -> void
 auto scene_main::render() -> void
 {
     //render all entities
-    //g_sprite_system->render();
-    g_text_system->render();
+    g_sprite_system->render();
+    //g_text_system->render();
 }
 glm::vec2 mouse_pos;
 auto scene_main::handle_event(const input_state& input_state) -> void
@@ -264,7 +269,7 @@ auto scene_main::on_gui() -> void
 
     
     bool clicked = ImGui::ImageButton(
-        (ImTextureID)(intptr_t)resource_manager::get_texture("dazai1").get_renderer_id(),
+        (ImTextureID)(intptr_t)resource_manager::get_texture("button").get_renderer_id(),
         ImVec2(200,50),
         ImVec2(0,1),
         ImVec2(1,0),

@@ -77,7 +77,6 @@ int main(int argc, char *argv[])
 
     game.clean();
     //clean window here if requires
-    
     return 0;
 }
 
